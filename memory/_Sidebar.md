@@ -1,0 +1,3 @@
+### MindForger documentation
+
+[History](History)
