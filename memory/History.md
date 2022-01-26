@@ -19,7 +19,7 @@ tool. Therefore it has relatively long history - it is successor of
 [RDF Spiders](#rdf-spiders), [MindRaider](#mindraider) and [Coaching Notebook](#coaching-notebook). Actually it's a bit more 
 complicated...
 # RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 43; read: 2020-04-19 20:24:29; revision: 36; modified: 2018-05-10 12:48:36; -->
-![RDF Spiders](history.spiders.jpg)
+![RDF Spiders](History.spiders.jpg)
 
 [RDF Spiders](http://mindraider.sourceforge.net/gallery/mindraider-incubator/index.html) was 
 a 90s Java-based application which visualized RDF models. RDF was a core format specification
@@ -31,7 +31,7 @@ It required good knowledge of RDF which limited
 number of potential users. This is why I decided to implement more user friendly 
 [MindRaider](#mindraider).
 # MindRaider <!-- Metadata: type: Note; created: 2018-03-18 09:12:59; reads: 21; read: 2020-04-19 20:25:18; revision: 5; modified: 2020-04-19 20:25:18; -->
-![MindRaider](history.mr.jpg)
+![MindRaider](History.mr.jpg)
 
 [MindRaider](http://mindraider.sourceforge.net/) is a 90s Java-based 
 Semantic Web desktop application ([video](https://www.youtube.com/watch?v=Q95ixrVCXEs)) which is an outliner with RDF runtime. 
@@ -39,7 +39,7 @@ MindRaider was decently successful project with 100.000+ downloads. However
 it became morally obsolete and I didn't want to invest my time to deliver new features 
 on top of dying UI and runtime technology. Therefore I decided to start a new project.
 # Coaching Notebook <!-- Metadata: type: Note; created: 2018-03-18 09:13:06; reads: 13; read: 2018-03-18 09:19:34; revision: 8; modified: 2018-03-18 09:19:34; -->
-![Coaching Notebook](history.mf.png)
+![Coaching Notebook](History.mf.png)
 
 [CoachingNotebook](http://web.mindforger.com/) is a successor of MindRaider. 
 At the beginning it was a combination of auto-coaching tool and outliner.
@@ -48,7 +48,7 @@ technologies. After a few years I determined
 that coaching aspect of MindForger has questionable future, application is too big,
 complex and basically all coaching features can be realized using a mature outliner.
 
-![CoachingNotebook](history.coaching-notebook.png)
+![CoachingNotebook](History.coaching-notebook.png)
 
 Therefore I decided to split CoachingNotebook project to two focused applications:
 auto-coaching and outliner. I opensourced CoachingNotebook (w/o outliner) 
