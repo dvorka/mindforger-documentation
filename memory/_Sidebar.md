@@ -1,5 +1,7 @@
 ### MindForger documentation
 
+<!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
+
 <!-- wiki file -->
 **Getting started**:
 
