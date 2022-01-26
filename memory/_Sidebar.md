@@ -87,6 +87,10 @@
 * Credits (not in Wiki, link to mindforger repo MD)
 
 <!-- wiki file -->
+**Frequently Asked Questions**
+* [FAQs](FAQs.md)
+
+<!-- wiki file -->
 **Developer documentation**: 
 
 * Development environment
