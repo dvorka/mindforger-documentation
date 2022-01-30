@@ -1,4 +1,4 @@
-# MindForger documentation <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 7; read: 2022-01-27 09:03:22; revision: 7; modified: 2022-01-27 09:03:22; importance: 0/5; urgency: 0/5; -->
+# MindForger documentation <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 27; read: 2022-01-30 09:06:31; revision: 27; modified: 2022-01-30 09:06:31; importance: 0/5; urgency: 0/5; -->
 
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
@@ -12,6 +12,7 @@
     - .
     - Windows
 * Configuration
+* Vision
 * [History](History.md)
 * Releases
 * Tutorials
@@ -29,6 +30,7 @@
     - Open Markdown file
     - New Markdown file
     - Open directory with Markdowns
+        - Example Markdown content
     - Markdown
         - Markdown cheat sheet and specification
         - `Format` menu
@@ -90,10 +92,6 @@
 * Credits (not in Wiki, link to mindforger repo MD)
 
 <!-- wiki file -->
-**Frequently Asked Questions**
-* [FAQs](FAQs.md)
-
-<!-- wiki file -->
 **Developer documentation**: 
 
 * Development environment
@@ -131,3 +129,7 @@
     - Branching conventions
     - Code format conventions
 * Security policy
+
+<!-- wiki file -->
+**Frequently Asked Questions**
+* [FAQs](FAQs.md)
