@@ -1,4 +1,4 @@
-# MindForger documentation <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 27; read: 2022-01-30 09:06:31; revision: 27; modified: 2022-01-30 09:06:31; importance: 0/5; urgency: 0/5; -->
+# MindForger documentation <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 31; read: 2022-01-30 15:52:17; revision: 31; modified: 2022-01-30 15:52:17; importance: 0/5; urgency: 0/5; -->
 
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
@@ -7,17 +7,37 @@
 
 * Why MindForger?
     - Presentation: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
-* Installation
-    - macOS
-    - .
-    - Windows
-* Configuration
 * Vision
-* [History](History.md)
-* Releases
 * Tutorials
     - Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
     - Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
+* [History](History.md)
+    - [RDF Spiders](History.md#rdf-spiders)
+	- [MindRaider](History.md#mindraider)
+	- [Coaching Notebook](History.md#coaching-notebook)
+	- [MindForger](History.md#mindforger)
+* In the news
+* Bugs and feature requests
+
+<!-- wiki file -->
+**Installation**:
+
+* [Installation](Installation.md)
+    - [macOS](Installation.md#macos)
+    - .
+    - Windows
+* Build
+    - [Build on macOS](Installation.md#build-on-macos)
+    - .
+    - Windows
+* Configure
+    - Spell check
+* Nightly builds
+    - macOS .dmg
+	- Windows installer
+	- Tarball
+* Releases
+
 
 <!-- wiki file -->
 **Features**:
@@ -87,9 +107,7 @@
     - Fonts
     - Spellcheck (Win)
     - AA poller
-* History
-    - Spiders
-* Credits (not in Wiki, link to mindforger repo MD)
+* [Credits](https://github.com/dvorka/mindforger/blob/master/CREDITS.md)
 
 <!-- wiki file -->
 **Developer documentation**: 
