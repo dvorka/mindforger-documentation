@@ -1,4 +1,4 @@
-### MindForger documentation
+# MindForger documentation <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 7; read: 2022-01-27 09:03:22; revision: 7; modified: 2022-01-27 09:03:22; importance: 0/5; urgency: 0/5; -->
 
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
@@ -6,16 +6,17 @@
 **Getting started**:
 
 * Why MindForger?
-    - Presentation: [Thinking notebook tenets](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
+    - Presentation: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
 * Installation
     - macOS
     - .
     - Windows
 * Configuration
 * [History](History.md)
-* FAQ
+* Releases
 * Tutorials
-    - Video: [Getting started with MindForger](https://www.youtube.com/watch?v=PlW2e1X3O-I)
+    - Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
+    - Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
 
 <!-- wiki file -->
 **Features**:

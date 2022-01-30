@@ -1,3 +1,1 @@
-https://www.mindforger.com
-
-martin.dvorak@mindforger.com
+https://www.mindforger.com martin.dvorak@mindforger.com
