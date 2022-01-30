@@ -1,13 +1,16 @@
-# MindForger documentation <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 31; read: 2022-01-30 15:52:17; revision: 31; modified: 2022-01-30 15:52:17; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 99; read: 2022-01-30 18:19:37; revision: 99; modified: 2022-01-30 18:19:37; importance: 0/5; urgency: 0/5; -->
 
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
 **Getting started**:
 
-* Why MindForger?
-    - Presentation: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
-* Vision
+* [Why MindForger?](Getting-started.md#why-mindforger)
+    - [Unique](Getting-started.md#unique)
+    - [Inspired by human mind](Getting-started.md#inspired-by-human-mind)
+    - [Open, free and fast](Getting-started.md#open--free-and-fast)
+* Presentations: 
+    - Prezi: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
 * Tutorials
     - Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
     - Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
@@ -16,31 +19,42 @@
 	- [MindRaider](History.md#mindraider)
 	- [Coaching Notebook](History.md#coaching-notebook)
 	- [MindForger](History.md#mindforger)
-* In the news
-* Bugs and feature requests
+* [In the news](Getting-started.md#in-the-news)
+* [Bugs and feature requests](Getting-started.md#bugs-and-feature-requests)
+* [Community](Getting-started.md#community)
 
 <!-- wiki file -->
 **Installation**:
 
-* [Installation](Installation.md)
+* [Install](Installation.md)
     - [macOS](Installation.md#macos)
-    - .
-    - Windows
-* Build
+    - [Windows](Installation.md#windows)
+    - [Ubuntu](Installation.md#ubuntu)
+    - [Debian](Installation.md#debian)
+    - [Fedora](Installation.md#fedora)
+    - [FreeBSD](Installation.md#freebsd)
+    - [Arch Linux](Installation.md#arch-linux)
+    - [NixOS](Installation.md#nixos)
+    - [openSUSE](Installation.md#opensuse)
+    - [WSL](Installation.md#wsl)
+* [Build](Installation.md#build-from-source-code)
     - [Build on macOS](Installation.md#build-on-macos)
-    - .
-    - Windows
-* Configure
-    - Spell check
-* Nightly builds
-    - macOS .dmg
-	- Windows installer
-	- Tarball
-* Releases
-
+    - [Build on Windows](Installation.md#build-on-windows)
+    - [Build on Ubuntu](Installation.md#build-on-ubuntu)
+    - [Build on Debian](Installation.md#build-on-debian)
+    - [Build on Fedora](Installation.md#build-on-fedora)
+    - [Build on Gentoo](Installation.md#build-on-gentoo)
+    - [Build on NixOS](Installation.md#build-on-nixos)
+    - [Build on WSL](Installation.md#build-on-wsl)
+    - [Build and run Docker](Installation.md#docker)
+* [Configure](Installation.md#configure)
+    - [Spell check](Installation.md#spell-check)
+* [Nightly builds](Installation.md#nightly-builds)
+* [Releases](Installation.md#releases)
+    - [Changelog](Installation.md#changelog)
 
 <!-- wiki file -->
-**Features**:
+**User documentation**:
 
 * Basics
     * Markdown document
@@ -112,15 +126,16 @@
 <!-- wiki file -->
 **Developer documentation**: 
 
+* Contribute
 * Development environment
-    - Ubuntu development environment
-    - Windows development environment
+    - [Linux development environment](Developer-documentation.md#linux-development-environment)
+    - [Windows development environment](Developer-documentation.md#windows-development-environment)
     - macOS development environment
 * Build
     - ... include instructions ...
 * Automation
     - Makefile and build/ directory
-* CI
+* [Continuous Integration (CI)](Developer-documentation.md#continuous-integration--ci)
     - GitHub actions
     - AppVeyor
     - nightly builds
@@ -134,8 +149,8 @@
     - Localization
     - API reference (dOxygen generated documentation @ www.mindforger.com)
 * Licensing
-    - MindForger license
-    - 3rd party dependencies licenses
+    - [MindForger license](https://github.com/dvorka/mindforger/blob/master/LICENSE)
+    - [3rd party dependencies licenses](https://github.com/dvorka/mindforger/tree/master/licenses)
 * Testing
     - Library unit tests
     - Frontend testing
@@ -146,7 +161,7 @@
 * Conventions and best practices
     - Branching conventions
     - Code format conventions
-* Security policy
+* [Security policy](https://github.com/dvorka/mindforger/blob/master/SECURITY.md)
 
 <!-- wiki file -->
 **Frequently Asked Questions**
