@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1389; read: 2022-01-30 17:20:34; revision: 1389; modified: 2022-01-30 17:20:34; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1391; read: 2022-02-01 10:06:52; revision: 1391; modified: 2022-02-01 10:06:52; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -798,8 +798,8 @@ Nightly builds:
 * [macOS .dmg nightly](https://github.com/dvorka/mindforger/actions)
 * [Windows installer nightly](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts)
 * [tarball nightly](https://github.com/dvorka/mindforger/actions/workflows/build_ubuntu.yml)
-# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 43; read: 2022-01-30 17:20:34; revision: 12; modified: 2022-01-30 17:20:34; -->
-MindForger releases:
+# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 45; read: 2022-02-01 10:06:52; revision: 13; modified: 2022-02-01 10:06:52; -->
+MindForger [releases](https://github.com/dvorka/mindforger/releases):
   
 * [1.53.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Spell check
 * [1.52.0](https://github.com/dvorka/mindforger/releases/tag/1.52.0): Autolinking
