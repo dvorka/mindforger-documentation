@@ -1,27 +1,27 @@
-# History <!-- Metadata: type: Outline; created: 2022-01-26 23:42:26; reads: 293; read: 2022-02-05 22:49:20; revision: 293; modified: 2022-02-05 22:49:20; importance: 0/5; urgency: 0/5; -->
+# History <!-- Metadata: type: Outline; created: 2022-01-26 23:42:26; reads: 311; read: 2022-02-05 23:06:32; revision: 311; modified: 2022-02-05 23:06:32; importance: 0/5; urgency: 0/5; -->
 The story of the human mind inspired outliner is also an important
 chapter in the story of my life.
 
-It's year 1996. It's early in the morning. I sit in a sofa and waiting 
+It's the year 1996. It's early in the morning. I sit in a sofa and waiting 
 for a college exercise to begin. Thinking about an interesting topic 
 and a piece of software to implement. How can I use what I learned in 
 recent two years at the college? It should be exciting, it should be 
 something from my domain, it must be something I will be using every 
-day... as student.
+day... as a student.
 
 A strange pale guy is limping through the corridor and sits
 next to me. I have never seen him before and cannot remind him from any
 past lecture. He stares at me through thick glasses and we start to talk about 
 this and that, about what exciting we have seen recently, getting to the 
 topics of our interest and finding that we actually have a lot in common...
-and interest in human mind in particular. We talk about old school
+and interest in the human mind in particular. We talk about old school
 AI, and about an obvious gap in contemporary Office suites. We skip
 the lecture and keep talking about the exciting ideas in a guild clubhouse.
 We say goodbye excited, inspired and passionate. I don't remember his name,
 but I remember that day until today very well. This was the last time
 we met.
 
-It's year 1998. I'm waiting in from of a session room for an
+It's the year 1998. I'm waiting in from of a session room for an
 old professor whose lectures I will be attending in the following 4 semesters
 to come. He excels in mathematical analysis, received highest academical awards,
 then he got fascinated by human mind, gave up mathematics, turned into rebel
@@ -32,15 +32,15 @@ room smiling aloud while having Nature magazine in his hand - making fun
 of an experiment of US scientists who sliced brain of a poor prisoner who was
 sentenced to death and trying to understand how the mind works. He compares
 it to the experiments with his grandson, self-observation, emotions analysis
-and primitive reflexes backgrounds.
+and primitive reflex backgrounds.
 
-It's year 2003. I'm joining my colleagues at work and we make a big Amazon
+It's the year 2003. I'm joining my colleagues at work and we make a big Amazon
 order to make it cheaper. I order [Pinker](https://stevenpinker.com/)'s 
 [How the Mind Work](https://en.wikipedia.org/wiki/How_the_Mind_Works) and 
 Gärdenfors's [Conceptual Spaces: The Geometry of Thought](https://mitpress.mit.edu/books/conceptual-spaces). 
 Great books, but this is not what I'm looking for...
 
-It's year 2004. I'm excited by the semantics web. Reading all available
+It's the year 2004. I'm excited by the semantics web. Reading all available
 literature, articles (including the one in
 [Scientific American](https://www.scientificamerican.com/article/the-semantic-web/)
 and web pages written by Tim Berners-Lee, going deep 
@@ -51,7 +51,7 @@ I'm googling, [putting together various libraries](#rdf-spiders),
 learning about force-directed graphs, coding overnight and
 in early mornings while my girlfriend sleeps next to me. Happy days.
 
-It's year 2005. I just released [MindRaider](#mindraider) with buzzwordish pitch
+It's the year 2005. I just released [MindRaider](#mindraider) with buzzwordish pitch
 "semantic web outliner" on SourceForge. My first open source project. 
 I have a good feeling of being able to do something myself without any help.
 I don't expect any response - the project is fresh meat, instable,
@@ -59,10 +59,10 @@ with no documentation and UI that nobody (except the author ~ me) can
 understand. I'm actually afraid that somebody will be using it... but 
 at the same time I'm curious. I got splash of emails - getting 10s of 
 emails in 2 weeks after the release. People from around 
-the world - including postgraduates and researches - are writing about 
+the world - including postgraduates and researchers - are writing about 
 MindRaider, asking questions, want to understand it, integrate and cooperate.
 
-It's year 2006 and I just gave a speech to a small audience at a university
+It's the year 2006 and I just gave a speech to a small audience at a university
 about the project. More feedback, more interest in the project, more ideas
 how to extend it. Two months later my older son is born and my life 
 priorities are changed.
@@ -73,9 +73,9 @@ and project gets 10k downloads in one day, I'm getting emails from students
 to whom MindRaider 'saved their ... you know what' when they needed to 
 prepare for a tough exam, from software and marketing companies that 
 use it to deliver projects. I'm getting emails from interesting verticals
-like automotive and even from NASA employees.
+like automotive and even NASA employees.
 
-It's year 2010. I just bought Kindle, 3rd generation. I spent my first
+It's the year 2010. I just bought Kindle, 3rd generation. I spent my first
 money for books on memo athletics. I also download a few
 cognitive psychology articles by coincidence. This is it! This is what 
 I discussed years ago with the pale student, this is what human mind 
@@ -89,16 +89,16 @@ and it goes much further. It's auto-coaching tool atop abstractions,
 I verified in the past, which is trying to help in making
 life more balanced and happier. But life cannot be planned...
 
-...it's year 2013. I'm lying and shaking on the bed<!-- within opened pavilion
+...it's the year 2013. I'm lying and shaking on the bed<!-- within opened pavilion
 of psychiatric sanatorium -->. Anxiety, depression and nightmares. Scared and
 unable to sleep for a few weeks. Having personal problems and 
 taking my work way too much seriously.
 
-It's year 2014 and I believe that this is a new beginning. I just opened 
+It's the year 2014 and I believe that this is a new beginning. I just opened 
 a text editor and started to write a book on human mind,
 memory, intelligence, knowledge, memo athletics, remembering,
 forgetting, subliminal learning, organized super-organisms and
-information waves ... which is shaping vision of thinking notebook.
+information waves ... which is shaping the vision of thinking notebook.
 
 It's 2017 and I just decided to leave my full-time job - inspired
 by [talk which Andy Weir gave at LLNL](https://www.youtube.com/watch?v=2tfh6OUUYUw) - to 
@@ -131,7 +131,7 @@ It's my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_
 birthday and I just announced the first public release - `MindForger 0.42.0` - to
 confirm [answer](https://www.youtube.com/watch?v=aboZctrHfK8) to 
 the Ultimate Question of life, the Universe, and Everything. 
-Sabbatical mission accomplished, but I believe that this just 
+Sabbatical mission accomplished, but I believe that this is just 
 a beginning - _Adventure is out there!_
 # RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 49; read: 2022-02-05 22:37:13; revision: 38; modified: 2022-02-05 22:37:13; -->
 ![RDF Spiders](History.spiders.jpg)
