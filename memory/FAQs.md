@@ -1,13 +1,21 @@
-# FAQs <!-- Metadata: type: Outline; created: 2022-01-30 18:16:16; reads: 28; read: 2022-01-30 18:17:54; revision: 28; modified: 2022-01-30 18:17:54; importance: 0/5; urgency: 0/5; -->
+# FAQs <!-- Metadata: type: Outline; created: 2022-01-30 18:16:16; reads: 30; read: 2022-02-05 16:37:07; revision: 30; modified: 2022-02-05 16:37:07; importance: 0/5; urgency: 0/5; -->
+Frequently asked questions:
 
-Frequently asked questions.
-# How can I quickly edit viewed note? <!-- Metadata: type: Note; created: 2018-04-28 05:30:16; reads: 24; read: 2022-01-30 18:17:44; revision: 8; modified: 2018-07-10 07:17:03; -->
+
+* [How can I quickly edit viewed note?](#how-can-i-quickly-edit-viewed-note)
+* [How can I open notebook title section?](#how-can-i-open-notebook-title-section) <kbd>todo</kbd>
+* [Why is not line starting with # turned into section when editing a note?](#why-is-not-line-starting-with---turned-into-section-when-editing-a-note)
+* [How can I change font size/color/... in HTML preview?](#how-can-i-change-font-size-color-----in-html-preview) <kbd>todo</kbd>
+* [How can I open Markdown file in MindForger?](#how-can-i-open-markdown-file-in-mindforger) <kbd>todo</kbd>
+* [How can I open Markdown file in MindForger?](#how-can-i-open-markdown-file-in-mindforger) <kbd>todo</kbd>
+* [How can I manually add Markdown files ot MindForger repository?](#how-can-i-manually-add-markdown-files-ot-mindforger-repository) <kbd>todo</kbd>
+# How can I quickly edit viewed note? <!-- Metadata: type: Note; created: 2018-04-28 05:30:16; reads: 28; read: 2022-02-05 16:36:55; revision: 8; modified: 2018-07-10 07:17:03; -->
 **Double click** HTML preview to open note editor or use <kbd>Alt+n e</kbd> (menu `Note/Edit`).
-# How can I open notebook title section? <!-- Metadata: type: Note; tags: todo; created: 2018-05-17 08:44:39; reads: 39; read: 2022-01-30 18:17:49; revision: 8; modified: 2022-01-30 18:17:49; -->
+# How can I open notebook title section? <!-- Metadata: type: Note; tags: todo; created: 2018-05-17 08:44:39; reads: 43; read: 2022-02-05 16:36:55; revision: 8; modified: 2022-01-30 18:17:49; -->
 ![Image](faq.title-section-edit.png)
 
 Simply click notebook **name** above the note tree outline.
-# Why is not line starting with # turned into section when editing a note? <!-- Metadata: type: Note; created: 2018-07-10 09:55:52; reads: 21; read: 2022-01-30 18:17:49; revision: 3; modified: 2018-07-10 09:56:48; -->
+# Why is not line starting with # turned into section when editing a note? <!-- Metadata: type: Note; created: 2018-07-10 09:55:52; reads: 25; read: 2022-02-05 16:36:55; revision: 3; modified: 2018-07-10 09:56:48; -->
 TL:DR use menu `Note/New`  to create a new section - "manual" section within section is intentionally **quoted**.
 
 MindForger uses Markdown as a format for storing data, but it aims to do more. Therefore it splits Markdown file to sections and represents each section as **Note**: 
@@ -18,7 +26,7 @@ MindForger uses Markdown as a format for storing data, but it aims to do more. T
 * ...
 
 See also ![explanation](user-documentation.outliner-rules.png)
-# How can I change font size/color/... in HTML preview? <!-- Metadata: type: Note; tags: todo; created: 2018-07-10 08:44:41; reads: 27; read: 2022-01-30 18:17:54; revision: 5; modified: 2022-01-30 18:17:54; -->
+# How can I change font size/color/... in HTML preview? <!-- Metadata: type: Note; tags: todo; created: 2018-07-10 08:44:41; reads: 29; read: 2022-02-05 16:36:55; revision: 5; modified: 2022-01-30 18:17:54; -->
 See [Custom HTML Preview CSS](user-documentation.md#custom-html-preview-css).
 # How can I open Markdown file in MindForger? <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:16:44; reads: 17; read: 2022-01-30 18:17:44; revision: 3; modified: 2022-01-30 18:17:07; -->
 

@@ -1,5 +1,5 @@
-# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 98; read: 2022-02-01 10:18:49; revision: 98; modified: 2022-02-01 10:18:49; importance: 0/5; urgency: 0/5; -->
-# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 26; read: 2022-02-01 10:18:49; revision: 24; modified: 2022-02-01 10:18:49; -->
+# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 114; read: 2022-02-05 17:11:10; revision: 114; modified: 2022-02-05 17:11:10; importance: 0/5; urgency: 0/5; -->
+# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 40; read: 2022-02-05 17:11:10; revision: 31; modified: 2022-02-05 17:11:10; -->
 ![MindForger](screenshot.tayr.png)
 
 Are you **drowning** in **information**, but starving for knowledge?
@@ -12,15 +12,19 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
 * [Installation](Installation.md)
 * [User documentation](User-documentation.md)
 * [Developer documentation](Developer-documentation.md)
+* [History](History.md)
 * [FAQs](FAQs.md)
 
 
 **MindForger** which aims to be human mind inspired personal knowledge management tool:
  
 * **Human mind**
-    * MindForger aims to mimic human mind - **learning**, **recalling**, 
-      **recognition**, [associations](User-documentation.md#autolinking--associate-as-you-read),
-      [forgetting](User-documentation.md#forgetting) - in order to achieve
+    * MindForger aims to mimic human mind - 
+    [Learning](User-documentation.md#learning),
+    [recalling](User-documentation.md#search),
+    [recognition](User-documentation.md#recognize-what-matters),
+    [associations](User-documentation.md#autolinking--associate-as-you-read),
+    [forgetting](User-documentation.md#forgetting) - in order to achieve
       synergy with your mind to make your searching, reading and writing 
       more productive.
 * **Personal**
@@ -35,7 +39,7 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
 * **Management**	  
     * MindForger starts where editors and search engines end. It thinks as 
       you [search](User-documentation.md#tays--think-as-you-search),
-      [browse](User-documentation.md#tayb--think-as-you-browse---knowledge-graph-navigator),
+      [browse](User-documentation.md#tayb--think-as-you-browse),
       [read](User-documentation.md#tayr--think-as-you-read) and 
       [write](User-documentation.md#tayw--think-as-you-write).
       Once you **find** a remark, MindForger
@@ -46,3 +50,5 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
 * **Tool**
     * MindForger is a **desktop** application which runs on [Linux](Installation.md#ubuntu),
       [macOS](Installation.md#macos) and [Windows](Installation.md#windows).
+
+**MindForger** has been released on the day of my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) birthday to confirm [answer](https://www.youtube.com/watch?v=aboZctrHfK8) to the Ultimate Question of life, the Universe, and Everything, however, the project has longer [history](History.md)

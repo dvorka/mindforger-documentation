@@ -1,4 +1,7 @@
-# Developer documentation <!-- Metadata: type: Outline; created: 2022-01-30 18:02:38; reads: 50; read: 2022-01-30 18:10:42; revision: 50; modified: 2022-01-30 18:10:42; importance: 0/5; urgency: 0/5; -->
+# Developer documentation <!-- Metadata: type: Outline; created: 2022-01-30 18:02:38; reads: 132; read: 2022-02-05 21:20:03; revision: 132; modified: 2022-02-05 21:20:03; importance: 0/5; urgency: 0/5; -->
+> _"There are only two kinds of languages: the ones people complain about and the ones nobody uses" -- [Bjarne Stroustrup](https://www.stroustrup.com/quotes.html)_
+
+MindForger is written in **C++** programming language.
 
 Contribute:
 
@@ -14,7 +17,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-# Contribute <!-- Metadata: type: Note; created: 2022-01-30 18:03:29; reads: 11; read: 2022-01-30 18:06:39; revision: 10; modified: 2022-01-30 18:06:39; -->
+# Contribute <!-- Metadata: type: Note; created: 2022-01-30 18:03:29; reads: 17; read: 2022-02-05 16:14:48; revision: 10; modified: 2022-01-30 18:06:39; -->
 Current **MindForger** implementation is just an initial imperfect sketch of much broader **vision**. It's purpose is to **demonstrate** viability of thinking notebook idea and to **show** possible research directions.
 
 Feel free to [contribute](https://www.mindforger.com)! Don't hesitate to contact [me](martin.dvorak@mindforger.com).
@@ -35,7 +38,7 @@ Feel free to [contribute](https://www.mindforger.com)! Don't hesitate to contact
     * Submit performance, efficiency and/or productivity enhancements.
 * **Documentation**
     * Write a document, blog post or tweet, create YouTube video, ...
-# Linux Development Environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 12; read: 2022-01-30 18:08:16; revision: 11; modified: 2022-01-30 18:08:16; -->
+# Linux Development Environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 14; read: 2022-02-05 16:14:21; revision: 11; modified: 2022-01-30 18:08:16; -->
 Perhaps you may find useful description of my development environment:
 
 * Backend library:
@@ -105,18 +108,6 @@ MindForger has also library benchmarks:
 
 Benchmarks are *disabled* by default - go to benchmark source code and remove `DISABLED_` prefix
 from its name. For more details see Google test framework documentation and benchmarks source code.
-## Continuous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2022-01-30 18:10:42; revision: 5; modified: 2022-01-30 18:10:42; -->
-Continuous builds:
-
-* [GitHub Actions](https://github.com/dvorka/mindforger/actions)
-    * See also `.github/workflows`
-* [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
-    * See also `appveyor.yml`
-
-Condemned:
-
-* ~~[Travis CI](https://travis-ci.org/dvorka/mindforger)~~
-    * See also `.travis.yml`
 ## Packaging <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
 Scripts used to created packages for Linux distributions can be found in:
 
@@ -295,7 +286,7 @@ Than:
   * `lib\test\src\debug\mindforger-lib-unit-tests.exe`
 
 
-## Using scripts <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Using scripts <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-02-05 16:14:40; revision: 1; modified: 2022-01-30 18:02:38; -->
 Alternatively, instead using of following above described manual steps, you can take advantage of batch files prepared for building and running MindForger, installer and unit tests. All the scripts are located in the ` $GIT\mindforger\build` folder:
 
 * `build-app.bat`
@@ -309,7 +300,7 @@ Alternatively, instead using of following above described manual steps, you can 
 Most important is the `env.bat`. It's called by others and sets up command line environment. Ammend this file to change paths based on your setup. Other scripts are self-explanatory. The `run-unit-tests.bat` can also take any argument. This is usefull for passing options to the _gtest_ framework. 
 
 
-## Windows Continous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Windows Continous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-02-05 15:16:03; revision: 1; modified: 2022-01-30 18:02:38; -->
 Continous Integration for Windows:
 
 * [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
@@ -334,12 +325,14 @@ Git branch naming convention:
     * release development branch used **before** release (stable master)
 * `stabilization/<release version>`
     * stable brach used **after** release (patch releases)
-## Source documentation conventions <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Source documentation conventions <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-02-05 16:14:35; revision: 1; modified: 2022-01-30 18:02:38; -->
 Source code documentation conventions:
 
 * Use Doxygen syntax in source code comments 
   https://www.cs.cmu.edu/~410/doc/doxygen.html
-# Technical Architecture <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+# Functional Architecture <!-- Metadata: type: Note; created: 2022-02-05 21:17:19; reads: 4; read: 2022-02-05 21:17:20; revision: 2; modified: 2022-02-05 21:17:20; -->
+
+# Technical Architecture <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-02-05 21:17:13; revision: 1; modified: 2022-01-30 18:02:38; -->
 This section gives a brief summary of MindForger technical architecture highlights.
 ## Library <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
 ...
@@ -409,41 +402,14 @@ See also:
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
 ### Force-driven Graph <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
 ...
-# Release Automation <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
-This is analysis of release automation making MindForger release much 
-faster and less time consuming.
-
-Release artifacts:
-* **PPA Launchpad**
-    * State: fully scripted
-    * Todo: 
-        * Load version number from a central place (env script)
-        * Call this script from central release script.
-        * Add section to generated report of main release script w/ URLs of Launchpad distros.
-* **PPA Debian (private)**
-    * State: text how to.
-    * Todo:
-        * Load version number.
-        * Write script which automates OLD version removal and new version add.
-        * Write script which will upload and replace PPA over FTS/SFTP/scp
-        * Add section to generated report of main release
-* **.deb**
-    * ...
-* **.rpm**
-    * ...
-* **tarball**
-    * ...
-
-TODO: employ CIs to build artifacts.
-TODO: flow diagram of how will MF be released.
-# Formats specification <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+# Formats specification <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2022-02-05 15:16:27; revision: 1; modified: 2022-01-30 18:02:38; -->
 MindForger can open **any** file that uses Markdown format. MindForger
 can also open **any** directory that contains Markdown files (also
 in its sub-directories).
 
 However, you can use MindForger's [Markdown hosted DSL](#markdown-hosted-dsl) and
 [repository format](#repository-format) to get much more (mind related) features.
-## Markdown hosted DSL <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Markdown hosted DSL <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 7; read: 2022-02-05 15:16:28; revision: 1; modified: 2022-01-30 18:02:38; -->
 This section describes MD conventions that MindForger uses to store outlines.
 
 Description:
@@ -467,7 +433,7 @@ canonical messages.
 
 ... here comes a text.
 ```
-## Repository Layout <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 1; read: 2022-01-30 18:02:38; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Repository Layout <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 7; read: 2022-02-05 15:18:31; revision: 1; modified: 2022-01-30 18:02:38; -->
 Design goals:
 
 * Repository specification SHOULD be general i.e. not bound to MindForger
@@ -535,3 +501,50 @@ Description:
 * MindForger home screen == cloud of is outline and/or note *labels* (split screen).
 * Extensions:
    * files w/ extensions that are not explicitly enumerated are ignored by Git (global ignore)
+# Continuous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 51; read: 2022-02-05 15:25:21; revision: 15; modified: 2022-02-05 15:25:21; -->
+Multiple CI services are used to build, test and package MindForger.
+## GitHub Actions <!-- Metadata: type: Note; created: 2022-02-05 15:16:44; reads: 30; read: 2022-02-05 15:25:03; revision: 6; modified: 2022-02-05 15:25:03; -->
+GitHub Actions are used to build macOS DiskImaGe packages and tarballs:
+
+* [GitHub Actions](https://github.com/dvorka/mindforger/actions)
+
+See also [.github/workflows](https://github.com/dvorka/mindforger/tree/dev/master/.github/workflows).
+## AppVeyor <!-- Metadata: type: Note; created: 2022-02-05 15:16:35; reads: 21; read: 2022-02-05 15:25:00; revision: 6; modified: 2022-02-05 15:25:00; -->
+AppVeyor CI is used to build Windows installer:
+
+* [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
+
+See also [appveyor.yml](https://github.com/dvorka/mindforger/blob/master/appveyor.yml).
+## Travis CI (condemned) <!-- Metadata: type: Note; created: 2022-02-05 15:18:35; reads: 14; read: 2022-02-05 15:24:54; revision: 7; modified: 2022-02-05 15:21:37; -->
+Travis CI is no longer used due to (GitHub account related) privacy issues and coarse grained security:
+
+* [Travis CI](https://travis-ci.org/dvorka/mindforger)
+
+See also [.travis.yml](https://github.com/dvorka/mindforger/tree/master/build/travis-ci).
+# Release Automation <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2022-02-05 15:16:30; revision: 1; modified: 2022-01-30 18:02:38; -->
+This is analysis of release automation making MindForger release much 
+faster and less time consuming.
+
+Release artifacts:
+* **PPA Launchpad**
+    * State: fully scripted
+    * Todo: 
+        * Load version number from a central place (env script)
+        * Call this script from central release script.
+        * Add section to generated report of main release script w/ URLs of Launchpad distros.
+* **PPA Debian (private)**
+    * State: text how to.
+    * Todo:
+        * Load version number.
+        * Write script which automates OLD version removal and new version add.
+        * Write script which will upload and replace PPA over FTS/SFTP/scp
+        * Add section to generated report of main release
+* **.deb**
+    * ...
+* **.rpm**
+    * ...
+* **tarball**
+    * ...
+
+TODO: employ CIs to build artifacts.
+TODO: flow diagram of how will MF be released.

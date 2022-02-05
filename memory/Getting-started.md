@@ -1,5 +1,13 @@
-# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 64; read: 2022-01-30 17:51:45; revision: 64; modified: 2022-01-30 17:51:45; importance: 0/5; urgency: 0/5; -->
+# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 66; read: 2022-02-05 16:37:41; revision: 66; modified: 2022-02-05 16:37:41; importance: 0/5; urgency: 0/5; -->
+Getting started with MindForger:
 
+* [Why MindForger?](#why-mindforger)
+    * [Unique](#unique)
+    * [Inspired by human mind](#inspired-by-human-mind)
+    * [Open, free and fast](#open--free-and-fast)
+* [In the news](#in-the-news)
+* [Bugs and feature requests](#bugs-and-feature-requests)
+* [Community](#community)
 # Why MindForger? <!-- Metadata: type: Note; created: 2022-01-30 17:24:15; reads: 14; read: 2022-01-30 17:50:31; revision: 2; modified: 2022-01-30 17:24:32; -->
 This document describes driving principles and vision for MindForger.
 

@@ -1,5 +1,4 @@
-# Table of Contents <!-- Metadata: type: Outline; created: 2022-01-27 08:45:44; reads: 99; read: 2022-01-30 18:19:37; revision: 99; modified: 2022-01-30 18:19:37; importance: 0/5; urgency: 0/5; -->
-
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 129; read: 2022-02-05 22:30:47; revision: 128; modified: 2022-02-05 22:30:47; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
@@ -37,18 +36,7 @@
     - [NixOS](Installation.md#nixos)
     - [openSUSE](Installation.md#opensuse)
     - [WSL](Installation.md#wsl)
-* [Build](Installation.md#build-from-source-code)
-    - [Build on macOS](Installation.md#build-on-macos)
-    - [Build on Windows](Installation.md#build-on-windows)
-    - [Build on Ubuntu](Installation.md#build-on-ubuntu)
-    - [Build on Debian](Installation.md#build-on-debian)
-    - [Build on Fedora](Installation.md#build-on-fedora)
-    - [Build on Gentoo](Installation.md#build-on-gentoo)
-    - [Build on NixOS](Installation.md#build-on-nixos)
-    - [Build on WSL](Installation.md#build-on-wsl)
-    - [Build and run Docker](Installation.md#docker)
 * [Configure](Installation.md#configure)
-    - [Spell check](Installation.md#spell-check)
 * [Nightly builds](Installation.md#nightly-builds)
 * [Releases](Installation.md#releases)
     - [Changelog](Installation.md#changelog)
@@ -77,15 +65,15 @@
     - Outlining
     - Hoisting
     - Spellcheck
-* Search
-    - Find . by .
-    - Full text search (scope)
-    - Recent
 * Markdown IDE
     - Templates
     - Refactoring
     - Cloning
     - Link completion
+* Search
+    - Find . by .
+    - Full text search (scope)
+    - Recent
 * Thinking notebook
     - MindForger repository
     - Metadata
@@ -126,22 +114,30 @@
 <!-- wiki file -->
 **Developer documentation**: 
 
-* Contribute
+* [Contribute](Developer-documentation.md#contribute)
+* [Build](Installation.md#build-from-source-code)
+    - [Build on macOS](Installation.md#build-on-macos)
+    - [Build on Windows](Installation.md#build-on-windows)
+    - [Build on Ubuntu](Installation.md#build-on-ubuntu)
+    - [Build on Debian](Installation.md#build-on-debian)
+    - [Build on Fedora](Installation.md#build-on-fedora)
+    - [Build on Gentoo](Installation.md#build-on-gentoo)
+    - [Build on NixOS](Installation.md#build-on-nixos)
+    - [Build on WSL](Installation.md#build-on-wsl)
+    - [Build and run Docker](Installation.md#docker)
 * Development environment
     - [Linux development environment](Developer-documentation.md#linux-development-environment)
     - [Windows development environment](Developer-documentation.md#windows-development-environment)
     - macOS development environment
-* Build
-    - ... include instructions ...
 * Automation
     - Makefile and build/ directory
 * [Continuous Integration (CI)](Developer-documentation.md#continuous-integration--ci)
-    - GitHub actions
-    - AppVeyor
-    - nightly builds
+    - [GitHub Actions](Developer-documentation.md#github-actions)
+    - [AppVeyor](Developer-documentation.md#appveyor)
+    - nightly builds: [.dmg](https://github.com/dvorka/mindforger/actions/workflows/build_macos.yml) | [Win installer](https://ci.appveyor.com/project/dvorka/mindforger) 
 * Implementation
     - Incremental Markdown recursive descent parser
-    - Magnets and rubbers: Force-driven Graph
+    - Magnets and rubbers: Force-directed Graph
     - Model View Presenter frontend pattern
     - NLP: stemmer, lexicon and bag of words
     - Repository layout specification
