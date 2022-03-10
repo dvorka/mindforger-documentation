@@ -1,8 +1,8 @@
-# History <!-- Metadata: type: Outline; created: 2022-01-26 23:42:26; reads: 311; read: 2022-02-05 23:06:32; revision: 311; modified: 2022-02-05 23:06:32; importance: 0/5; urgency: 0/5; -->
+# History <!-- Metadata: type: Outline; created: 2022-01-26 23:42:26; reads: 363; read: 2022-03-10 08:34:42; revision: 363; modified: 2022-03-10 08:34:42; importance: 0/5; urgency: 0/5; -->
 The story of the human mind inspired outliner is also an important
 chapter in the story of my life.
 
-It's the year 1996. It's early in the morning. I sit in a sofa and waiting 
+It's the year 1996. It's early in the morning. I sit on a sofa and wait
 for a college exercise to begin. Thinking about an interesting topic 
 and a piece of software to implement. How can I use what I learned in 
 recent two years at the college? It should be exciting, it should be 
@@ -23,13 +23,13 @@ we met.
 
 It's the year 1998. I'm waiting in from of a session room for an
 old professor whose lectures I will be attending in the following 4 semesters
-to come. He excels in mathematical analysis, received highest academical awards,
-then he got fascinated by human mind, gave up mathematics, turned into rebel
+to come. He excels in mathematical analysis, received the highest academic awards,
+then he got fascinated by the human mind, gave up mathematics, turned into a rebel
 and started to study his own mind and also the mind of his 4 years old grandson. 
-Discussing various aspects of human mind, cell model, neural networks
-four hours every week for two years. He is skeptic, he often enters the
+Discussing various aspects of the human mind, cell model, neural networks
+four hours every week for two years. He is skeptical, he often enters the
 room smiling aloud while having Nature magazine in his hand - making fun 
-of an experiment of US scientists who sliced brain of a poor prisoner who was
+of an experiment of US scientists who sliced the brain of a poor prisoner who was
 sentenced to death and trying to understand how the mind works. He compares
 it to the experiments with his grandson, self-observation, emotions analysis
 and primitive reflex backgrounds.
@@ -44,7 +44,7 @@ It's the year 2004. I'm excited by the semantics web. Reading all available
 literature, articles (including the one in
 [Scientific American](https://www.scientificamerican.com/article/the-semantic-web/)
 and web pages written by Tim Berners-Lee, going deep 
-into RDF, ontologies and DARPA funded technologies and specs. Reminding 
+into RDF, ontologies and DARPA-funded technologies and specs. Reminding 
 my college encounter thinking about putting the technology and ideas together.
 
 I'm googling, [putting together various libraries](#rdf-spiders),
@@ -52,31 +52,31 @@ learning about force-directed graphs, coding overnight and
 in early mornings while my girlfriend sleeps next to me. Happy days.
 
 It's the year 2005. I just released [MindRaider](#mindraider) with buzzwordish pitch
-"semantic web outliner" on SourceForge. My first open source project. 
+"semantic web outliner" on SourceForge. My first open-source project. 
 I have a good feeling of being able to do something myself without any help.
-I don't expect any response - the project is fresh meat, instable,
+I don't expect any response - the project is fresh meat, unstable,
 with no documentation and UI that nobody (except the author ~ me) can 
-understand. I'm actually afraid that somebody will be using it... but 
-at the same time I'm curious. I got splash of emails - getting 10s of 
+understand. I'm afraid that someone will be using it... but 
+at the same time I'm curious. I got a splash of emails - getting 10s of 
 emails in 2 weeks after the release. People from around 
 the world - including postgraduates and researchers - are writing about 
 MindRaider, asking questions, want to understand it, integrate and cooperate.
 
 It's the year 2006 and I just gave a speech to a small audience at a university
 about the project. More feedback, more interest in the project, more ideas
-how to extend it. Two months later my older son is born and my life 
+on how to extend it. Two months later my older son is born and my life 
 priorities are changed.
 
-The project lives it's own life. I use it on everyday basis as a normal
+The project lives its own life. I use it on an everyday basis as a normal
 end user. It's reviewed on various servers, there is an article on Lifehacker
-and project gets 10k downloads in one day, I'm getting emails from students
-to whom MindRaider 'saved their ... you know what' when they needed to 
+and the project gets 10k downloads in one day, I'm getting emails from students
+to whom MindRaider 'saved their ...' (you know what) when they needed to 
 prepare for a tough exam, from software and marketing companies that 
 use it to deliver projects. I'm getting emails from interesting verticals
 like automotive and even NASA employees.
 
 It's the year 2010. I just bought Kindle, 3rd generation. I spent my first
-money for books on memo athletics. I also download a few
+money on books on memo athletics. I also download a few
 cognitive psychology articles by coincidence. This is it! This is what 
 I discussed years ago with the pale student, this is what human mind 
 addicted professor has been researching. I enjoy reading formal 
@@ -95,7 +95,7 @@ unable to sleep for a few weeks. Having personal problems and
 taking my work way too much seriously.
 
 It's the year 2014 and I believe that this is a new beginning. I just opened 
-a text editor and started to write a book on human mind,
+a text editor and started to write a book on the human mind,
 memory, intelligence, knowledge, memo athletics, remembering,
 forgetting, subliminal learning, organized super-organisms and
 information waves ... which is shaping the vision of thinking notebook.
@@ -113,7 +113,7 @@ beautiful research articles and books.
 implemented [Git](https://en.wikipedia.org/wiki/Git) because he was
 not satisfied with existing version-control systems and he wanted to
 efficiently maintain Linux kernel source code. I admire both of these men. 
-Both of them stopped the work and implemented tool which they were
+Both of them stopped the work and implemented a tool which they were
 desperately missing. Then they returned back to do what they know best.
 My motivation is exactly the same.
 
@@ -121,7 +121,7 @@ Forger part of the [MindForger](https://www.mindforger.com) project name
 is inspired by _forger_ character
 from [Inception (2018)](https://www.imdb.com/title/tt1375666/fullcredits)
 movie by Christopher Nolan (Tom Hardy as dream property forger). This is
-also why the first release screenshot and web page will be based on Eddie
+also why the first release screenshot and the web page will be based on Eddie
 character from [Venom](https://www.imdb.com/title/tt1270797/) movie 
 (Tom Hardy w/ symbiont).
 

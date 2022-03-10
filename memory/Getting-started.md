@@ -1,4 +1,4 @@
-# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 66; read: 2022-02-05 16:37:41; revision: 66; modified: 2022-02-05 16:37:41; importance: 0/5; urgency: 0/5; -->
+# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 72; read: 2022-03-10 08:49:04; revision: 72; modified: 2022-03-10 08:49:04; importance: 0/5; urgency: 0/5; -->
 Getting started with MindForger:
 
 * [Why MindForger?](#why-mindforger)
@@ -8,7 +8,7 @@ Getting started with MindForger:
 * [In the news](#in-the-news)
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Community](#community)
-# Why MindForger? <!-- Metadata: type: Note; created: 2022-01-30 17:24:15; reads: 14; read: 2022-01-30 17:50:31; revision: 2; modified: 2022-01-30 17:24:32; -->
+# Why MindForger? <!-- Metadata: type: Note; created: 2022-01-30 17:24:15; reads: 20; read: 2022-03-10 08:48:40; revision: 2; modified: 2022-01-30 17:24:32; -->
 This document describes driving principles and vision for MindForger.
 
 Are you drowning in information, but starving for **knowledge**? Where do you 
@@ -25,7 +25,7 @@ Its mission is to help you in organization of your knowledge and associated
 local, web and real world resources in a way that enables quick navigation, 
 concise representation, automatic interconnections, associative completion 
 and inferencing.
-## Unique <!-- Metadata: type: Note; created: 2022-01-30 17:23:31; reads: 23; read: 2022-01-30 17:50:31; revision: 5; modified: 2022-01-30 17:43:58; -->
+## Unique <!-- Metadata: type: Note; tags: todo,links; created: 2022-01-30 17:23:31; reads: 31; read: 2022-03-10 08:49:04; revision: 6; modified: 2022-03-10 08:49:04; -->
 MindForger is **human mind** inspired **personal** knowledge management tool:
 
 * **Human mind**
@@ -51,9 +51,9 @@ MindForger is **human mind** inspired **personal** knowledge management tool:
       existing content related to the text being written.
 * **Tool**
     * MindForger is a **desktop** application which runs on Linux, macOS and Windows.
-## Inspired by human mind <!-- Metadata: type: Note; created: 2022-01-30 17:43:41; reads: 14; read: 2022-01-30 17:50:31; revision: 2; modified: 2022-01-30 17:43:42; -->
+## Inspired by human mind <!-- Metadata: type: Note; created: 2022-01-30 17:43:41; reads: 20; read: 2022-03-10 08:48:51; revision: 2; modified: 2022-01-30 17:43:42; -->
 
-## Open, free and fast <!-- Metadata: type: Note; created: 2022-01-30 17:44:18; reads: 10; read: 2022-01-30 17:50:31; revision: 2; modified: 2022-01-30 17:44:19; -->
+## Open, free and fast <!-- Metadata: type: Note; created: 2022-01-30 17:44:18; reads: 14; read: 2022-03-10 08:48:51; revision: 2; modified: 2022-01-30 17:44:19; -->
 MindForger features:
 
 * **Open**
@@ -117,7 +117,7 @@ MindForger features:
       any CMS or cloud drive to push your data for backup (even to multiple 
       locations).
 
-# In the news <!-- Metadata: type: Note; created: 2022-01-30 17:47:38; reads: 8; read: 2022-01-30 17:50:31; revision: 5; modified: 2022-01-30 17:48:54; -->
+# In the news <!-- Metadata: type: Note; created: 2022-01-30 17:47:38; reads: 10; read: 2022-03-10 08:46:25; revision: 5; modified: 2022-01-30 17:48:54; -->
 Read about MindForger:
 
 * [FOSSMint](https://www.fossmint.com/mindforger-notebook-and-markdown-ide/)
@@ -127,15 +127,14 @@ Read about MindForger:
 * [AwesomeOpenSource](https://awesomeopensource.com/project/dvorka/mindforger)
 * [MOONGIFT.jp](https://www.moongift.jp/2018/12/mindforger-markdown%E3%82%92%E4%BD%BF%E3%81%A3%E3%81%9F%E3%83%8A%E3%83%AC%E3%83%83%E3%82%B8%E3%83%99%E3%83%BC%E3%82%B9/)
 * [root.cz](https://www.root.cz/clanky/softwarova-sklizen-19-9-2018/)  
-# Bugs and feature requests <!-- Metadata: type: Note; created: 2022-01-30 17:49:10; reads: 7; read: 2022-01-30 17:49:37; revision: 3; modified: 2022-01-30 17:49:37; -->
+# Bugs and feature requests <!-- Metadata: type: Note; created: 2022-01-30 17:49:10; reads: 10; read: 2022-03-10 08:46:33; revision: 4; modified: 2022-03-10 08:46:33; -->
 Share your ideas/suggestions/enhancements or report bugs:
 
-https://github.com/dvorka/mindforger/issues
-# Community <!-- Metadata: type: Note; created: 2022-01-27 08:59:12; reads: 22; read: 2022-01-30 17:51:45; revision: 8; modified: 2022-01-30 17:51:45; -->
+* https://github.com/dvorka/mindforger/issues
+# Community <!-- Metadata: type: Note; created: 2022-01-27 08:59:12; reads: 25; read: 2022-03-10 08:46:49; revision: 9; modified: 2022-03-10 08:46:49; -->
 Follow `@mindforger` on:
 
 * [GitHub](https://github.com/dvorka/mindforger)
 * [Twitter](https://twitter.com/mindforger)
 * [YouTube](https://www.youtube.com/user/MindForgerChannel)
 * [Facebook](http://www.facebook.com/pages/MindForger/172099806154112)
-* [Google Groups](https://groups.google.com/forum/#!forum/mindforger)

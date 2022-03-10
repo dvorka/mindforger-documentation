@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1420; read: 2022-02-05 16:45:26; revision: 1420; modified: 2022-02-05 16:45:26; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1425; read: 2022-03-10 08:48:27; revision: 1425; modified: 2022-03-10 08:48:27; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -750,6 +750,12 @@ docker start $(cat ~/.mindforger.docker)
 
 Check also https://github.com/dvorka/mindforger/tree/master/build/docker for handy scripts.
 
+# Nightly builds <!-- Metadata: type: Note; created: 2022-01-30 17:06:58; reads: 30; read: 2022-03-10 08:47:54; revision: 4; modified: 2022-03-10 08:47:54; -->
+Nightly builds:
+
+* [macOS .dmg](https://github.com/dvorka/mindforger/actions)
+* [Windows installer](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts)
+* [tarball](https://github.com/dvorka/mindforger/actions/workflows/build_ubuntu.yml)
 # Configure <!-- Metadata: type: Note; created: 2022-01-30 18:02:50; reads: 66; read: 2022-02-05 16:19:25; revision: 3; modified: 2022-02-05 16:18:59; -->
 MindForger can be configured either from UI:
 
@@ -836,17 +842,12 @@ MindForger can be either in **thinking** or **sleeping** mode:
 
 Switch thinking/sleeping mode based on whether you **need** mind features for the particular
 repository or not - consider performance/CPU consumption vs features trade-off.
-### AA poler <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 25; read: 2022-02-05 16:45:26; revision: 5; modified: 2022-02-05 16:45:26; -->
+### AA poler <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 27; read: 2022-03-10 08:47:14; revision: 5; modified: 2022-02-05 16:45:26; -->
 
-# Nightly builds <!-- Metadata: type: Note; created: 2022-01-30 17:06:58; reads: 23; read: 2022-02-05 16:19:26; revision: 3; modified: 2022-01-30 17:13:48; -->
-Nightly builds:
-
-* [macOS .dmg nightly](https://github.com/dvorka/mindforger/actions)
-* [Windows installer nightly](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts)
-* [tarball nightly](https://github.com/dvorka/mindforger/actions/workflows/build_ubuntu.yml)
-# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 53; read: 2022-02-05 16:19:26; revision: 13; modified: 2022-02-01 10:06:52; -->
+# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 55; read: 2022-03-10 08:48:27; revision: 14; modified: 2022-03-10 08:48:27; -->
 MindForger [releases](https://github.com/dvorka/mindforger/releases):
   
+* [1.54.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Smart(er) Markdown editor
 * [1.53.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Spell check
 * [1.52.0](https://github.com/dvorka/mindforger/releases/tag/1.52.0): Autolinking
 * [1.51.0](https://github.com/dvorka/mindforger/releases/tag/1.51.0): Live preview

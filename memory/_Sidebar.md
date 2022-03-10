@@ -1,8 +1,16 @@
-# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 129; read: 2022-02-05 22:30:47; revision: 128; modified: 2022-02-05 22:30:47; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 154; read: 2022-03-10 09:01:43; revision: 154; modified: 2022-03-10 09:01:43; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
 **Getting started**:
+
+* How to edit Markdown file?
+* How to open directory with (many) Markdown files?
+* How to open MindForger repository?
+* FAQs
+
+<!-- wiki file -->
+**About**:
 
 * [Why MindForger?](Getting-started.md#why-mindforger)
     - [Unique](Getting-started.md#unique)
@@ -37,17 +45,19 @@
     - [openSUSE](Installation.md#opensuse)
     - [WSL](Installation.md#wsl)
 * [Configure](Installation.md#configure)
-* [Nightly builds](Installation.md#nightly-builds)
 * [Releases](Installation.md#releases)
-    - [Changelog](Installation.md#changelog)
+* [Changelog](Installation.md#changelog)
+* [Nightly builds](Installation.md#nightly-builds)
 
 <!-- wiki file -->
 **User documentation**:
 
 * Basics
     * Markdown document
-    * Document == Notebook
-    * Section == Note
+    * Document ~ Notebook
+    * Section ~ Note
+* Notebook editor
+    - .
 * Markdown editor
     - Open Markdown file
     - New Markdown file
@@ -98,7 +108,7 @@
     - GROW
 * Machine learning / NLP
     - CSV export
-        - OHE note and notebook tags
+        - Tags OHE
 * Tooling
     - Terminal
     - CLI

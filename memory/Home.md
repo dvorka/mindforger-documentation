@@ -1,5 +1,5 @@
-# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 114; read: 2022-02-05 17:11:10; revision: 114; modified: 2022-02-05 17:11:10; importance: 0/5; urgency: 0/5; -->
-# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 40; read: 2022-02-05 17:11:10; revision: 31; modified: 2022-02-05 17:11:10; -->
+# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 116; read: 2022-03-10 08:46:01; revision: 116; modified: 2022-03-10 08:46:01; importance: 0/5; urgency: 0/5; -->
+# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 42; read: 2022-03-10 08:46:01; revision: 32; modified: 2022-03-10 08:46:01; -->
 ![MindForger](screenshot.tayr.png)
 
 Are you **drowning** in **information**, but starving for knowledge?
@@ -51,4 +51,4 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
     * MindForger is a **desktop** application which runs on [Linux](Installation.md#ubuntu),
       [macOS](Installation.md#macos) and [Windows](Installation.md#windows).
 
-**MindForger** has been released on the day of my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) birthday to confirm [answer](https://www.youtube.com/watch?v=aboZctrHfK8) to the Ultimate Question of life, the Universe, and Everything, however, the project has longer [history](History.md)
+**MindForger** has been released on the day of my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) birthday to confirm [answer](https://www.youtube.com/watch?v=aboZctrHfK8) to the Ultimate Question of life, the Universe, and Everything, however, the project has longer [history](History.md).
