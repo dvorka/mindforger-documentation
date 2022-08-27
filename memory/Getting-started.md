@@ -1,4 +1,4 @@
-# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 72; read: 2022-03-10 08:49:04; revision: 72; modified: 2022-03-10 08:49:04; importance: 0/5; urgency: 0/5; -->
+# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 80; read: 2022-08-27 07:51:50; revision: 74; modified: 2022-08-27 07:51:50; importance: 0/5; urgency: 0/5; -->
 Getting started with MindForger:
 
 * [Why MindForger?](#why-mindforger)
@@ -8,7 +8,7 @@ Getting started with MindForger:
 * [In the news](#in-the-news)
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Community](#community)
-# Why MindForger? <!-- Metadata: type: Note; created: 2022-01-30 17:24:15; reads: 20; read: 2022-03-10 08:48:40; revision: 2; modified: 2022-01-30 17:24:32; -->
+# Why MindForger? <!-- Metadata: type: Note; created: 2022-01-30 17:24:15; reads: 25; read: 2022-08-27 07:51:40; revision: 2; modified: 2022-01-30 17:24:32; -->
 This document describes driving principles and vision for MindForger.
 
 Are you drowning in information, but starving for **knowledge**? Where do you 
@@ -25,7 +25,7 @@ Its mission is to help you in organization of your knowledge and associated
 local, web and real world resources in a way that enables quick navigation, 
 concise representation, automatic interconnections, associative completion 
 and inferencing.
-## Unique <!-- Metadata: type: Note; tags: todo,links; created: 2022-01-30 17:23:31; reads: 31; read: 2022-03-10 08:49:04; revision: 6; modified: 2022-03-10 08:49:04; -->
+## Unique <!-- Metadata: type: Note; tags: todo,links; created: 2022-01-30 17:23:31; reads: 38; read: 2022-08-27 07:51:45; revision: 6; modified: 2022-03-10 08:49:04; -->
 MindForger is **human mind** inspired **personal** knowledge management tool:
 
 * **Human mind**
@@ -51,9 +51,9 @@ MindForger is **human mind** inspired **personal** knowledge management tool:
       existing content related to the text being written.
 * **Tool**
     * MindForger is a **desktop** application which runs on Linux, macOS and Windows.
-## Inspired by human mind <!-- Metadata: type: Note; created: 2022-01-30 17:43:41; reads: 20; read: 2022-03-10 08:48:51; revision: 2; modified: 2022-01-30 17:43:42; -->
+## Inspired by human mind <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 17:43:41; reads: 26; read: 2022-08-27 07:51:50; revision: 3; modified: 2022-08-27 07:51:50; -->
 
-## Open, free and fast <!-- Metadata: type: Note; created: 2022-01-30 17:44:18; reads: 14; read: 2022-03-10 08:48:51; revision: 2; modified: 2022-01-30 17:44:19; -->
+## Open, free and fast <!-- Metadata: type: Note; created: 2022-01-30 17:44:18; reads: 16; read: 2022-08-27 07:51:43; revision: 2; modified: 2022-01-30 17:44:19; -->
 MindForger features:
 
 * **Open**
@@ -117,7 +117,7 @@ MindForger features:
       any CMS or cloud drive to push your data for backup (even to multiple 
       locations).
 
-# In the news <!-- Metadata: type: Note; created: 2022-01-30 17:47:38; reads: 10; read: 2022-03-10 08:46:25; revision: 5; modified: 2022-01-30 17:48:54; -->
+# In the news <!-- Metadata: type: Note; created: 2022-01-30 17:47:38; reads: 13; read: 2022-08-27 07:46:04; revision: 5; modified: 2022-01-30 17:48:54; -->
 Read about MindForger:
 
 * [FOSSMint](https://www.fossmint.com/mindforger-notebook-and-markdown-ide/)

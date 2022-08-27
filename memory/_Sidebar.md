@@ -1,4 +1,4 @@
-# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 154; read: 2022-03-10 09:01:43; revision: 154; modified: 2022-03-10 09:01:43; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 184; read: 2022-08-27 08:15:43; revision: 184; modified: 2022-08-27 08:15:43; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
@@ -53,12 +53,19 @@
 **User documentation**:
 
 * Basics
-    * Markdown document
-    * Document ~ Notebook
-    * Section ~ Note
+    - Notebook
+    - Note
+    - Repository
 * Notebook editor
-    - .
+    - New Notebok
+    - Open existing Notebook
+    - Edit Notebook and it's description
+    - Deprecate Notebook and Limbo
 * Markdown editor
+    - From Markdown to MindForger
+        - Markdown document
+        - Document ~ Notebook
+        - Section ~ Note
     - Open Markdown file
     - New Markdown file
     - Open directory with Markdowns
@@ -106,20 +113,22 @@
     - Eisenhower matrix
 * Coaching
     - GROW
-* Machine learning / NLP
+* Integrations
+    - Mobile phone (Git)
+* Machine learning: NLP
     - CSV export
         - Tags OHE
 * Tooling
     - Terminal
     - CLI
 * Configuration
-    - Appearance Themes
+    - Appearance themes
         - Native with fixed fonts
         - ...
     - Fonts
     - Spellcheck (Win)
     - AA poller
-* [Credits](https://github.com/dvorka/mindforger/blob/master/CREDITS.md)
+* [Credits](User-documentation.md#credits)
 
 <!-- wiki file -->
 **Developer documentation**: 
@@ -148,7 +157,7 @@
 * Implementation
     - Incremental Markdown recursive descent parser
     - Magnets and rubbers: Force-directed Graph
-    - Model View Presenter frontend pattern
+    - Model View Presenter front-end pattern
     - NLP: stemmer, lexicon and bag of words
     - Repository layout specification
     - Outline document format specification (Markdown hosted DSL)

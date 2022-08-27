@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1425; read: 2022-03-10 08:48:27; revision: 1425; modified: 2022-03-10 08:48:27; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1435; read: 2022-08-27 07:53:45; revision: 1435; modified: 2022-08-27 07:53:45; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -458,7 +458,7 @@ Run MindForger and start your XServer for Windows (e.g. [Xming](https://sourcefo
 DISPLAY=:0.0 ./mindforger
 ```
 
-## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 195; read: 2022-02-05 16:19:25; revision: 65; modified: 2022-01-05 07:57:11; -->
+## Build on Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-03-20 16:19:07; reads: 198; read: 2022-08-27 07:32:49; revision: 65; modified: 2022-01-05 07:57:11; -->
 Build MindForger on Ubuntu 16.04 or later.
 
 Install package dependencies:
@@ -844,20 +844,20 @@ Switch thinking/sleeping mode based on whether you **need** mind features for th
 repository or not - consider performance/CPU consumption vs features trade-off.
 ### AA poler <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 27; read: 2022-03-10 08:47:14; revision: 5; modified: 2022-02-05 16:45:26; -->
 
-# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 55; read: 2022-03-10 08:48:27; revision: 14; modified: 2022-03-10 08:48:27; -->
+# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 57; read: 2022-08-27 07:53:45; revision: 19; modified: 2022-08-27 07:53:45; -->
 MindForger [releases](https://github.com/dvorka/mindforger/releases):
   
 * [1.54.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Smart(er) Markdown editor
 * [1.53.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Spell check
 * [1.52.0](https://github.com/dvorka/mindforger/releases/tag/1.52.0): Autolinking
 * [1.51.0](https://github.com/dvorka/mindforger/releases/tag/1.51.0): Live preview
-* [1.50.0](https://github.com/dvorka/mindforger/releases/tag/1.50.0): Dashboard, Link Completion, Image Drag&Drop, FTS
-* [1.49.0](https://github.com/dvorka/mindforger/releases/tag/1.49.0): Microsoft Windows and GitHub Flavored Markdown
-* [1.48.0](https://github.com/dvorka/mindforger/releases/tag/1.48.0): CSV export and MathJax Menu
-* [1.47.0](https://github.com/dvorka/mindforger/releases/tag/1.47.0): Knowledge Graph Navigator
-* [1.46.0](https://github.com/dvorka/mindforger/releases/tag/1.46.0): Standard Terminology and Toolbar
-* [1.43.0](https://github.com/dvorka/mindforger/releases/tag/1.43.0): Eisenhower Matrix, Tags View and Recent Notes
-* [1.42.0](https://github.com/dvorka/mindforger/releases/tag/1.42.0): Initial Release
-## Changelog <!-- Metadata: type: Note; created: 2022-01-30 17:18:30; reads: 21; read: 2022-02-05 16:19:25; revision: 6; modified: 2022-01-30 17:19:08; -->
+* [1.50.0](https://github.com/dvorka/mindforger/releases/tag/1.50.0): Dashboard, link completion, image Drag&Drop, full-text search (FTS)
+* [1.49.0](https://github.com/dvorka/mindforger/releases/tag/1.49.0): Microsoft Windows and GitHub flavored Markdown
+* [1.48.0](https://github.com/dvorka/mindforger/releases/tag/1.48.0): CSV export and MathJax menu
+* [1.47.0](https://github.com/dvorka/mindforger/releases/tag/1.47.0): Knowledge graph navigator
+* [1.46.0](https://github.com/dvorka/mindforger/releases/tag/1.46.0): Standard terminology and toolbar
+* [1.43.0](https://github.com/dvorka/mindforger/releases/tag/1.43.0): Eisenhower matrix, tags view and recent notes
+* [1.42.0](https://github.com/dvorka/mindforger/releases/tag/1.42.0): Initial release
+## Changelog <!-- Metadata: type: Note; created: 2022-01-30 17:18:30; reads: 23; read: 2022-08-27 07:52:08; revision: 6; modified: 2022-01-30 17:19:08; -->
 See per-release [changelog](https://raw.githubusercontent.com/dvorka/mindforger/master/Changelog) for more details.
 

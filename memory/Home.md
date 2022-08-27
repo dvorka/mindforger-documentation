@@ -1,5 +1,5 @@
-# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 116; read: 2022-03-10 08:46:01; revision: 116; modified: 2022-03-10 08:46:01; importance: 0/5; urgency: 0/5; -->
-# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 42; read: 2022-03-10 08:46:01; revision: 32; modified: 2022-03-10 08:46:01; -->
+# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 124; read: 2022-08-27 08:14:22; revision: 120; modified: 2022-08-27 08:14:22; importance: 0/5; urgency: 0/5; -->
+# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 49; read: 2022-08-27 08:14:22; revision: 34; modified: 2022-08-27 08:14:22; -->
 ![MindForger](screenshot.tayr.png)
 
 Are you **drowning** in **information**, but starving for knowledge?
