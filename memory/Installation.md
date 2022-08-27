@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1435; read: 2022-08-27 07:53:45; revision: 1435; modified: 2022-08-27 07:53:45; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1455; read: 2022-08-27 09:03:29; revision: 1455; modified: 2022-08-27 09:03:29; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -22,15 +22,24 @@ Build:
 * [build on Gentoo](#build-on-gentoo)
 * [build on NixOS](#build-on-nixos)
 * [build on WSL](#build-on-wsl)
-
-Docker:
-
 * [build and run container](#build-and-run-in-container)
 
-Tarball:
+Configure:
+
+* [Appearance and themes](#appearance-and-themes)
+* [Custom HTML Preview CSS](#custom-html-preview-css)
+* [Spell check](#spell-check)
+* [Think vs. Sleep mode](#think-vs--sleep-mode)
+
+Package for a new distribution or OS:
 
 * [download tarball](https://github.com/dvorka/mindforger/releases)
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 79; read: 2022-02-05 16:19:24; revision: 20; modified: 2022-01-30 17:15:40; -->
+
+Look up:
+
+* [release](#releases)
+* [change](#changelog)
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 81; read: 2022-08-27 08:57:08; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
@@ -712,7 +721,7 @@ Run MindForger:
 
 # Docker <!-- Metadata: type: Note; created: 2018-09-23 13:45:53; reads: 46; read: 2022-02-05 16:19:25; revision: 5; modified: 2018-09-23 13:49:01; -->
 Run MindForger in Docker container.
-## Build and run in container <!-- Metadata: type: Note; tags: docker; created: 2018-09-23 13:46:37; reads: 99; read: 2022-02-05 16:19:25; revision: 60; modified: 2020-03-08 17:04:07; -->
+## Build and run in container <!-- Metadata: type: Note; tags: docker; created: 2018-09-23 13:46:37; reads: 103; read: 2022-08-27 08:01:49; revision: 60; modified: 2020-03-08 17:04:07; -->
 Build [Docker](https://www.docker.com/) image and run MindForger in Docker container.
 
 Build image:
@@ -842,9 +851,9 @@ MindForger can be either in **thinking** or **sleeping** mode:
 
 Switch thinking/sleeping mode based on whether you **need** mind features for the particular
 repository or not - consider performance/CPU consumption vs features trade-off.
-### AA poler <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 27; read: 2022-03-10 08:47:14; revision: 5; modified: 2022-02-05 16:45:26; -->
+### AA poler <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 29; read: 2022-08-27 07:53:47; revision: 5; modified: 2022-02-05 16:45:26; -->
 
-# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 57; read: 2022-08-27 07:53:45; revision: 19; modified: 2022-08-27 07:53:45; -->
+# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 58; read: 2022-08-27 07:53:45; revision: 19; modified: 2022-08-27 07:53:45; -->
 MindForger [releases](https://github.com/dvorka/mindforger/releases):
   
 * [1.54.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Smart(er) Markdown editor

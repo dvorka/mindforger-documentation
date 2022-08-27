@@ -1,4 +1,4 @@
-# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 184; read: 2022-08-27 08:15:43; revision: 184; modified: 2022-08-27 08:15:43; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 192; read: 2022-08-27 09:04:24; revision: 192; modified: 2022-08-27 09:04:24; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
@@ -45,6 +45,10 @@
     - [openSUSE](Installation.md#opensuse)
     - [WSL](Installation.md#wsl)
 * [Configure](Installation.md#configure)
+    - [Appearance and themes](Installation.md#appearance-and-themes)
+    - [Custom HTML Preview CSS](Installation.md#custom-html-preview-css)
+    - [Spell check](Installation.md#spell-check)
+    - [Think vs. Sleep mode](Installation.md#think-vs--sleep-mode)
 * [Releases](Installation.md#releases)
 * [Changelog](Installation.md#changelog)
 * [Nightly builds](Installation.md#nightly-builds)
