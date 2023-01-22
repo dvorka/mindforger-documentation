@@ -1,4 +1,4 @@
-# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 192; read: 2022-08-27 09:04:24; revision: 192; modified: 2022-08-27 09:04:24; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 194; read: 2023-01-22 17:28:33; revision: 194; modified: 2023-01-22 17:28:33; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
@@ -161,7 +161,7 @@
 * Implementation
     - Incremental Markdown recursive descent parser
     - Magnets and rubbers: Force-directed Graph
-    - Model View Presenter front-end pattern
+    - [Model View Presenter front-end pattern](Developer-documentation.md#model-view-presenter)
     - NLP: stemmer, lexicon and bag of words
     - Repository layout specification
     - Outline document format specification (Markdown hosted DSL)
