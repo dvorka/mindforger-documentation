@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1499; read: 2023-11-05 14:06:56; revision: 1499; modified: 2023-11-05 14:06:56; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1529; read: 2023-11-12 13:00:51; revision: 1529; modified: 2023-11-12 13:00:51; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -39,11 +39,11 @@ Look up:
 
 * [release](#releases)
 * [change](#changelog)
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 81; read: 2022-08-27 08:57:08; revision: 20; modified: 2022-01-30 17:15:40; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 83; read: 2023-11-12 12:54:50; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
-## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 94; read: 2022-02-05 16:19:24; revision: 13; modified: 2021-12-31 10:09:00; -->
+## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 96; read: 2023-11-12 12:54:50; revision: 13; modified: 2021-12-31 10:09:00; -->
 Install MindForger on macOS either using `brew` or by downloading `.dmg`.
 
 **Homebrew**
@@ -67,13 +67,13 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 71; read: 2022-02-05 16:45:02; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 73; read: 2023-11-12 12:54:50; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
-## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 93; read: 2022-02-05 16:19:24; revision: 9; modified: 2020-03-08 17:03:04; -->
+## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 95; read: 2023-11-12 12:54:50; revision: 9; modified: 2020-03-08 17:03:04; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -104,7 +104,7 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 123; read: 2022-02-05 16:19:24; revision: 21; modified: 2020-03-08 17:02:23; -->
+## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 125; read: 2023-11-12 12:54:50; revision: 21; modified: 2020-03-08 17:02:23; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -118,19 +118,23 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 107; read: 2023-11-05 14:06:56; revision: 27; modified: 2023-11-05 14:06:56; -->
+## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 109; read: 2023-11-12 13:00:51; revision: 42; modified: 2023-11-12 13:00:51; -->
 Install MindForger on [Debian](https://www.debian.org/) either by downloading `.deb` or from **PPA**.
 
 Download `.deb` package for your Debian version from:
 
 * [GitHub Releases](https://github.com/dvorka/mindforger/releases) **Assets** section
 
-To install MindForger from the **PPA** add [my PPA](http://www.mindforger.com/debian), trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and
-install MindForger:
+To install MindForger from the **PPA** add [my PPA](http://www.mindforger.com/debian) for **your Debian release** version, trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and
+install MindForger - follow the instructions described in:
+
+* http://www.mindforger.com/debian-ppa
+
+For example Debian **"bookworm"**:
 
 ```bash
 # add PPA to APT sources:
-sudo bash -c 'echo -e "\ndeb https://www.mindforger.com/debian stretch main" > /etc/apt/sources.list.d/mindforger.list'
+echo "deb http://www.mindforger.com/debian-ppa/bookworm bookworm main" | sudo tee /etc/apt/sources.list.d/mindforger.list
 
 # import PPA's GPG key
 wget -qO - http://www.mindforger.com/gpgpubkey.txt | sudo apt-key add -
@@ -141,8 +145,6 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-
-See also http://www.mindforger.com/debian/
 ## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 129; read: 2022-02-05 16:19:24; revision: 22; modified: 2020-03-08 17:02:33; -->
 Install MindForger on [Fedora](https://getfedora.org/):
 
