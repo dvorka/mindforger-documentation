@@ -1,4 +1,4 @@
-# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 80; read: 2022-08-27 07:51:50; revision: 74; modified: 2022-08-27 07:51:50; importance: 0/5; urgency: 0/5; -->
+# Getting started <!-- Metadata: type: Outline; created: 2022-01-26 23:41:16; reads: 84; read: 2023-11-16 07:16:07; revision: 84; modified: 2023-11-16 07:16:07; importance: 0/5; urgency: 0/5; -->
 Getting started with MindForger:
 
 * [Why MindForger?](#why-mindforger)
@@ -53,7 +53,7 @@ MindForger is **human mind** inspired **personal** knowledge management tool:
     * MindForger is a **desktop** application which runs on Linux, macOS and Windows.
 ## Inspired by human mind <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 17:43:41; reads: 26; read: 2022-08-27 07:51:50; revision: 3; modified: 2022-08-27 07:51:50; -->
 
-## Open, free and fast <!-- Metadata: type: Note; created: 2022-01-30 17:44:18; reads: 16; read: 2022-08-27 07:51:43; revision: 2; modified: 2022-01-30 17:44:19; -->
+## Open, free and fast <!-- Metadata: type: Note; created: 2022-01-30 17:44:18; reads: 19; read: 2023-11-16 07:16:07; revision: 7; modified: 2023-11-16 07:16:07; -->
 MindForger features:
 
 * **Open**
@@ -94,8 +94,8 @@ MindForger features:
 * **Synchronization**
     * Data can be synchronized among all your devices - workstations, laptops and 
       mobiles/tablets - in a variety of way: 
-        * Linux: Git, Google Drive, Dropbox, ...
-        * Windows: Git, Google Drive, Dropbox, ...
+        * Linux: [Git](https://github.com/), [Syncthing](https://syncthing.net/), Google Drive, Dropbox, ...
+        * Windows: [Git](https://github.com/), [Syncthing](https://syncthing.net/), Google Drive, Dropbox, ...
         * Android: MGit, AGit, ...
 
 * **Performance**
