@@ -1,34 +1,42 @@
-# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 194; read: 2023-01-22 17:28:33; revision: 194; modified: 2023-01-22 17:28:33; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 222; read: 2024-02-14 09:05:35; revision: 218; modified: 2024-02-14 09:05:35; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
 **Getting started**:
 
-* How to edit Markdown file?
-* How to open directory with (many) Markdown files?
-* How to open MindForger repository?
-* FAQs
+* [Basics](#basics)
+    * [Workspace](Getting-started.md#workspace)
+    * [Notebook](Getting-started.md#notebook)
+    * [Note](Getting-started.md#note)
+* [Create Workspace](Getting-started.md#create-workspace)
+    * [Create Notebook](Getting-started.md#create-notebook)
+        * [Create Note](Getting-started.md#create-note)
+        * [Edit Note](Getting-started.md#edit-note)
+        * [Fix Grammar with Wingman](Getting-started.md#fix-grammar-with-wingman)
+* [Notes Outliner](Getting-started.md#notes-outliner)
+* [Find Note](Getting-started.md#find-note)
+* [Delete Notebook](Getting-started.md#delete-notebook)
+* [Video tutorials](Getting-started.md#video-tutorials)
+    * Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
+    * Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
 
 <!-- wiki file -->
 **About**:
 
-* [Why MindForger?](Getting-started.md#why-mindforger)
-    - [Unique](Getting-started.md#unique)
-    - [Inspired by human mind](Getting-started.md#inspired-by-human-mind)
-    - [Open, free and fast](Getting-started.md#open--free-and-fast)
+* [Why MindForger?](About.md#why-mindforger)
+    - [Unique](About.md#unique)
+    - [Inspired by human mind](About.md#inspired-by-human-mind)
+    - [Open, free and fast](About.md#open--free-and-fast)
 * Presentations: 
     - Prezi: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
-* Tutorials
-    - Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
-    - Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
 * [History](History.md)
     - [RDF Spiders](History.md#rdf-spiders)
 	- [MindRaider](History.md#mindraider)
 	- [Coaching Notebook](History.md#coaching-notebook)
 	- [MindForger](History.md#mindforger)
-* [In the news](Getting-started.md#in-the-news)
-* [Bugs and feature requests](Getting-started.md#bugs-and-feature-requests)
-* [Community](Getting-started.md#community)
+* [In the news](About.md#in-the-news)
+* [Bugs and feature requests](About.md#bugs-and-feature-requests)
+* [Community](About.md#community)
 
 <!-- wiki file -->
 **Installation**:
@@ -61,7 +69,7 @@
     - Note
     - Repository
 * Notebook editor
-    - New Notebok
+    - New Notebook
     - Open existing Notebook
     - Edit Notebook and it's description
     - Deprecate Notebook and Limbo

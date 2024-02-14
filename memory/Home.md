@@ -1,5 +1,5 @@
-# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 124; read: 2022-08-27 08:14:22; revision: 120; modified: 2022-08-27 08:14:22; importance: 0/5; urgency: 0/5; -->
-# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 49; read: 2022-08-27 08:14:22; revision: 34; modified: 2022-08-27 08:14:22; -->
+# Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 126; read: 2024-02-12 11:14:46; revision: 124; modified: 2024-02-12 11:14:46; importance: 0/5; urgency: 0/5; -->
+# MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 51; read: 2024-02-12 11:14:46; revision: 36; modified: 2024-02-12 11:14:46; -->
 ![MindForger](screenshot.tayr.png)
 
 Are you **drowning** in **information**, but starving for knowledge?
@@ -20,7 +20,7 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
  
 * **Human mind**
     * MindForger aims to mimic human mind - 
-    [Learning](User-documentation.md#learning),
+    [learning](User-documentation.md#learning),
     [recalling](User-documentation.md#search),
     [recognition](User-documentation.md#recognize-what-matters),
     [associations](User-documentation.md#autolinking--associate-as-you-read),

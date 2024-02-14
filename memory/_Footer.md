@@ -1,4 +1,4 @@
-# Footer <!-- Metadata: type: Outline; created: 2022-01-30 15:59:38; reads: 17; read: 2022-08-27 08:22:28; revision: 17; modified: 2022-08-27 08:22:28; importance: 0/5; urgency: 0/5; -->
+# Footer <!-- Metadata: type: Outline; created: 2022-01-30 15:59:38; reads: 19; read: 2024-02-12 11:12:54; revision: 19; modified: 2024-02-12 11:12:54; importance: 0/5; urgency: 0/5; -->
 <!-- CREDITS link is broken by removal of .md extension - find a way how to protect it (possibly in the conversion script) -->
 
 Created with passion for my personal pleasure.

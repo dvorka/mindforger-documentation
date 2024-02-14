@@ -1,4 +1,4 @@
-# User documentation <!-- Metadata: type: Outline; tags: important,urgent,todo; created: 2022-02-26 08:27:46; reads: 57; read: 2022-08-27 08:18:48; revision: 57; modified: 2022-08-27 08:18:48; importance: 0/5; urgency: 0/5; -->
+# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 371; read: 2024-02-14 08:43:56; revision: 367; modified: 2024-02-14 08:43:56; importance: 0/5; urgency: 0/5; -->
 Table of contents:
 
 * [Basics](#basics)
@@ -109,46 +109,50 @@ Table of contents:
 * [Credits](#credits)
 
 This document _briefly_ describes key MindForger features.
-# Inspiration <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:55:01; reads: 9; read: 2022-08-27 08:14:46; revision: 4; modified: 2022-08-27 07:56:24; -->
-<!-- google products with NICE documentation and simply copy it, write it as book -->
-# Basics <!-- Metadata: type: Note; tags: todo; created: 2022-02-26 08:27:46; reads: 23; read: 2022-08-27 08:14:49; revision: 2; modified: 2022-03-10 08:52:08; -->
-This section aims to explain basic MindForger terminology:
+# Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 26; read: 2024-02-13 20:01:01; revision: 7; modified: 2024-02-13 08:16:32; -->
+![desktop](user-documentation.basic-concepts-overview.png)
 
-* [Notebook](#document---notebook)
-* [Note](#section---note)
-* [Repository](#mindforger-repository)
-## Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 21; read: 2022-08-27 08:14:48; revision: 2; modified: 2022-03-10 08:52:47; -->
-<!-- Notebook and notebook description (header), DIA diagram -->
-## Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 13; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+MindForger uses the following terminology:
 
-## Repository <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 13; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+* [Workspace](Getting-started.md#workspace)
+* [Notebook](Getting-started.md#notebook)
+* [Note](Getting-started.md#note)
 
-# Notebook editor <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 16; read: 2022-08-27 08:14:46; revision: 2; modified: 2022-03-10 08:54:15; -->
+In short:
+
+* The MindForger [workspace](Getting-started.md#workspace) is analogous **the desktop** of an office desk.
+    * The MindForger [notebook](Getting-started.md#notebook) analogous to **a notepad** on the desktop.
+        * A MindForger [note](Getting-started.md#note) is analogous to **a page with the note** from a **notepad**.
+
+For more details see [Basics](Getting-started.md#basics) section in the [Getting Started](Getting-started.md) guide.
+
+
+# Notebook editor <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 54; read: 2024-02-13 20:01:01; revision: 2; modified: 2022-03-10 08:54:15; -->
 <!-- this Note describes how to use MindForger WITHOUT knowledge of Markdown (which is not mandatory in principle) - starting user documentation with Markdown specification could discourage / scare out potential users ... thus this section will be about Notebooks, Notes and plain text only -->
-## Open Notebook file <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 9; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+## Open Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 40; read: 2024-02-13 20:01:01; revision: 2; modified: 2024-02-12 11:15:56; -->
 
-## Outliner <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 13; read: 2022-08-27 08:14:46; revision: 2; modified: 2022-08-27 07:58:34; -->
+## Outliner <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 36; read: 2024-02-13 20:01:01; revision: 2; modified: 2022-08-27 07:58:34; -->
 <!-- add section on outliners history - emphasize that that historical text is not mandatory -->
-### Promote note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Promote note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-13 20:01:01; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Demote note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Demote note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-13 20:01:01; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Top <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Top <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-13 20:01:01; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Up <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Up <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-13 20:01:01; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Down <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Down <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 21; read: 2024-02-13 20:01:01; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Move note to bottom <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Move note to bottom <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 19; read: 2024-02-13 20:01:02; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Hoisting <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Hoisting <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 21; read: 2024-02-13 20:01:02; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-## Live Preview <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:46; revision: 1; modified: 2022-02-26 08:27:46; -->
+## Live Preview <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 25; read: 2024-02-13 20:01:02; revision: 1; modified: 2022-02-26 08:27:46; -->
 Easily toggle live HTML preview of edited Markdown
 with shortcut or edit panel buttons.
-### Live preview <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2022-08-27 08:14:45; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Live preview <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 27; read: 2024-02-13 20:01:02; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### View and Edit mode <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 10; read: 2022-08-27 08:14:45; revision: 2; modified: 2022-03-10 08:53:48; -->
+### View and Edit mode <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 30; read: 2024-02-13 20:01:02; revision: 3; modified: 2024-02-10 23:28:19; -->
 <!-- new screnshot w/ overlay comments -->
 
 ![Image](user-documentation.click-to-edit.png)
@@ -158,7 +162,68 @@ rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
-# Markdown editor <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 11; read: 2022-08-27 08:14:45; revision: 1; modified: 2022-02-26 08:27:46; -->
+# Wingman <!-- Metadata: type: Note; created: 2024-02-13 11:34:18; reads: 24; read: 2024-02-13 20:01:06; revision: 14; modified: 2024-02-13 20:01:06; -->
+[![v](https://img.youtube.com/vi/eyLV5P_Bujs/0.jpg)](https://www.youtube.com/watch?v=eyLV5P_Bujs)
+
+Wingman is a [Large Language Model](https://en.wikipedia.org/wiki/Large_language_model) (LLM) based tool that can be used to:
+
+* summarize
+* explain
+* fix grammar
+* reformulate
+* ...
+
+... text (selected or under the cursor), Notes or Notebooks.
+
+
+## Wingman LLM provider configuration <!-- Metadata: type: Note; created: 2024-02-13 11:34:29; reads: 68; read: 2024-02-13 19:19:46; revision: 66; modified: 2024-02-13 19:19:46; -->
+Wingman tool uses OpenAI as LLM provider. Therefore the first step is to **generate API key** which will be used by Wingman:
+
+1. open https://platform.openai.com/api-keys
+1. click <kbd>+ Create new secret key</kbd> to **generate** new API key
+   ![i](wingman-openai-gen-key.png)
+1. save the key e.g. in your password manager
+
+
+There are **two** options how to **configure** OpenAI API key in MindForger:
+
+**Option A (safer)** - configure shell environment variable:
+
+1. add API key to your shell configuration:
+    * Linux:
+        * Bash:
+            * Add the following line into your `/home/${USER}/.bashrc`:
+                * `export MINDFORGER_OPENAI_API_KEY="...your API key..."`
+        * Zsh:
+            * Add the following line into your `/home/${USER}/.zshrc`:
+                * `export MINDFORGER_OPENAI_API_KEY="...your API key..."`
+1. start new shell
+1. run MindForger
+    
+**Option B** - set the API key in the MindForger configuration dialog:
+
+1. open menu `Workspace`
+1. choose `Preferences` menu item
+1. select `Wingman` tab in the configuration dialog
+1. paste API key to the edit line in the dialog:
+   ![i](wingman-config-1.png)
+1. click <kbd>OK</kbd> to save **unencrypted** API key to `.mindforger.md` in your home directory
+1. restart MindForger
+1. open `Preferences` dialog to check that OpenAI is selected as the LLM Provider for Wingman
+   ![i](wingman-openai-done.png)
+
+
+## Fix grammar <!-- Metadata: type: Note; created: 2024-02-13 11:34:51; reads: 12; read: 2024-02-13 11:36:38; revision: 2; modified: 2024-02-13 11:34:51; -->
+
+## Summarize <!-- Metadata: type: Note; created: 2024-02-13 11:35:15; reads: 9; read: 2024-02-13 11:36:38; revision: 3; modified: 2024-02-13 11:35:26; -->
+
+## Rewrite <!-- Metadata: type: Note; created: 2024-02-13 11:35:32; reads: 8; read: 2024-02-13 11:36:37; revision: 2; modified: 2024-02-13 11:35:33; -->
+
+## Complete text <!-- Metadata: type: Note; created: 2024-02-13 11:35:36; reads: 10; read: 2024-02-13 11:36:37; revision: 3; modified: 2024-02-13 11:35:49; -->
+
+## ELI5: Explain like I'm 5 <!-- Metadata: type: Note; created: 2024-02-13 11:36:24; reads: 6; read: 2024-02-13 11:36:28; revision: 2; modified: 2024-02-13 11:36:24; -->
+
+# Markdown editor <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 15; read: 2024-02-13 11:34:21; revision: 1; modified: 2022-02-26 08:27:46; -->
 MindForger can be used as a Markdown **editor**.
 
 It allows you to easily write [Markdown](#markdown) 
@@ -648,7 +713,7 @@ While editing a Note or Notebook write prefix of
 a Notebook/Note name and use <kbd>Ctrl-/</kbd> to 
 get link completion. When you choose a link from completer,
 Markdown link to target Notebook/Note is automatically created.
-# Markdown IDE <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 3; read: 2022-08-27 08:14:45; revision: 1; modified: 2022-02-26 08:27:46; -->
+# Markdown IDE <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 5; read: 2024-02-13 11:34:15; revision: 1; modified: 2022-02-26 08:27:46; -->
 MindForger is more than just Markdown editor - it is integrated development environment (**IDE**) 
 for the development of Markdown document collections (repositories, documentation, books, etc.):
 
@@ -793,7 +858,7 @@ Search **scope**:
 * If you run note search **by name** when a notebook is opened
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
-## Tag <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 3; read: 2022-08-27 08:14:44; revision: 1; modified: 2022-02-26 08:27:46; -->
+## Tag <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 6; read: 2024-02-13 19:13:56; revision: 1; modified: 2022-02-26 08:27:46; -->
 Use menu `Recall/Recall Notebook by Tag` / `Recall/Recall Note by Tag`
 to search for **notebooks** / **notes** by tag(s). Result shows as you
 add/remove tags in the dialog.
@@ -825,7 +890,7 @@ MindForger can be used to learn:
 * manage knowledge in a [MindForger repository](#mindforger-repository)
 * edit single [Markdown file](#markdown-file)
 * edit [multiple Markdown files](#markdown-directory) in given (sub)directories
-### MindForger repository <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 3; read: 2022-08-27 08:14:44; revision: 1; modified: 2022-02-26 08:27:46; -->
+### MindForger repository <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2024-02-10 22:54:11; revision: 1; modified: 2022-02-26 08:27:46; -->
 MindForger repository is a directory with specific 
 [structure](developer-documentation.md#repository-layout) 
 where MindForger stores your **knowledge**. It contains Markdown 
@@ -861,7 +926,7 @@ mindforger-repository/
 ```
 ## Metadata <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 3; read: 2022-08-27 08:14:44; revision: 1; modified: 2022-02-26 08:27:46; -->
 
-### Tags <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 3; read: 2022-08-27 08:14:44; revision: 1; modified: 2022-02-26 08:27:46; -->
+### Tags <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 7; read: 2024-02-13 19:14:06; revision: 1; modified: 2022-02-26 08:27:46; -->
 
 ### Read/write statistics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 3; read: 2022-08-27 08:14:44; revision: 1; modified: 2022-02-26 08:27:46; -->
 
