@@ -1,4 +1,4 @@
-# Developer documentation <!-- Metadata: type: Outline; created: 2022-01-30 18:02:38; reads: 320; read: 2022-08-27 07:45:38; revision: 320; modified: 2022-08-27 07:45:38; importance: 0/5; urgency: 0/5; -->
+# Developer documentation <!-- Metadata: type: Outline; created: 2022-01-30 18:02:38; reads: 326; read: 2024-02-16 16:31:37; revision: 320; modified: 2022-08-27 07:45:38; importance: 0/5; urgency: 0/5; -->
 > _"There are only two kinds of languages: the ones people complain about and the ones nobody uses" -- [Bjarne Stroustrup](https://www.stroustrup.com/quotes.html)_
 
 MindForger is written in **C++** programming language.
@@ -17,7 +17,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-# Contribute <!-- Metadata: type: Note; created: 2022-01-30 18:03:29; reads: 21; read: 2022-08-27 07:24:36; revision: 10; modified: 2022-01-30 18:06:39; -->
+# Contribute <!-- Metadata: type: Note; created: 2022-01-30 18:03:29; reads: 23; read: 2024-02-16 16:30:32; revision: 10; modified: 2022-01-30 18:06:39; -->
 Current **MindForger** implementation is just an initial imperfect sketch of much broader **vision**. It's purpose is to **demonstrate** viability of thinking notebook idea and to **show** possible research directions.
 
 Feel free to [contribute](https://www.mindforger.com)! Don't hesitate to contact [me](martin.dvorak@mindforger.com).
@@ -38,7 +38,7 @@ Feel free to [contribute](https://www.mindforger.com)! Don't hesitate to contact
     * Submit performance, efficiency and/or productivity enhancements.
 * **Documentation**
     * Write a document, blog post or tweet, create YouTube video, ...
-# Linux development environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 37; read: 2022-08-27 07:39:36; revision: 30; modified: 2022-08-27 07:39:36; -->
+# Linux development environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 39; read: 2024-02-16 16:30:32; revision: 30; modified: 2022-08-27 07:39:36; -->
 Perhaps you may find useful description of my development environment:
 
 * Backend library:
@@ -69,14 +69,14 @@ Perhaps you may find useful description of my development environment:
         * `alt-x compile` > `cd ../.. && make` (make -k for keep going)
 
 For more details see the source code.
-## Build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 20; read: 2022-08-27 07:39:36; revision: 5; modified: 2022-08-27 07:33:51; -->
+## Build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 22; read: 2024-02-16 16:30:34; revision: 5; modified: 2022-08-27 07:33:51; -->
 See [build on Ubuntu](Installation.md#build-on-ubuntu) for how to build MindForger.
 
 **Unit tests** are conducted by the [gtest](https://github.com/google/googletest) framework. Download, build and optionally install this framework before building MindForger unit tests. 
 
 
 * [gtest](https://github.com/google/googletest): Google Test for C++ 
-## Tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 21; read: 2022-08-27 07:39:37; revision: 4; modified: 2022-08-27 07:34:25; -->
+## Tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 23; read: 2024-02-16 16:30:34; revision: 4; modified: 2022-08-27 07:34:25; -->
 MindForger has:
 
 * library unit tests
@@ -96,7 +96,7 @@ MindForger has:
 * can be run using `build/test-gui.sh`
 
 For more details check tests source code.
-## Benchmarks <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 15; read: 2022-08-27 07:39:37; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Benchmarks <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 17; read: 2024-02-16 16:30:35; revision: 1; modified: 2022-01-30 18:02:38; -->
 MindForger has also library benchmarks:
 
 * based on [Google test framework](https://github.com/google/googletest)
@@ -105,7 +105,7 @@ MindForger has also library benchmarks:
 
 Benchmarks are *disabled* by default - go to benchmark source code and remove `DISABLED_` prefix
 from its name. For more details see Google test framework documentation and benchmarks source code.
-## Packaging <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 15; read: 2022-08-27 07:39:37; revision: 4; modified: 2022-08-27 07:36:11; -->
+## Packaging <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 17; read: 2024-02-16 16:30:36; revision: 4; modified: 2022-08-27 07:36:11; -->
 Scripts used to created packages for Linux distributions can be found in:
 
 * Ubuntu: `build/ubuntu`
@@ -124,7 +124,7 @@ Scripts used to created packages for Linux distributions can be found in:
 Check `make` targets for MindForger supported platforms targets:
 
 * `make help`
-# Windows development environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 13; read: 2022-08-27 07:39:44; revision: 6; modified: 2022-08-27 07:39:44; -->
+# Windows development environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 15; read: 2024-02-16 16:30:37; revision: 6; modified: 2022-08-27 07:39:44; -->
 Perhaps you may find useful description of my development environment:
 
 * Source: 
@@ -141,7 +141,7 @@ Perhaps you may find useful description of my development environment:
     * Google Test Framework 
 
 For more details see source code.
-## Install prerequisites <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 9; read: 2022-08-27 07:39:44; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Install prerequisites <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2024-02-16 16:30:38; revision: 1; modified: 2022-01-30 18:02:38; -->
 
 * [Microsoft Visual Studio](https://visualstudio.microsoft.com/downloads/) (Community Edition suffices), during installation add with C++ support (todo: detailed info or screenshot)
     * or [Windows 10 SDK] (untested)(https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
@@ -163,7 +163,7 @@ Prepare MindForger sources:
     * `git submodule init`
     * `git supmodule update`
 
-## Build dependencies <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 12; read: 2022-08-27 07:39:45; revision: 4; modified: 2022-08-27 07:38:14; -->
+## Build dependencies <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 14; read: 2024-02-16 16:30:39; revision: 4; modified: 2022-08-27 07:38:14; -->
 Building dependecies is required only once, during initial building.
 
 Build `cmake-gfm` - it requires `cmake` on the path.
@@ -179,7 +179,7 @@ Build `cmake-gfm` - it requires `cmake` on the path.
     * `cmake --build . --config Release -- /m`
     * `cmake --build . --config Debug -- /m`
 
-## Build MindForger <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 12; read: 2022-08-27 07:39:45; revision: 3; modified: 2022-08-27 07:39:16; -->
+## Build MindForger <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 14; read: 2024-02-16 16:30:40; revision: 3; modified: 2022-08-27 07:39:16; -->
 * Goto GitHub repository directory:
     * `cd $GIT\mindforger`
 * Setup development environment in cmd line. Change path according to your MSVC 2017 and Qt installation
@@ -190,7 +190,7 @@ Build `cmake-gfm` - it requires `cmake` on the path.
 * Build MindForger:
     * `nmake`
 * `.exe` binary will be stored in the `app\release` folder
-### Plan for Windows build and distribution <!-- Metadata: type: Note; tags: remove; created: 2022-01-30 18:02:38; reads: 16; read: 2022-08-27 07:39:57; revision: 3; modified: 2022-08-27 07:39:57; -->
+### Plan for Windows build and distribution <!-- Metadata: type: Note; tags: remove; created: 2022-01-30 18:02:38; reads: 20; read: 2024-02-16 16:30:43; revision: 3; modified: 2022-08-27 07:39:57; -->
 GitHub:
 
 * milestone: https://github.com/dvorka/mindforger/milestone/10
@@ -227,7 +227,7 @@ Get **pre-release** user feedback:
 
 * https://github.com/dvorka/mindforger/issues/632
 
-## Running MindForger <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-08-27 07:40:01; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Running MindForger <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 7; read: 2024-02-16 16:30:45; revision: 1; modified: 2022-01-30 18:02:38; -->
 * Manual run outside of QtCreator requires adding Qt libraries and Zlib libraries to _PATH_. Zlib binaries are located in `$GIT\mindforger\deps\zlib-win\ 
   * Qt files. Change path according to your setup
     * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -236,7 +236,7 @@ Get **pre-release** user feedback:
   * Start MindForger
     * `app\release\mindforger.exe`
 
-## Creating installer <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-08-27 07:40:33; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Creating installer <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2024-02-16 16:30:46; revision: 1; modified: 2022-01-30 18:02:38; -->
 * Install [Inno Setup 5](http://www.jrsoftware.org/download.php/is-unicode.exe)
 * Prepare development environment. Change path according to your Qt installation
   * `"C:\software\Qt\5.12.0\msvc2017_64\bin\qtenv2.bat"`
@@ -247,7 +247,7 @@ Get **pre-release** user feedback:
   * `"c:\Program Files (x86)\Inno Setup 5\ISCC.exe" /Qp /DVcRedistPath="c:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Redist\MSVC\14.14.26405\vcredist_x64.exe" build\windows\installer\mindforger-setup.iss` 
 * the result is in the `app\release\installer` folder
 
-## Building unit tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2022-08-27 07:40:36; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Building unit tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 7; read: 2024-02-16 16:30:46; revision: 1; modified: 2022-01-30 18:02:38; -->
 Unit tests are conducted by the [gtest](https://github.com/google/googletest) framework. Download, build and optionally install this framework before building MindForger unit tests. 
 
 Gtest is expected at `C:\Program Files\gtest-distribution` by default. If you have it somewhere else you have to update the `lib\test\src\src.pro` Qt project file to change path to gtest.
@@ -264,7 +264,7 @@ Than:
 * Build tests
     * `nmake`
 
-### Running unit tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2022-08-27 07:40:36; revision: 1; modified: 2022-01-30 18:02:38; -->
+### Running unit tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 7; read: 2024-02-16 16:30:47; revision: 1; modified: 2022-01-30 18:02:38; -->
 * Prepare environment
   * `set "PATH=%PATH%;$GIT\mindforger\deps\zlib-win"`
   * `set M8R_GIT_PATH=$GIT\mindforger`
@@ -273,7 +273,7 @@ Than:
   * `lib\test\src\debug\mindforger-lib-unit-tests.exe`
 
 
-## Using scripts <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 10; read: 2022-08-27 07:40:36; revision: 2; modified: 2022-03-10 08:40:47; -->
+## Using scripts <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 12; read: 2024-02-16 16:30:47; revision: 2; modified: 2022-03-10 08:40:47; -->
 ```
 cd build/
 make help
@@ -294,12 +294,12 @@ Alternatively, instead using of following above described manual steps, you can 
 Most important is the `env.bat`. It's called by others and sets up command line environment. Ammend this file to change paths based on your setup. Other scripts are self-explanatory. The `run-unit-tests.bat` can also take any argument. This is usefull for passing options to the _gtest_ framework. 
 
 
-## Windows Continous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 9; read: 2022-08-27 07:40:36; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Windows Continous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2024-02-16 16:30:48; revision: 1; modified: 2022-01-30 18:02:38; -->
 Continous Integration for Windows:
 
 * [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
     * See also `appveyor.yml`
-## Optional QtCreator build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 20; read: 2022-08-27 07:40:36; revision: 2; modified: 2022-08-27 07:40:22; -->
+## Optional QtCreator build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 22; read: 2024-02-16 16:30:48; revision: 2; modified: 2022-08-27 07:40:22; -->
 * Start Qt creator
 * Open project `%GIT%\mindforger\mindforger.pro`
     * Enable **Desktop Qt 5.xx MSVC2017 64bit** build
@@ -310,16 +310,16 @@ Continous Integration for Windows:
     * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) and select `Debugging Tools for Windows` only. 
 
   
-### QtCreator debugging <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 9; read: 2022-08-27 07:40:37; revision: 1; modified: 2022-01-30 18:02:38; -->
+### QtCreator debugging <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2024-02-16 16:30:49; revision: 1; modified: 2022-01-30 18:02:38; -->
 * For setting debugger in QtCreator follow instructions in Qt 
   documention [Setting Up Debugger](https://doc.qt.io/qtcreator/creator-debugger-engines.html)
 * CDB is part for Windows SDK. If you have only Visual Studio, it must be installed additionaly. 
   Download [Windows 10 SDK](https://developer.microsoft.com/en-us/windows/downloads/windows-10-sdk) 
   and select `Debugging Tools for Windows` only. 
 
-# Conventions and BPs <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 3; read: 2022-08-27 07:40:37; revision: 1; modified: 2022-01-30 18:02:38; -->
+# Conventions and BPs <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2024-02-16 16:30:49; revision: 1; modified: 2022-01-30 18:02:38; -->
 Conventions and best practices.
-## Git and Branching Conventions <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2022-08-27 07:40:39; revision: 3; modified: 2022-03-10 08:45:19; -->
+## Git and Branching Conventions <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 7; read: 2024-02-16 16:30:50; revision: 3; modified: 2022-03-10 08:45:19; -->
 Git:
 
 * `master` is the main development branch
@@ -344,29 +344,18 @@ Git branch naming convention:
     * release development branch used **before** release (stable master)
 * `stabilization/<release version>`
     * stable brach used **after** release (patch releases)
-## Source documentation conventions <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 5; read: 2022-08-27 07:41:05; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Source documentation conventions <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 9; read: 2024-02-16 16:31:32; revision: 1; modified: 2022-01-30 18:02:38; -->
 Source code documentation conventions:
 
 * Use Doxygen syntax in source code comments 
   https://www.cs.cmu.edu/~410/doc/doxygen.html
-# Functional Architecture <!-- Metadata: type: Note; created: 2022-02-05 21:17:19; reads: 17; read: 2022-08-27 07:41:36; revision: 5; modified: 2022-08-27 07:41:36; -->
-MindForger **functional** architecture.
-## Requirements <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:37:28; reads: 24; read: 2022-08-27 07:45:38; revision: 4; modified: 2022-08-27 07:45:38; -->
-
-## Non-requirements <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:37:31; reads: 23; read: 2022-08-27 07:45:34; revision: 3; modified: 2022-08-27 07:45:34; -->
-
-## Technical non-requirements <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:38:03; reads: 21; read: 2022-08-27 07:45:31; revision: 3; modified: 2022-08-27 07:45:31; -->
-
-## Technical Requirements <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:37:53; reads: 21; read: 2022-08-27 07:45:28; revision: 3; modified: 2022-08-27 07:45:28; -->
-
-# Technical Architecture <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 24; read: 2022-08-27 07:45:24; revision: 3; modified: 2022-08-27 07:41:45; -->
+# Technical Architecture <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 28; read: 2024-02-16 16:31:38; revision: 3; modified: 2022-08-27 07:41:45; -->
 MindForger **technical** architecture.
-## Implementation <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:39:25; reads: 15; read: 2022-08-27 07:45:24; revision: 3; modified: 2022-08-27 07:44:05; -->
+## Library <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 21; read: 2024-02-16 16:31:38; revision: 3; modified: 2022-08-27 07:44:02; -->
 
-## Library <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 17; read: 2022-08-27 07:45:24; revision: 3; modified: 2022-08-27 07:44:02; -->
-### 3rd-party dependencies <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 16; read: 2022-08-27 07:45:23; revision: 2; modified: 2022-08-27 07:43:58; -->
+### 3rd-party dependencies <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 20; read: 2024-02-16 16:31:39; revision: 2; modified: 2022-08-27 07:43:58; -->
 
-#### cmark-gfm <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 13; read: 2022-08-27 07:45:23; revision: 1; modified: 2022-01-30 18:02:38; -->
+#### cmark-gfm <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 17; read: 2024-02-16 16:31:40; revision: 1; modified: 2022-01-30 18:02:38; -->
 MindForger uses [cmark-gfm](https://github.com/github/cmark-gfm) for rendering 
 of Markdown documents to HTML:
 
@@ -394,15 +383,19 @@ cmark-gfm versions used:
       `0.28.3.gfm.20` (January 31, 2019) with aforementioned patches
 * 1.42.0 - ...
     - MindForger used Discount for Markdown rendering priort cmark-gfm
-### Markdown Recursive Descent Parser <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 17; read: 2022-08-27 07:45:23; revision: 3; modified: 2022-08-27 07:44:11; -->
-### NLP: Stemmer, Lexicon, BoW <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 19; read: 2022-08-27 07:45:23; revision: 3; modified: 2022-08-27 07:43:50; -->
-### Neural Network <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 17; read: 2022-08-27 07:45:22; revision: 3; modified: 2022-08-27 07:43:45; -->
-## GUI <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 15; read: 2022-08-27 07:45:22; revision: 3; modified: 2022-08-27 07:43:42; -->
-### Qt <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 17; read: 2022-08-27 07:45:21; revision: 3; modified: 2022-08-27 07:43:38; -->
-### Model View Presenter <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 14; read: 2022-08-27 07:45:20; revision: 2; modified: 2022-08-27 07:43:34; -->
+### Markdown Recursive Descent Parser <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 21; read: 2024-02-16 16:31:42; revision: 3; modified: 2022-08-27 07:44:11; -->
+
+### NLP: Stemmer, Lexicon, BoW <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 23; read: 2024-02-16 16:31:43; revision: 3; modified: 2022-08-27 07:43:50; -->
+
+## GUI <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 17; read: 2024-02-16 16:31:06; revision: 3; modified: 2022-08-27 07:43:42; -->
+
+### Qt <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 19; read: 2024-02-16 16:31:07; revision: 3; modified: 2022-08-27 07:43:38; -->
+
+### Model View Presenter <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 16; read: 2024-02-16 16:31:07; revision: 2; modified: 2022-08-27 07:43:34; -->
 ![Image](./developer-documentation.signals.png)
-### Async UI updates <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 11; read: 2022-08-27 07:45:20; revision: 3; modified: 2022-08-27 07:45:20; -->
-### Localization <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 9; read: 2022-08-27 07:45:13; revision: 1; modified: 2022-01-30 18:02:38; -->
+### Async UI updates <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 13; read: 2024-02-16 16:31:09; revision: 3; modified: 2022-08-27 07:45:20; -->
+
+### Localization <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2024-02-16 16:31:10; revision: 1; modified: 2022-01-30 18:02:38; -->
 Adding a new/updating existing MindForger l10n:
 
 * Add translation name to `app/app.pro`: `TRANSLATIONS += resources/qt/translations/mindforger_en.ts`
@@ -422,17 +415,18 @@ See also:
 
 * http://doc.qt.io/qt-5/internationalization.html
 * http://doc.qt.io/qt-5/qtlinguist-hellotr-example.html
-### Force-driven graph <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 13; read: 2022-08-27 07:45:13; revision: 3; modified: 2022-08-27 07:45:13; -->
-## Benchmarks <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:39:32; reads: 21; read: 2022-08-27 07:45:10; revision: 3; modified: 2022-08-27 07:45:10; -->
+### Force-driven graph <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 17; read: 2024-02-16 16:31:13; revision: 3; modified: 2022-08-27 07:45:13; -->
 
-# Formats specification <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 25; read: 2022-08-27 07:45:05; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Benchmarks <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:39:32; reads: 25; read: 2024-02-16 16:31:13; revision: 3; modified: 2022-08-27 07:45:10; -->
+
+# Formats specification <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 27; read: 2024-02-16 16:31:14; revision: 1; modified: 2022-01-30 18:02:38; -->
 MindForger can open **any** file that uses Markdown format. MindForger
 can also open **any** directory that contains Markdown files (also
 in its sub-directories).
 
 However, you can use MindForger's [Markdown hosted DSL](#markdown-hosted-dsl) and
 [repository format](#repository-format) to get much more (mind related) features.
-## Markdown hosted DSL <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 27; read: 2022-08-27 07:45:04; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Markdown hosted DSL <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 29; read: 2024-02-16 16:31:17; revision: 1; modified: 2022-01-30 18:02:38; -->
 This section describes MD conventions that MindForger uses to store outlines.
 
 Description:
@@ -456,7 +450,7 @@ canonical messages.
 
 ... here comes a text.
 ```
-## Repository layout <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 27; read: 2022-08-27 07:45:03; revision: 3; modified: 2022-08-27 07:44:44; -->
+## Repository layout <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 29; read: 2024-02-16 16:31:17; revision: 3; modified: 2022-08-27 07:44:44; -->
 Design goals:
 
 * Repository specification SHOULD be general i.e. not bound to MindForger
@@ -524,27 +518,27 @@ Description:
 * MindForger home screen == cloud of is outline and/or note *labels* (split screen).
 * Extensions:
    * files w/ extensions that are not explicitly enumerated are ignored by Git (global ignore)
-# Continuous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 63; read: 2022-08-27 07:45:03; revision: 15; modified: 2022-02-05 15:25:21; -->
+# Continuous Integration (CI) <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 65; read: 2024-02-16 16:31:18; revision: 15; modified: 2022-02-05 15:25:21; -->
 Multiple CI services are used to build, test and package MindForger.
-## GitHub Actions <!-- Metadata: type: Note; created: 2022-02-05 15:16:44; reads: 40; read: 2022-08-27 07:45:03; revision: 6; modified: 2022-02-05 15:25:03; -->
+## GitHub Actions <!-- Metadata: type: Note; created: 2022-02-05 15:16:44; reads: 42; read: 2024-02-16 16:31:19; revision: 6; modified: 2022-02-05 15:25:03; -->
 GitHub Actions are used to build macOS DiskImaGe packages and tarballs:
 
 * [GitHub Actions](https://github.com/dvorka/mindforger/actions)
 
 See also [.github/workflows](https://github.com/dvorka/mindforger/tree/dev/master/.github/workflows).
-## AppVeyor <!-- Metadata: type: Note; created: 2022-02-05 15:16:35; reads: 31; read: 2022-08-27 07:45:03; revision: 6; modified: 2022-02-05 15:25:00; -->
+## AppVeyor <!-- Metadata: type: Note; created: 2022-02-05 15:16:35; reads: 33; read: 2024-02-16 16:31:20; revision: 6; modified: 2022-02-05 15:25:00; -->
 AppVeyor CI is used to build Windows installer:
 
 * [AppVeyor](https://ci.appveyor.com/project/dvorka/mindforger)
 
 See also [appveyor.yml](https://github.com/dvorka/mindforger/blob/master/appveyor.yml).
-## Travis CI (condemned) <!-- Metadata: type: Note; created: 2022-02-05 15:18:35; reads: 24; read: 2022-08-27 07:45:02; revision: 7; modified: 2022-02-05 15:21:37; -->
+## Travis CI (condemned) <!-- Metadata: type: Note; created: 2022-02-05 15:18:35; reads: 28; read: 2024-02-16 16:31:24; revision: 7; modified: 2022-02-05 15:21:37; -->
 Travis CI is no longer used due to (GitHub account related) privacy issues and coarse grained security:
 
 * [Travis CI](https://travis-ci.org/dvorka/mindforger)
 
 See also [.travis.yml](https://github.com/dvorka/mindforger/tree/master/build/travis-ci).
-# Release automation <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 18; read: 2022-08-27 07:45:02; revision: 2; modified: 2022-08-27 07:45:02; -->
+# Release automation <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 22; read: 2024-02-16 16:31:24; revision: 2; modified: 2022-08-27 07:45:02; -->
 This is analysis of release automation making MindForger release much 
 faster and less time consuming.
 
