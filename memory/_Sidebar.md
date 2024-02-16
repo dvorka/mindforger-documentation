@@ -1,4 +1,4 @@
-# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 222; read: 2024-02-14 09:05:35; revision: 218; modified: 2024-02-14 09:05:35; importance: 0/5; urgency: 0/5; -->
+# Table of Contents <!-- Metadata: type: Outline; tags: mindforger-home; created: 2022-01-27 08:45:44; reads: 274; read: 2024-02-16 16:29:35; revision: 274; modified: 2024-02-16 16:29:35; importance: 0/5; urgency: 0/5; -->
 <!-- Hint: links must NOT have .md extension as with .md is shown source of the page -->
 
 <!-- wiki file -->
@@ -64,16 +64,18 @@
 <!-- wiki file -->
 **User documentation**:
 
-* Basics
-    - Notebook
-    - Note
-    - Repository
-* Notebook editor
+* [Basics](Getting-started.md#basics)
+    - [Workspace](Getting-started.md#workspace)
+    - [Notebook](Getting-started.md#notebook)
+    - [Note](Getting-started.md#note)
+* [Knowledge manager](User-documentation.md#knowledge-manager)
     - New Notebook
     - Open existing Notebook
     - Edit Notebook and it's description
     - Deprecate Notebook and Limbo
-* Markdown editor
+* [Wingman](User-documentation.md#wingman) @ LLM
+    * [Wingman LLM provider configuration](User-documentation.md#wingman-llm-provider-configuration)
+* [Markdown editor](User-documentation.md#markdown-editor)
     - From Markdown to MindForger
         - Markdown document
         - Document ~ Notebook
@@ -87,58 +89,55 @@
         - `Format` menu
         - Images
         - Links
-        - Math
+        - [Math](User-documentation.md#math)
         - Diagrams
         - Interesting documents and examples
-    - Live preview
-    - Outlining
-    - Hoisting
+    - [Live preview](User-documentation.md#live-preview)
+    - [Outlineing](User-documentation.md#outliner)
     - Spellcheck
 * Markdown IDE
     - Templates
     - Refactoring
     - Cloning
     - Link completion
-* Search
+* [Search](Getting-started.md#find-note)
     - Find . by .
     - Full text search (scope)
     - Recent
 * Thinking notebook
-    - MindForger repository
+    - [Workspace](Getting-started.md#workspace)
     - Metadata
         - Tags
         - Statistics (RW)
         - Deadlines
         - Progress
         - Types (thing)
-    - Auto-linking
-    - Think as you read
-    - Think as you write
+    - [Auto-linking](User-documentation.md#auto-linking)
+    - [Think as you Browse](User-documentation.md#tayb--think-as-you-browse)
+    - [Think as you Read](User-documentation.md#tayr--think-as-you-read)
+    - [Think as you Write](User-documentation.md#tayw--think-as-you-write)
     - Associations
-    - Scopes
+    - [Scopes](User-documentation.md#scopes)
         - Time-based scopes
         - Tag-based scopes
-    - Knowledge graph navigator
-    - Limbo
+    - [Knowledge graph navigator](User-documentation.md#knowledge-graph-navigator)
+    - [Limbo](User-documentation.md#limbo)
 * Study tools
-    - Kanban
-    - Eisenhower matrix
-* Coaching
-    - GROW
+    - [Kanban on Tags](User-documentation.md#kanban-on-tags)
+    - [Eisenhower matrix](User-documentation.md#eisenhower-matrix)
+* [Coaching](User-documentation.md#coaching)
+    - [GROW model](User-documentation.md#grow-model)
 * Integrations
     - Mobile phone (Git)
-* Machine learning: NLP
-    - CSV export
-        - Tags OHE
+* [Machine learning: NLP](User-documentation.md#machine-learning--nlp)
+    - [CSV export](User-documentation.md#csv-export)
+        - [Tags OHE](User-documentation.md#csv-export)
 * Tooling
-    - Terminal
-    - CLI
+    - [CLI](User-documentation.md#cli)
 * Configuration
     - Appearance themes
-        - Native with fixed fonts
-        - ...
     - Fonts
-    - Spellcheck (Win)
+    - Spellcheck
     - AA poller
 * [Credits](User-documentation.md#credits)
 

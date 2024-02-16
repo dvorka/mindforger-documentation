@@ -1,4 +1,4 @@
-# Getting Started <!-- Metadata: type: Outline; created: 2024-02-13 08:09:03; reads: 443; read: 2024-02-14 09:01:25; revision: 443; modified: 2024-02-14 09:01:25; importance: 0/5; urgency: 0/5; -->
+# Getting Started <!-- Metadata: type: Outline; created: 2024-02-13 08:09:03; reads: 491; read: 2024-02-16 15:43:16; revision: 485; modified: 2024-02-16 15:43:16; importance: 0/5; urgency: 0/5; -->
 Getting started with **MindForger**.
 
 Table of contents:
@@ -20,7 +20,7 @@ Table of contents:
     * [🎞 MindForger: First steps](#mindforger--first-steps)
 
 
-# Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 114; read: 2024-02-14 09:00:19; revision: 34; modified: 2024-02-13 18:36:21; -->
+# Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 130; read: 2024-02-16 15:42:41; revision: 34; modified: 2024-02-13 18:36:21; -->
 ![desktop](user-documentation.basic-concepts-overview.png)
 
 This section aims to explain basic MindForger terminology:
@@ -38,7 +38,7 @@ In short:
 Let's describe basic terms in more detail.
 
 
-## Workspace <!-- Metadata: type: Note; created: 2024-02-10 22:53:08; reads: 110; read: 2024-02-14 09:00:19; revision: 12; modified: 2024-02-13 19:09:50; -->
+## Workspace <!-- Metadata: type: Note; created: 2024-02-10 22:53:08; reads: 129; read: 2024-02-16 15:42:41; revision: 15; modified: 2024-02-14 22:18:51; -->
 ![desktop](user-documentation.basic-concepts-workspace.png)
 
 MindForger **workspace**:
@@ -49,7 +49,7 @@ MindForger **workspace**:
 * ... might be empty
 
 
-## Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 129; read: 2024-02-14 09:00:20; revision: 21; modified: 2024-02-13 19:18:13; -->
+## Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 145; read: 2024-02-16 15:42:42; revision: 21; modified: 2024-02-13 19:18:13; -->
 ![desktop](user-documentation.basic-concepts-notebook.png)
 
 MindForger **notebook**:
@@ -58,7 +58,7 @@ MindForger **notebook**:
 * organizes notes in hierarchy - [outline](User-documentation.md#outliner)
 * can be marked with [tags](User-documentation.md#tag)
 * is typically devoted to a specific topic such as a project plan, family gifts or lessons learned
-## Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 97; read: 2024-02-14 09:00:20; revision: 11; modified: 2024-02-13 19:18:43; -->
+## Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 115; read: 2024-02-16 15:42:42; revision: 11; modified: 2024-02-13 19:18:43; -->
 ![desktop](user-documentation.basic-concepts-overview.png)
 
 MindForger **note**:
@@ -68,7 +68,7 @@ MindForger **note**:
 * can be marked with [tags](User-documentation.md#tag)
 
 
-# Create Workspace <!-- Metadata: type: Note; created: 2024-02-13 07:57:32; reads: 91; read: 2024-02-14 09:00:20; revision: 21; modified: 2024-02-14 08:12:54; -->
+# Create Workspace <!-- Metadata: type: Note; created: 2024-02-13 07:57:32; reads: 120; read: 2024-02-16 15:43:16; revision: 32; modified: 2024-02-16 15:43:16; -->
 [![v](https://img.youtube.com/vi/ahThnkU9d90/0.jpg)](https://www.youtube.com/watch?v=ahThnkU9d90)
 
 Create **new** [workspace](#workspace) as follows:
@@ -82,7 +82,7 @@ Create **new** [workspace](#workspace) as follows:
 1. click <kbd>New</kbd> to create the workspace
 
 
-## Create Notebook <!-- Metadata: type: Note; created: 2024-02-13 07:57:40; reads: 106; read: 2024-02-14 09:00:20; revision: 18; modified: 2024-02-14 08:15:28; -->
+## Create Notebook <!-- Metadata: type: Note; created: 2024-02-13 07:57:40; reads: 136; read: 2024-02-16 15:42:43; revision: 18; modified: 2024-02-14 08:15:28; -->
 Create **new** [notebook](#notebook) as follows:
 
 1. open menu `Notebook`
@@ -96,7 +96,7 @@ Create **new** [notebook](#notebook) as follows:
 1. click <kbd>OK</kbd> to create the notebook
 
 
-### Create Note <!-- Metadata: type: Note; created: 2024-02-13 07:57:43; reads: 118; read: 2024-02-14 09:00:20; revision: 18; modified: 2024-02-14 08:57:40; -->
+### Create Note <!-- Metadata: type: Note; created: 2024-02-13 07:57:43; reads: 148; read: 2024-02-16 15:42:45; revision: 18; modified: 2024-02-14 08:57:40; -->
 Create **new** [note](#note) as follows:
 
 1. open menu `Note`
@@ -109,7 +109,7 @@ Create **new** [note](#note) as follows:
 1. click <kbd>OK</kbd> to create the note
 
 
-### Edit Note <!-- Metadata: type: Note; created: 2024-02-13 08:19:27; reads: 114; read: 2024-02-14 09:00:20; revision: 15; modified: 2024-02-14 08:12:21; -->
+### Edit Note <!-- Metadata: type: Note; created: 2024-02-13 08:19:27; reads: 142; read: 2024-02-16 15:42:48; revision: 15; modified: 2024-02-14 08:12:21; -->
 When you are viewing a [note](#note), you can edit it using one of the options below:
 
 * **Double click** the mouse preview.
@@ -122,7 +122,7 @@ Once you finish editing the [note](#note) you can save it and preview using one 
 * Click <kbd>Save & Leave</kbd> button at the bottom of the editor.
 
 
-### Fix Grammar with Wingman <!-- Metadata: type: Note; created: 2024-02-13 08:22:36; reads: 133; read: 2024-02-14 09:00:21; revision: 25; modified: 2024-02-14 08:33:34; -->
+### Fix Grammar with Wingman <!-- Metadata: type: Note; created: 2024-02-13 08:22:36; reads: 156; read: 2024-02-16 15:42:49; revision: 25; modified: 2024-02-14 08:33:34; -->
 [![v](https://img.youtube.com/vi/QLX9CWzzEa8/0.jpg)](https://www.youtube.com/watch?v=QLX9CWzzEa8)
 
 While you are editing a [note](#note), you can **fix grammar** of the text as follows:
@@ -147,7 +147,7 @@ While you are editing a [note](#note), you can **fix grammar** of the text as fo
 ... and much more - for more details see [Wingman](User-documentation.md#wingman).
 
 
-# Notes Outliner <!-- Metadata: type: Note; created: 2024-02-13 08:19:31; reads: 123; read: 2024-02-14 09:00:21; revision: 25; modified: 2024-02-14 08:57:28; -->
+# Notes Outliner <!-- Metadata: type: Note; created: 2024-02-13 08:19:31; reads: 140; read: 2024-02-16 15:42:50; revision: 26; modified: 2024-02-16 14:03:32; -->
 [![v](https://img.youtube.com/vi/LUqavHfKhnc/0.jpg)](https://www.youtube.com/watch?v=LUqavHfKhnc)
 
 An **outliner** is a feature used in word processing, **note-taking**, and organizational software to help users outline and structure their ideas. Outlining actions in MindForger allow users to create **hierarchies** or levels of information by, making it easier to organize and navigate through a [Notebook](#notebook):
@@ -172,7 +172,7 @@ An **outliner** is a feature used in word processing, **note-taking**, and organ
 Outlining is a powerful tool that allows you to organize your thoughts and make your remarks structured, comprehensible, and scalable.
 
 
-# Find Note <!-- Metadata: type: Note; created: 2024-02-13 08:21:00; reads: 102; read: 2024-02-14 09:00:21; revision: 12; modified: 2024-02-14 09:00:13; -->
+# Find Note <!-- Metadata: type: Note; created: 2024-02-13 08:21:00; reads: 118; read: 2024-02-16 15:42:58; revision: 12; modified: 2024-02-14 09:00:13; -->
 [![v](https://img.youtube.com/vi/a-i7EU58H7Y/0.jpg)](https://www.youtube.com/watch?v=a-i7EU58H7Y)
 
 You can **find** [notebooks](#notebook) and [notes](#note) using the following attributes:
@@ -193,7 +193,7 @@ For instance, to find [notes](#note) by text phrase:
 Similarly, for other search options.
 
 
-# Delete Notebook <!-- Metadata: type: Note; created: 2024-02-13 08:20:07; reads: 80; read: 2024-02-14 09:00:21; revision: 18; modified: 2024-02-14 08:42:39; -->
+# Delete Notebook <!-- Metadata: type: Note; created: 2024-02-13 08:20:07; reads: 89; read: 2024-02-16 15:42:56; revision: 19; modified: 2024-02-16 15:29:26; -->
 [![v](https://img.youtube.com/vi/gtGbCdb_7c8/0.jpg)](https://www.youtube.com/watch?v=gtGbCdb_7c8)
 
 [Notebook](#notebook) can be ~~deleted~~ **deprecated** as follows:
@@ -213,7 +213,7 @@ purge or resurrect deprecated notebook:
 1. use you file manager to manipulate the notebook
 
 
-# Video tutorials <!-- Metadata: type: Note; created: 2024-02-13 18:29:52; reads: 43; read: 2024-02-14 09:00:21; revision: 11; modified: 2024-02-14 08:21:15; -->
+# Video tutorials <!-- Metadata: type: Note; created: 2024-02-13 18:29:52; reads: 45; read: 2024-02-16 14:06:27; revision: 11; modified: 2024-02-14 08:21:15; -->
 MindForger **video** tutorials:
 
 * 🎞 [playlist](https://www.youtube.com/playlist?list=PLkTlgXXVRbUDdvysdslnAt_mU15oNPWNS) on YouTube
