@@ -1,4 +1,4 @@
-# Developer documentation <!-- Metadata: type: Outline; created: 2022-01-30 18:02:38; reads: 326; read: 2024-02-16 16:31:37; revision: 320; modified: 2022-08-27 07:45:38; importance: 0/5; urgency: 0/5; -->
+# Developer documentation <!-- Metadata: type: Outline; created: 2022-01-30 18:02:38; reads: 336; read: 2026-09-02 06:55:25; revision: 336; modified: 2026-09-02 06:55:25; importance: 0/5; urgency: 0/5; -->
 > _"There are only two kinds of languages: the ones people complain about and the ones nobody uses" -- [Bjarne Stroustrup](https://www.stroustrup.com/quotes.html)_
 
 MindForger is written in **C++** programming language.
@@ -17,7 +17,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-# Contribute <!-- Metadata: type: Note; created: 2022-01-30 18:03:29; reads: 23; read: 2024-02-16 16:30:32; revision: 10; modified: 2022-01-30 18:06:39; -->
+# Contribute <!-- Metadata: type: Note; created: 2022-01-30 18:03:29; reads: 29; read: 2026-09-02 06:52:42; revision: 10; modified: 2022-01-30 18:06:39; -->
 Current **MindForger** implementation is just an initial imperfect sketch of much broader **vision**. It's purpose is to **demonstrate** viability of thinking notebook idea and to **show** possible research directions.
 
 Feel free to [contribute](https://www.mindforger.com)! Don't hesitate to contact [me](martin.dvorak@mindforger.com).
@@ -38,7 +38,7 @@ Feel free to [contribute](https://www.mindforger.com)! Don't hesitate to contact
     * Submit performance, efficiency and/or productivity enhancements.
 * **Documentation**
     * Write a document, blog post or tweet, create YouTube video, ...
-# Linux development environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 39; read: 2024-02-16 16:30:32; revision: 30; modified: 2022-08-27 07:39:36; -->
+# Linux development environment <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 47; read: 2026-09-02 06:52:43; revision: 30; modified: 2022-08-27 07:39:36; -->
 Perhaps you may find useful description of my development environment:
 
 * Backend library:
@@ -69,15 +69,75 @@ Perhaps you may find useful description of my development environment:
         * `alt-x compile` > `cd ../.. && make` (make -k for keep going)
 
 For more details see the source code.
-## Build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 22; read: 2024-02-16 16:30:34; revision: 5; modified: 2022-08-27 07:33:51; -->
-See [build on Ubuntu](Installation.md#build-on-ubuntu) for how to build MindForger.
+## Build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 43; read: 2026-09-02 06:55:25; revision: 7; modified: 2026-09-02 06:55:25; -->
+See [build on Ubuntu](Installation.md#build-on-ubuntu) for how to build MindForger:
+
+```
+make build-dev
+```
 
 **Unit tests** are conducted by the [gtest](https://github.com/google/googletest) framework. Download, build and optionally install this framework before building MindForger unit tests. 
 
 
-* [gtest](https://github.com/google/googletest): Google Test for C++ 
-## Tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 23; read: 2024-02-16 16:30:34; revision: 4; modified: 2022-08-27 07:34:25; -->
-MindForger has:
+## Tests <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 41; read: 2026-09-02 06:55:11; revision: 10; modified: 2026-09-02 06:54:51; -->
+**Prerequisite**: [Google test framework](https://github.com/google/googletest)
+
+1. Checkout `googletest` and go to the checkout:
+
+```
+cd googletest
+```
+
+2. Create/enter a build directory (skip mkdir if build/ already exists, as it does here):
+
+```
+mkdir -p build
+cd build
+```
+
+3. Configure with CMake (Release build, install prefix /usr/local):
+
+```
+cmake -DCMAKE_BUILD_TYPE=Release ..
+```
+
+4. Build:
+
+```
+make -j$(nproc)
+```
+
+5. Install system-wide (needs root — this copies headers to /usr/local/include/gtest and /usr/local/include/gmock, and libs to /usr/local/lib):
+
+```
+sudo make install
+```
+
+6. Refresh the linker cache (usually not strictly required for static libs, but harmless):
+
+```
+sudo ldconfig
+```
+
+7. Verify the install:
+
+```
+ls /usr/local/include/gtest/gtest.h
+ls /usr/local/lib/libgtest.a /usr/local/lib/libgtest_main.a
+```
+
+8. Set the env vars test-lib-units.sh requires, then run the tests:
+
+```
+export M8R_CPU_CORES=$(nproc)
+export M8R_GIT_PATH=/home/dvorka/p/mindforger/git/mindforger
+cd /home/dvorka/p/mindforger/git/mindforger/build
+make test-lib
+```
+
+---
+
+MindForger **tests**:
 
 * library unit tests
 * frontend GUI tests
@@ -96,7 +156,7 @@ MindForger has:
 * can be run using `build/test-gui.sh`
 
 For more details check tests source code.
-## Benchmarks <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 17; read: 2024-02-16 16:30:35; revision: 1; modified: 2022-01-30 18:02:38; -->
+## Benchmarks <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 19; read: 2026-09-02 06:37:44; revision: 1; modified: 2022-01-30 18:02:38; -->
 MindForger has also library benchmarks:
 
 * based on [Google test framework](https://github.com/google/googletest)
