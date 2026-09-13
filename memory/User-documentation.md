@@ -1,4 +1,4 @@
-# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 827; read: 2024-02-16 16:19:59; revision: 827; modified: 2024-02-16 16:19:59; importance: 0/5; urgency: 0/5; -->
+# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 847; read: 2026-09-13 15:58:05; revision: 847; modified: 2026-09-13 15:58:05; importance: 0/5; urgency: 0/5; -->
 Table of contents:
 
 * [Basics](#basics)
@@ -673,7 +673,7 @@ public static void main(string[] args) {
 ---
 
 💡 edit this Note to see the syntax
-### Math <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 31; read: 2024-02-16 16:17:39; revision: 4; modified: 2024-02-16 16:16:44; -->
+### Math <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 43; read: 2026-09-13 15:49:47; revision: 6; modified: 2026-09-13 15:49:47; -->
 ![i](user-documentation.math.png)
 
 [MathJax](https://www.mathjax.org/) handles **inline** expressions like: x^2 + y^2 = z^2 or **block** expressions like: $$\frac{D\rho}{Dt} = 0.$$
@@ -701,8 +701,10 @@ expression to image and include it in Markdown.
 ---
 
 💡 edit this Note to see the syntax <br/>
-💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu `Mind/Adapt/Markdown`
-#### MathJax <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 29; read: 2024-02-16 16:17:39; revision: 4; modified: 2024-02-16 16:16:58; -->
+💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu menu `Workspace/Preferences/Viewer/Math support`
+
+
+#### MathJax <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 45; read: 2026-09-13 15:49:24; revision: 6; modified: 2026-09-13 15:33:04; -->
 ![i](user-documentation.mathjax.png)
 
 MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference):
@@ -741,8 +743,10 @@ MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-
 Limit block:
 
 $$\lim_{x\to 0}$$
+### Diagrams <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 39; read: 2026-09-13 15:58:05; revision: 8; modified: 2026-09-13 15:58:05; -->
+MindForger supports [Mermaid](https://github.com/mermaid-js/mermaid) ([cheatsheet](https://github.com/JakeSteam/Mermaid)) to render **diagrams**.
 
-### Diagrams <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 26; read: 2024-02-16 16:17:40; revision: 2; modified: 2024-02-16 16:13:05; -->
+
 Flowchart diagram:
 
 ``` mermaid
@@ -792,7 +796,7 @@ gantt
 ---
 
 💡 edit this Note to see the syntax <br/>
-💡 if math expressions are **not** rendered, then you must **enable** them using menu `Mind/Adapt/Markdown`
+💡 if diagram expressions are **not** rendered, then you must **enable** them using menu `Workspace/Preferences/Viewer/Diagram support`.
 ### Comments <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 27; read: 2024-02-16 16:17:40; revision: 1; modified: 2022-02-26 08:27:46; -->
 If you want **line** or **multi-line** comment that 
 is strictly for yourself (readers of the converted 
@@ -1451,7 +1455,7 @@ See MindForger cheetsheet(s):
 See [Markdown cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet).
 
 
-## MathJax cheatsheet <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 35; read: 2024-02-16 16:19:20; revision: 5; modified: 2024-02-16 16:04:01; -->
+## MathJax cheatsheet <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 39; read: 2026-09-13 15:17:52; revision: 5; modified: 2024-02-16 16:04:01; -->
 See [MathJax cheat sheet](#mathjax).
 
 
