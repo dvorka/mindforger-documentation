@@ -1,0 +1,5 @@
+MindForger documentation - vendored 3rd party web assets
+Updated: 2026-09-19
+
+Tabler: 1.5.1 (MIT) - https://tabler.io
+Lato:   latin 400, 700 (OFL) - https://fonts.google.com/specimen/Lato

@@ -7,4 +7,4 @@ Released on the day of my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_H
 <br/>
 [Martin.Dvorak@mindforger.com](http://me.mindforger.com) and [contributors](https://github.com/dvorka/mindforger/blob/master/CREDITS.md)
 <br/>
-2018-2024
+2018-2026
