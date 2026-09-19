@@ -26,4 +26,8 @@ Organizer name: Eisenhower Matrix
 * Filter by: notebooks and notes
 * Outline scope: 
 
+# Notebook Shelves
+Notebook shelf name: Notebooks Map
+* Key: mind/outlines-map.md
+
 
