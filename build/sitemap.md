@@ -19,6 +19,9 @@ Format:
 * [output](index.html)
 * [title](MindForger Documentation)
 
+### Table of Contents
+* [source](TOC.md)
+
 ### Project History
 * [source](HISTORY.md)
 
@@ -61,3 +64,6 @@ Format:
 
 ### Changelog
 * [url](https://github.com/dvorka/mindforger/blob/master/Changelog)
+
+### RSS
+* [url](rss.xml)

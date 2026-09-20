@@ -35,10 +35,17 @@ doc-clean: ## purge the distro/ directory with generated documentation
 .PHONY: doc
 doc: doc-deps doc-clean ## generate HTML documentation from Markdown sources
 	@echo "Generating documentation from Markdown..."
+	$(PYTHON) $(BUILD)/make/generate_toc.py \
+		--source-dir $(SOURCE) \
+		--sitemap $(BUILD)/sitemap.md
 	$(PYTHON) $(BUILD)/make/generate_docs.py \
 		--source-dir $(SOURCE) \
 		--sitemap $(BUILD)/sitemap.md \
 		--assets-dir $(BUILD)/assets \
+		--output-dir $(OUT)
+	$(PYTHON) $(BUILD)/make/generate_rss.py \
+		--source-dir $(SOURCE) \
+		--sitemap $(BUILD)/sitemap.md \
 		--output-dir $(OUT)
 	@echo "DONE documentation generated to file://$(OUT)/index.html"
 

@@ -667,6 +667,7 @@ def generate_footer_html(md_filename: str) -> str:
               <li class="list-inline-item">Doc made with <a href="{PROJECT_URL}" target="_blank">MindForger</a></li>
               <li class="list-inline-item"><a href="{GITHUB_DOC_EDIT}{md_filename}" target="_blank">Edit on GitHub</a></li>
               <li class="list-inline-item"><a href="{GITHUB_DOC_VIEW}{md_filename}" target="_blank">Source</a></li>
+              <li class="list-inline-item"><a href="rss.xml">RSS</a></li>
             </ul>
           </div>
         </footer>'''
@@ -705,6 +706,7 @@ def get_html_template() -> str:
     <meta name="description" content="{{DESCRIPTION}}" />
     <meta name="author" content="Martin.Dvorak@mindforger.com" />
     <link rel="canonical" href="{{CANONICAL}}" />
+    <link rel="alternate" type="application/rss+xml" title="MindForger Blog" href="rss.xml" />
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="icon" href="assets/mind-forger.png" type="image/png" />
     <meta name="theme-color" content="#008c00" />
@@ -783,6 +785,43 @@ def get_html_template() -> str:
 '''
 
 
+def render_markdown(
+    md_content: str,
+    page_map: dict[str, str],
+    md_name: str,
+    page_title: Optional[str] = None,
+) -> tuple[str, str, str, list[tuple[int, str, str]], bool]:
+    """
+    Render the Markdown of a notebook to the HTML content of its page.
+
+    Args:
+        md_content: Markdown content of the notebook
+        page_map: Markdown file name -> HTML file name
+        md_name: Name of the Markdown file, used to resolve its links
+        page_title: Page title override from the sitemap
+
+    Returns:
+        Tuple of (title, description, HTML content, (level, text, id) headings,
+        whether the page contains math)
+    """
+    md_content = strip_metadata(md_content)
+    title, md_content = extract_title(md_content)
+    if page_title:
+        title = page_title
+
+    description = extract_description(md_content, title)
+    md_content = strip_duplicate_title(md_content, title)
+    md_content = strip_inline_toc(md_content)
+    md_content = demote_headings(md_content)
+    md_content = rewrite_links(md_content, page_map, md_name)
+
+    md_content, math = protect_math(md_content)
+    html_content = markdown_to_html(md_content)
+    html_content = restore_math(html_content, math)
+    html_content, headings = add_heading_ids(html_content)
+    return title, description, html_content, headings, bool(math)
+
+
 def generate_page(
     item: NavItem,
     section: NavSection,
@@ -809,21 +848,9 @@ def generate_page(
     html_name = page_map[item.source]
     print(f"Generating: {item.source} -> {html_name}")
 
-    md_content = strip_metadata(md_path.read_text(encoding="utf-8"))
-    title, md_content = extract_title(md_content)
-    if item.page_title:
-        title = item.page_title
-
-    description = extract_description(md_content, title)
-    md_content = strip_duplicate_title(md_content, title)
-    md_content = strip_inline_toc(md_content)
-    md_content = demote_headings(md_content)
-    md_content = rewrite_links(md_content, page_map, item.source)
-
-    md_content, math = protect_math(md_content)
-    html_content = markdown_to_html(md_content)
-    html_content = restore_math(html_content, math)
-    html_content, headings = add_heading_ids(html_content)
+    title, description, html_content, headings, math = render_markdown(
+        md_path.read_text(encoding="utf-8"), page_map, item.source, item.page_title
+    )
     html_content = style_content(html_content)
 
     html = get_html_template()
