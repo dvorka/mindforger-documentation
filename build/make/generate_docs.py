@@ -134,7 +134,8 @@ def parse_sitemap(sitemap_path: Path) -> list[NavSection]:
 
 def md_filename_to_html(md_filename: str) -> str:
     """Convert a Markdown file name to the default HTML file name."""
-    return md_filename.replace(".md", ".html").lower()
+    # GETTING_STARTED.md -> getting-started.html: URLs of the site use hyphens
+    return md_filename.replace(".md", ".html").lower().replace("_", "-")
 
 
 def build_page_map(sections: list[NavSection]) -> dict[str, str]:
@@ -315,7 +316,7 @@ def rewrite_links(md_content: str, page_map: dict[str, str], md_name: str) -> st
     """
     Rewrite links to other Markdown notebooks so that they point to HTML pages.
 
-    '[x](Getting-started.md#note)' becomes '[x](getting-started.html#note)'.
+    '[x](GETTING_STARTED.md#note)' becomes '[x](getting-started.html#note)'.
     External links, image links and bare '#anchor' links are left alone.
 
     Args:
@@ -327,7 +328,7 @@ def rewrite_links(md_content: str, page_map: dict[str, str], md_name: str) -> st
         Markdown content with rewritten links
     """
     # the sources are not consistent in the case of the linked file names,
-    # e.g. both 'User-documentation.md' and 'user-documentation.md' are used
+    # e.g. both 'USER_DOCUMENTATION.md' and 'user-documentation.md' are used
     lower_page_map = {name.lower(): html for name, html in page_map.items()}
 
     def replace(match: re.Match) -> str:

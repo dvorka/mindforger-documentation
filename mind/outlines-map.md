@@ -14,46 +14,46 @@
 <!-- wiki file -->
 **About**:
 
-* [Why MindForger?](Getting-started.md#why-mindforger)
-    - [Unique](Getting-started.md#unique)
-    - [Inspired by human mind](Getting-started.md#inspired-by-human-mind)
-    - [Open, free and fast](Getting-started.md#open--free-and-fast)
+* [Why MindForger?](GETTING_STARTED.md#why-mindforger)
+    - [Unique](GETTING_STARTED.md#unique)
+    - [Inspired by human mind](GETTING_STARTED.md#inspired-by-human-mind)
+    - [Open, free and fast](GETTING_STARTED.md#open--free-and-fast)
 * Presentations: 
     - Prezi: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
 * Tutorials
     - Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
     - Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
-* [History](History.md)
-    - [RDF Spiders](History.md#rdf-spiders)
-	- [MindRaider](History.md#mindraider)
-	- [Coaching Notebook](History.md#coaching-notebook)
-	- [MindForger](History.md#mindforger)
-* [In the news](Getting-started.md#in-the-news)
-* [Bugs and feature requests](Getting-started.md#bugs-and-feature-requests)
-* [Community](Getting-started.md#community)
+* [History](HISTORY.md)
+    - [RDF Spiders](HISTORY.md#rdf-spiders)
+	- [MindRaider](HISTORY.md#mindraider)
+	- [Coaching Notebook](HISTORY.md#coaching-notebook)
+	- [MindForger](HISTORY.md#mindforger)
+* [In the news](GETTING_STARTED.md#in-the-news)
+* [Bugs and feature requests](GETTING_STARTED.md#bugs-and-feature-requests)
+* [Community](GETTING_STARTED.md#community)
 
 <!-- wiki file -->
 **Installation**:
 
-* [Install](Installation.md)
-    - [macOS](Installation.md#macos)
-    - [Windows](Installation.md#windows)
-    - [Ubuntu](Installation.md#ubuntu)
-    - [Debian](Installation.md#debian)
-    - [Fedora](Installation.md#fedora)
-    - [FreeBSD](Installation.md#freebsd)
-    - [Arch Linux](Installation.md#arch-linux)
-    - [NixOS](Installation.md#nixos)
-    - [openSUSE](Installation.md#opensuse)
-    - [WSL](Installation.md#wsl)
-* [Configure](Installation.md#configure)
-    - [Appearance and themes](Installation.md#appearance-and-themes)
-    - [Custom HTML Preview CSS](Installation.md#custom-html-preview-css)
-    - [Spell check](Installation.md#spell-check)
-    - [Think vs. Sleep mode](Installation.md#think-vs--sleep-mode)
-* [Releases](Installation.md#releases)
-* [Changelog](Installation.md#changelog)
-* [Nightly builds](Installation.md#nightly-builds)
+* [Install](INSTALLATION.md)
+    - [macOS](INSTALLATION.md#macos)
+    - [Windows](INSTALLATION.md#windows)
+    - [Ubuntu](INSTALLATION.md#ubuntu)
+    - [Debian](INSTALLATION.md#debian)
+    - [Fedora](INSTALLATION.md#fedora)
+    - [FreeBSD](INSTALLATION.md#freebsd)
+    - [Arch Linux](INSTALLATION.md#arch-linux)
+    - [NixOS](INSTALLATION.md#nixos)
+    - [openSUSE](INSTALLATION.md#opensuse)
+    - [WSL](INSTALLATION.md#wsl)
+* [Configure](INSTALLATION.md#configure)
+    - [Appearance and themes](INSTALLATION.md#appearance-and-themes)
+    - [Custom HTML Preview CSS](INSTALLATION.md#custom-html-preview-css)
+    - [Spell check](INSTALLATION.md#spell-check)
+    - [Think vs. Sleep mode](INSTALLATION.md#think-vs--sleep-mode)
+* [Releases](INSTALLATION.md#releases)
+* [Changelog](INSTALLATION.md#changelog)
+* [Nightly builds](INSTALLATION.md#nightly-builds)
 
 <!-- wiki file -->
 **User documentation**:
@@ -134,36 +134,36 @@
     - Fonts
     - Spellcheck (Win)
     - AA poller
-* [Credits](User-documentation.md#credits)
+* [Credits](USER_DOCUMENTATION.md#credits)
 
 <!-- wiki file -->
 **Developer documentation**: 
 
-* [Contribute](Developer-documentation.md#contribute)
-* [Build](Installation.md#build-from-source-code)
-    - [Build on macOS](Installation.md#build-on-macos)
-    - [Build on Windows](Installation.md#build-on-windows)
-    - [Build on Ubuntu](Installation.md#build-on-ubuntu)
-    - [Build on Debian](Installation.md#build-on-debian)
-    - [Build on Fedora](Installation.md#build-on-fedora)
-    - [Build on Gentoo](Installation.md#build-on-gentoo)
-    - [Build on NixOS](Installation.md#build-on-nixos)
-    - [Build on WSL](Installation.md#build-on-wsl)
-    - [Build and run Docker](Installation.md#docker)
+* [Contribute](DEVELOPER_DOCUMENTATION.md#contribute)
+* [Build](INSTALLATION.md#build-from-source-code)
+    - [Build on macOS](INSTALLATION.md#build-on-macos)
+    - [Build on Windows](INSTALLATION.md#build-on-windows)
+    - [Build on Ubuntu](INSTALLATION.md#build-on-ubuntu)
+    - [Build on Debian](INSTALLATION.md#build-on-debian)
+    - [Build on Fedora](INSTALLATION.md#build-on-fedora)
+    - [Build on Gentoo](INSTALLATION.md#build-on-gentoo)
+    - [Build on NixOS](INSTALLATION.md#build-on-nixos)
+    - [Build on WSL](INSTALLATION.md#build-on-wsl)
+    - [Build and run Docker](INSTALLATION.md#docker)
 * Development environment
-    - [Linux development environment](Developer-documentation.md#linux-development-environment)
-    - [Windows development environment](Developer-documentation.md#windows-development-environment)
+    - [Linux development environment](DEVELOPER_DOCUMENTATION.md#linux-development-environment)
+    - [Windows development environment](DEVELOPER_DOCUMENTATION.md#windows-development-environment)
     - macOS development environment
 * Automation
     - Makefile and build/ directory
-* [Continuous Integration (CI)](Developer-documentation.md#continuous-integration--ci)
-    - [GitHub Actions](Developer-documentation.md#github-actions)
-    - [AppVeyor](Developer-documentation.md#appveyor)
+* [Continuous Integration (CI)](DEVELOPER_DOCUMENTATION.md#continuous-integration--ci)
+    - [GitHub Actions](DEVELOPER_DOCUMENTATION.md#github-actions)
+    - [AppVeyor](DEVELOPER_DOCUMENTATION.md#appveyor)
     - nightly builds: [.dmg](https://github.com/dvorka/mindforger/actions/workflows/build_macos.yml) | [Win installer](https://ci.appveyor.com/project/dvorka/mindforger) 
 * Implementation
     - Incremental Markdown recursive descent parser
     - Magnets and rubbers: Force-directed Graph
-    - [Model View Presenter front-end pattern](Developer-documentation.md#model-view-presenter)
+    - [Model View Presenter front-end pattern](DEVELOPER_DOCUMENTATION.md#model-view-presenter)
     - NLP: stemmer, lexicon and bag of words
     - Repository layout specification
     - Outline document format specification (Markdown hosted DSL)
@@ -186,10 +186,10 @@
 
 <!-- wiki file -->
 **Frequently Asked Questions**
-* [FAQs](FAQs.md)
-## Home <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Home.md),[Outline path](Home.md); created: 2022-01-12 09:45:45; reads: 133; read: 2024-02-12 11:14:46; revision: 124; modified: 2024-02-12 11:14:46; -->
+* [FAQs](FAQS.md)
+## Home <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Home.md),[Outline path](HOME.md); created: 2022-01-12 09:45:45; reads: 133; read: 2024-02-12 11:14:46; revision: 124; modified: 2024-02-12 11:14:46; -->
 
-## Getting Started <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Getting-started.md),[Outline path](Getting-started.md); created: 2022-01-26 23:41:16; reads: 90; read: 2024-02-13 08:10:54; revision: 86; modified: 2024-02-13 08:10:54; -->
+## Getting Started <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Getting-started.md),[Outline path](GETTING_STARTED.md); created: 2022-01-26 23:41:16; reads: 90; read: 2024-02-13 08:10:54; revision: 86; modified: 2024-02-13 08:10:54; -->
 Getting started with MindForger:
 
 * [Why MindForger?](#why-mindforger)
@@ -199,7 +199,7 @@ Getting started with MindForger:
 * [In the news](#in-the-news)
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Community](#community)
-## Installation <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Installation.md),[Outline path](Installation.md); created: 2018-03-20 16:19:07; reads: 1538; read: 2023-11-19 18:33:09; revision: 1533; modified: 2023-11-19 18:33:09; -->
+## Installation <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Installation.md),[Outline path](INSTALLATION.md); created: 2018-03-20 16:19:07; reads: 1538; read: 2023-11-19 18:33:09; revision: 1533; modified: 2023-11-19 18:33:09; -->
 Install:
 
 * [macOS](#macos)
@@ -240,7 +240,7 @@ Look up:
 
 * [release](#releases)
 * [change](#changelog)
-## User documentation <!-- Metadata: type: Outline; tags: important,urgent,todo; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/User-documentation.md),[Outline path](User-documentation.md); created: 2022-02-26 08:27:46; reads: 158; read: 2024-02-13 08:14:00; revision: 155; modified: 2024-02-13 08:14:00; -->
+## User documentation <!-- Metadata: type: Outline; tags: important,urgent,todo; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/User-documentation.md),[Outline path](USER_DOCUMENTATION.md); created: 2022-02-26 08:27:46; reads: 158; read: 2024-02-13 08:14:00; revision: 155; modified: 2024-02-13 08:14:00; -->
 Table of contents:
 
 * [Basics](#basics)
@@ -351,7 +351,7 @@ Table of contents:
 * [Credits](#credits)
 
 This document _briefly_ describes key MindForger features.
-## Developer documentation <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Developer-documentation.md),[Outline path](Developer-documentation.md); created: 2022-01-30 18:02:38; reads: 321; read: 2022-08-27 07:45:38; revision: 321; modified: 2022-08-27 07:45:38; -->
+## Developer documentation <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/Developer-documentation.md),[Outline path](DEVELOPER_DOCUMENTATION.md); created: 2022-01-30 18:02:38; reads: 321; read: 2022-08-27 07:45:38; revision: 321; modified: 2022-08-27 07:45:38; -->
 > _"There are only two kinds of languages: the ones people complain about and the ones nobody uses" -- [Bjarne Stroustrup](https://www.stroustrup.com/quotes.html)_
 
 MindForger is written in **C++** programming language.
@@ -370,7 +370,7 @@ Specifications:
 In case that you have any question or want to learn more about technical details 
 please don't hesitate to contact [me](mailto:martin.dvorak@mindforger.com).
 
-## FAQs <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/FAQs.md),[Outline path](FAQs.md); created: 2022-02-26 08:27:46; reads: 42; read: 2022-08-27 07:56:04; revision: 41; modified: 2022-08-27 07:56:04; -->
+## FAQs <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/FAQs.md),[Outline path](FAQS.md); created: 2022-02-26 08:27:46; reads: 42; read: 2022-08-27 07:56:04; revision: 41; modified: 2022-08-27 07:56:04; -->
 <!-- find all GitHub issues with "question" label (even closed) and turn them to questions in this Notebook -->
 
 Frequently asked questions:
@@ -384,7 +384,7 @@ Frequently asked questions:
 * [Why is not line starting with # turned into section when editing a note?](#why-is-not-line-starting-with---turned-into-section-when-editing-a-note)
 * [How can I change font size/color/... in HTML preview?](#how-can-i-change-font-size-color-----in-html-preview)
 * [How can I manually add Markdown files to MindForger repository?](#how-can-i-manually-add-markdown-files-to-mindforger-repository)
-## About <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/About.md),[Outline path](About.md); created: 2022-01-26 23:41:16; reads: 90; read: 2024-02-13 08:07:31; revision: 87; modified: 2024-02-13 08:15:36; -->
+## About <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/About.md),[Outline path](ABOUT.md); created: 2022-01-26 23:41:16; reads: 90; read: 2024-02-13 08:07:31; revision: 87; modified: 2024-02-13 08:15:36; -->
 Getting started with MindForger:
 
 * [Why MindForger?](#why-mindforger)
@@ -394,7 +394,7 @@ Getting started with MindForger:
 * [In the news](#in-the-news)
 * [Bugs and feature requests](#bugs-and-feature-requests)
 * [Community](#community)
-## History <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/History.md),[Outline path](History.md); created: 2022-01-26 23:42:26; reads: 364; read: 2022-03-10 08:34:42; revision: 363; modified: 2022-03-10 08:34:42; -->
+## History <!-- Metadata: type: Outline; links: [Outline key](/home/dvorka/p/mindforger/git/mindforger-documentation/memory/History.md),[Outline path](HISTORY.md); created: 2022-01-26 23:42:26; reads: 364; read: 2022-03-10 08:34:42; revision: 363; modified: 2022-03-10 08:34:42; -->
 The story of the human mind inspired outliner is also an important
 chapter in the story of my life.
 
@@ -521,7 +521,7 @@ also why the first release screenshot and the web page will be based on Eddie
 character from [Venom](https://www.imdb.com/title/tt1270797/) movie 
 (Tom Hardy w/ symbiont).
 
-![42nd birthday](History.42nd-birthday.jpg)
+![42nd birthday](HISTORY.42nd-birthday.jpg)
 
 It's my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) 
 birthday and I just announced the first public release - `MindForger 0.42.0` - to

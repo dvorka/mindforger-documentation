@@ -809,7 +809,7 @@ You can either use your custom CSS - there is no UI for such change:
 
 This will ensure that CSS from given path will be loaded by HTML preview since the next time MindForger is started.
 ## Wingman preferences <!-- Metadata: type: Note; created: 2024-02-19 08:05:31; reads: 9; read: 2024-02-19 08:06:32; revision: 3; modified: 2024-02-19 08:06:00; -->
-See [Wingman LLM provider configuration](User-documentation.md#wingman-llm-provider-configuration)
+See [Wingman LLM provider configuration](USER_DOCUMENTATION.md#wingman-llm-provider-configuration)
 
 
 ## Spell check preferences <!-- Metadata: type: Note; created: 2021-12-22 20:04:34; reads: 63; read: 2024-02-19 08:06:32; revision: 10; modified: 2024-02-19 08:06:21; -->

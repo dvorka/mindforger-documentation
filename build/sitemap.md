@@ -15,12 +15,12 @@ Format:
 ## Home
 
 ### Documentation
-* [source](Home.md)
+* [source](HOME.md)
 * [output](index.html)
 * [title](MindForger Documentation)
 
 ### Project History
-* [source](History.md)
+* [source](HISTORY.md)
 
 ### Credits
 * [source](CREDITS.md)
@@ -28,28 +28,28 @@ Format:
 ### ---
 
 ### About
-* [source](About.md)
+* [source](ABOUT.md)
 
 ## User Documentation
 
 ### Installation
-* [source](Installation.md)
+* [source](INSTALLATION.md)
 
 ### Getting Started
-* [source](Getting-started.md)
+* [source](GETTING_STARTED.md)
 
 ### User Documentation
-* [source](User-documentation.md)
+* [source](USER_DOCUMENTATION.md)
 
 ### ---
 
 ### FAQs
-* [source](FAQs.md)
+* [source](FAQS.md)
 
 ## Technical Documentation
 
 ### Developer Guide
-* [source](Developer-documentation.md)
+* [source](DEVELOPER_DOCUMENTATION.md)
 
 ## News
 

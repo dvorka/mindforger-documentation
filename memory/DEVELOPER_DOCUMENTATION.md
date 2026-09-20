@@ -70,7 +70,7 @@ Perhaps you may find useful description of my development environment:
 
 For more details see the source code.
 ## Build <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 43; read: 2026-09-02 06:55:25; revision: 7; modified: 2026-09-02 06:55:25; -->
-See [build on Ubuntu](Installation.md#build-on-ubuntu) for how to build MindForger:
+See [build on Ubuntu](INSTALLATION.md#build-on-ubuntu) for how to build MindForger:
 
 ```
 make build-dev
@@ -452,7 +452,7 @@ cmark-gfm versions used:
 ### Qt <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 19; read: 2024-02-16 16:31:07; revision: 3; modified: 2022-08-27 07:43:38; -->
 
 ### Model View Presenter <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 16; read: 2024-02-16 16:31:07; revision: 2; modified: 2022-08-27 07:43:34; -->
-![Image](./developer-documentation.signals.png)
+![Image](./DEVELOPER_DOCUMENTATION.signals.png)
 ### Async UI updates <!-- Metadata: type: Note; tags: todo; created: 2022-01-30 18:02:38; reads: 13; read: 2024-02-16 16:31:09; revision: 3; modified: 2022-08-27 07:45:20; -->
 
 ### Localization <!-- Metadata: type: Note; created: 2022-01-30 18:02:38; reads: 11; read: 2024-02-16 16:31:10; revision: 1; modified: 2022-01-30 18:02:38; -->

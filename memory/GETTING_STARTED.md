@@ -21,7 +21,7 @@ Table of contents:
 
 
 # Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 130; read: 2024-02-16 15:42:41; revision: 34; modified: 2024-02-13 18:36:21; -->
-![desktop](user-documentation.basic-concepts-overview.png)
+![desktop](GETTING_STARTED.basic-concepts-overview.png)
 
 This section aims to explain basic MindForger terminology:
 
@@ -39,7 +39,7 @@ Let's describe basic terms in more detail.
 
 
 ## Workspace <!-- Metadata: type: Note; created: 2024-02-10 22:53:08; reads: 129; read: 2024-02-16 15:42:41; revision: 15; modified: 2024-02-14 22:18:51; -->
-![desktop](user-documentation.basic-concepts-workspace.png)
+![desktop](GETTING_STARTED.basic-concepts-workspace.png)
 
 MindForger **workspace**:
 
@@ -50,22 +50,22 @@ MindForger **workspace**:
 
 
 ## Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 145; read: 2024-02-16 15:42:42; revision: 21; modified: 2024-02-13 19:18:13; -->
-![desktop](user-documentation.basic-concepts-notebook.png)
+![desktop](GETTING_STARTED.basic-concepts-notebook.png)
 
 MindForger **notebook**:
 
 * contains [notes](#note)
-* organizes notes in hierarchy - [outline](User-documentation.md#outliner)
-* can be marked with [tags](User-documentation.md#tag)
+* organizes notes in hierarchy - [outline](USER_DOCUMENTATION.md#outliner)
+* can be marked with [tags](USER_DOCUMENTATION.md#tag)
 * is typically devoted to a specific topic such as a project plan, family gifts or lessons learned
 ## Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 115; read: 2024-02-16 15:42:42; revision: 11; modified: 2024-02-13 19:18:43; -->
-![desktop](user-documentation.basic-concepts-overview.png)
+![desktop](GETTING_STARTED.basic-concepts-overview.png)
 
 MindForger **note**:
 
 * contains text, images and links
 * can link notebooks and notes (within the [Workspace](#workspace)) and/or files and URLs
-* can be marked with [tags](User-documentation.md#tag)
+* can be marked with [tags](USER_DOCUMENTATION.md#tag)
 
 
 # Create Workspace <!-- Metadata: type: Note; created: 2024-02-13 07:57:32; reads: 120; read: 2024-02-16 15:43:16; revision: 32; modified: 2024-02-16 15:43:16; -->
@@ -144,7 +144,7 @@ While you are editing a [note](#note), you can **fix grammar** of the text as fo
 * provide synonyms and antonyms
 * explain 
 
-... and much more - for more details see [Wingman](User-documentation.md#wingman).
+... and much more - for more details see [Wingman](USER_DOCUMENTATION.md#wingman).
 
 
 # Notes Outliner <!-- Metadata: type: Note; created: 2024-02-13 08:19:31; reads: 140; read: 2024-02-16 15:42:50; revision: 26; modified: 2024-02-16 14:03:32; -->

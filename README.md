@@ -2,13 +2,13 @@
 This **private** repository is where MindForger documentation is written. 
 
 * [Sidebar](./memory/_Sidebar.md)
-* [Home](./memory/Home.md)
-* [History](./memory/History.md)
-* [Installation](./memory/Installation.md)
-* [Getting started](./memory/Getting-started.md)
-* [User documentation](./memory/User-documentation.md)
-* [Developer documentation](./memory/Developer-documentation.md)
-* [FAQ](./memory/FAQs.md)
+* [Home](./memory/HOME.md)
+* [History](./memory/HISTORY.md)
+* [Installation](./memory/INSTALLATION.md)
+* [Getting started](./memory/GETTING_STARTED.md)
+* [User documentation](./memory/USER_DOCUMENTATION.md)
+* [Developer documentation](./memory/DEVELOPER_DOCUMENTATION.md)
+* [FAQ](./memory/FAQS.md)
 * [Footer](./memory/_Footer.md)
 
 

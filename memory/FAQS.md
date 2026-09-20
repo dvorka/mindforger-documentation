@@ -13,7 +13,7 @@ Frequently asked questions:
 * [How can I change font size/color/... in HTML preview?](#how-can-i-change-font-size-color-----in-html-preview)
 * [How can I manually add Markdown files to MindForger repository?](#how-can-i-manually-add-markdown-files-to-mindforger-repository)
 # How can I open notebook title section? <!-- Metadata: type: Note; tags: todo; created: 2022-02-26 08:27:46; reads: 34; read: 2022-08-27 07:56:04; revision: 3; modified: 2022-08-27 07:56:04; -->
-Image: `faq.title-section-edit.png`
+Image: `FAQS.title-section-edit.png`
 
 Simply click notebook **name** above the note tree outline.
 # How can I quickly edit viewed note? <!-- Metadata: type: Note; tags: todo,macos; created: 2022-02-26 08:27:46; reads: 36; read: 2022-08-27 07:55:33; revision: 3; modified: 2022-03-10 08:21:33; -->
@@ -38,8 +38,8 @@ MindForger uses Markdown as a format for storing data, but it aims to do more. T
 * It offers associated sections (Notes) to the section being read/written
 * ...
 
-See also ![explanation](user-documentation.outliner-rules.png)
+See also ![explanation](FAQS.outliner-rules.png)
 # How can I change font size/color/... in HTML preview? <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 13; read: 2022-08-27 07:55:32; revision: 1; modified: 2022-02-26 08:27:46; -->
-See [Custom HTML Preview CSS](user-documentation.md#custom-html-preview-css).
+See [Custom HTML Preview CSS](INSTALLATION.md#custom-html-preview-css).
 # How can I manually add Markdown files to MindForger repository? <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 10; read: 2022-08-27 07:55:31; revision: 2; modified: 2022-02-26 08:31:20; -->
 

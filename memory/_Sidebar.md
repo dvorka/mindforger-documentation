@@ -5,77 +5,77 @@
 **Getting started**:
 
 * [Basics](#basics)
-    * [Workspace](Getting-started.md#workspace)
-    * [Notebook](Getting-started.md#notebook)
-    * [Note](Getting-started.md#note)
-* [Create Workspace](Getting-started.md#create-workspace)
-    * [Create Notebook](Getting-started.md#create-notebook)
-        * [Create Note](Getting-started.md#create-note)
-        * [Edit Note](Getting-started.md#edit-note)
-        * [Fix Grammar with Wingman](Getting-started.md#fix-grammar-with-wingman)
-* [Notes Outliner](Getting-started.md#notes-outliner)
-* [Find Note](Getting-started.md#find-note)
-* [Delete Notebook](Getting-started.md#delete-notebook)
-* [Video tutorials](Getting-started.md#video-tutorials)
+    * [Workspace](GETTING_STARTED.md#workspace)
+    * [Notebook](GETTING_STARTED.md#notebook)
+    * [Note](GETTING_STARTED.md#note)
+* [Create Workspace](GETTING_STARTED.md#create-workspace)
+    * [Create Notebook](GETTING_STARTED.md#create-notebook)
+        * [Create Note](GETTING_STARTED.md#create-note)
+        * [Edit Note](GETTING_STARTED.md#edit-note)
+        * [Fix Grammar with Wingman](GETTING_STARTED.md#fix-grammar-with-wingman)
+* [Notes Outliner](GETTING_STARTED.md#notes-outliner)
+* [Find Note](GETTING_STARTED.md#find-note)
+* [Delete Notebook](GETTING_STARTED.md#delete-notebook)
+* [Video tutorials](GETTING_STARTED.md#video-tutorials)
     * Video: [Getting started](https://www.youtube.com/watch?v=PlW2e1X3O-I)
     * Video: [First steps](https://www.youtube.com/watch?v=UR49y3uNurs)
 
 <!-- wiki file -->
 **About**:
 
-* [Why MindForger?](About.md#why-mindforger)
-    - [Unique](About.md#unique)
-    - [Inspired by human mind](About.md#inspired-by-human-mind)
-    - [Open, free and fast](About.md#open--free-and-fast)
+* [Why MindForger?](ABOUT.md#why-mindforger)
+    - [Unique](ABOUT.md#unique)
+    - [Inspired by human mind](ABOUT.md#inspired-by-human-mind)
+    - [Open, free and fast](ABOUT.md#open--free-and-fast)
 * Presentations: 
     - Prezi: [Thinking notebook](https://prezi.com/view/pMJ7bmdpTYDBi7nMKFdU/)
-* [History](History.md)
-    - [RDF Spiders](History.md#rdf-spiders)
-	- [MindRaider](History.md#mindraider)
-	- [Coaching Notebook](History.md#coaching-notebook)
-	- [MindForger](History.md#mindforger)
-* [In the news](About.md#in-the-news)
-* [Bugs and feature requests](About.md#bugs-and-feature-requests)
-* [Community](About.md#community)
+* [History](HISTORY.md)
+    - [RDF Spiders](HISTORY.md#rdf-spiders)
+	- [MindRaider](HISTORY.md#mindraider)
+	- [Coaching Notebook](HISTORY.md#coaching-notebook)
+	- [MindForger](HISTORY.md#mindforger)
+* [In the news](ABOUT.md#in-the-news)
+* [Bugs and feature requests](ABOUT.md#bugs-and-feature-requests)
+* [Community](ABOUT.md#community)
 
 <!-- wiki file -->
 **Installation**:
 
-* [Install](Installation.md)
-    - [macOS](Installation.md#macos)
-    - [Windows](Installation.md#windows)
-    - [Ubuntu](Installation.md#ubuntu)
-    - [Debian](Installation.md#debian)
-    - [Fedora](Installation.md#fedora)
-    - [FreeBSD](Installation.md#freebsd)
-    - [Arch Linux](Installation.md#arch-linux)
-    - [NixOS](Installation.md#nixos)
-    - [openSUSE](Installation.md#opensuse)
-    - [WSL](Installation.md#wsl)
-* [Configure](Installation.md#configure)
-    - [Appearance and themes](Installation.md#appearance-and-themes)
-    - [Custom HTML Preview CSS](Installation.md#custom-html-preview-css)
-    - [Spell check](Installation.md#spell-check)
-    - [Think vs. Sleep mode](Installation.md#think-vs--sleep-mode)
+* [Install](INSTALLATION.md)
+    - [macOS](INSTALLATION.md#macos)
+    - [Windows](INSTALLATION.md#windows)
+    - [Ubuntu](INSTALLATION.md#ubuntu)
+    - [Debian](INSTALLATION.md#debian)
+    - [Fedora](INSTALLATION.md#fedora)
+    - [FreeBSD](INSTALLATION.md#freebsd)
+    - [Arch Linux](INSTALLATION.md#arch-linux)
+    - [NixOS](INSTALLATION.md#nixos)
+    - [openSUSE](INSTALLATION.md#opensuse)
+    - [WSL](INSTALLATION.md#wsl)
+* [Configure](INSTALLATION.md#configure)
+    - [Appearance and themes](INSTALLATION.md#appearance-and-themes)
+    - [Custom HTML Preview CSS](INSTALLATION.md#custom-html-preview-css)
+    - [Spell check](INSTALLATION.md#spell-check)
+    - [Think vs. Sleep mode](INSTALLATION.md#think-vs--sleep-mode)
 * [Releases](RELEASES.md)
-* [Changelog](Installation.md#changelog)
-* [Nightly builds](Installation.md#nightly-builds)
+* [Changelog](INSTALLATION.md#changelog)
+* [Nightly builds](INSTALLATION.md#nightly-builds)
 
 <!-- wiki file -->
 **User documentation**:
 
-* [Basics](Getting-started.md#basics)
-    - [Workspace](Getting-started.md#workspace)
-    - [Notebook](Getting-started.md#notebook)
-    - [Note](Getting-started.md#note)
-* [Knowledge manager](User-documentation.md#knowledge-manager)
+* [Basics](GETTING_STARTED.md#basics)
+    - [Workspace](GETTING_STARTED.md#workspace)
+    - [Notebook](GETTING_STARTED.md#notebook)
+    - [Note](GETTING_STARTED.md#note)
+* [Knowledge manager](USER_DOCUMENTATION.md#knowledge-manager)
     - New Notebook
     - Open existing Notebook
     - Edit Notebook and it's description
     - Deprecate Notebook and Limbo
-* [Wingman](User-documentation.md#wingman) @ LLM
-    * [Wingman LLM provider configuration](User-documentation.md#wingman-llm-provider-configuration)
-* [Markdown editor](User-documentation.md#markdown-editor)
+* [Wingman](USER_DOCUMENTATION.md#wingman) @ LLM
+    * [Wingman LLM provider configuration](USER_DOCUMENTATION.md#wingman-llm-provider-configuration)
+* [Markdown editor](USER_DOCUMENTATION.md#markdown-editor)
     - From Markdown to MindForger
         - Markdown document
         - Document ~ Notebook
@@ -89,51 +89,51 @@
         - `Format` menu
         - Images
         - Links
-        - [Math](User-documentation.md#math)
+        - [Math](USER_DOCUMENTATION.md#math)
         - Diagrams
         - Interesting documents and examples
-    - [Live preview](User-documentation.md#live-preview)
-    - [Outlineing](User-documentation.md#outliner)
+    - [Live preview](USER_DOCUMENTATION.md#live-preview)
+    - [Outlineing](USER_DOCUMENTATION.md#outliner)
     - Spellcheck
 * Markdown IDE
     - Templates
     - Refactoring
     - Cloning
     - Link completion
-* [Search](Getting-started.md#find-note)
+* [Search](GETTING_STARTED.md#find-note)
     - Find . by .
     - Full text search (scope)
     - Recent
 * Thinking notebook
-    - [Workspace](Getting-started.md#workspace)
+    - [Workspace](GETTING_STARTED.md#workspace)
     - Metadata
         - Tags
         - Statistics (RW)
         - Deadlines
         - Progress
         - Types (thing)
-    - [Auto-linking](User-documentation.md#auto-linking)
-    - [Think as you Browse](User-documentation.md#tayb--think-as-you-browse)
-    - [Think as you Read](User-documentation.md#tayr--think-as-you-read)
-    - [Think as you Write](User-documentation.md#tayw--think-as-you-write)
+    - [Auto-linking](USER_DOCUMENTATION.md#auto-linking)
+    - [Think as you Browse](USER_DOCUMENTATION.md#tayb--think-as-you-browse)
+    - [Think as you Read](USER_DOCUMENTATION.md#tayr--think-as-you-read)
+    - [Think as you Write](USER_DOCUMENTATION.md#tayw--think-as-you-write)
     - Associations
-    - [Scopes](User-documentation.md#scopes)
+    - [Scopes](USER_DOCUMENTATION.md#scopes)
         - Time-based scopes
         - Tag-based scopes
-    - [Knowledge graph navigator](User-documentation.md#knowledge-graph-navigator)
-    - [Limbo](User-documentation.md#limbo)
+    - [Knowledge graph navigator](USER_DOCUMENTATION.md#knowledge-graph-navigator)
+    - [Limbo](USER_DOCUMENTATION.md#limbo)
 * Study tools
-    - [Kanban on Tags](User-documentation.md#kanban-on-tags)
-    - [Eisenhower matrix](User-documentation.md#eisenhower-matrix)
-* [Coaching](User-documentation.md#coaching)
-    - [GROW model](User-documentation.md#grow-model)
+    - [Kanban on Tags](USER_DOCUMENTATION.md#kanban-on-tags)
+    - [Eisenhower matrix](USER_DOCUMENTATION.md#eisenhower-matrix)
+* [Coaching](USER_DOCUMENTATION.md#coaching)
+    - [GROW model](USER_DOCUMENTATION.md#grow-model)
 * Integrations
     - Mobile phone (Git)
-* [Machine learning: NLP](User-documentation.md#machine-learning--nlp)
-    - [CSV export](User-documentation.md#csv-export)
-        - [Tags OHE](User-documentation.md#csv-export)
+* [Machine learning: NLP](USER_DOCUMENTATION.md#machine-learning--nlp)
+    - [CSV export](USER_DOCUMENTATION.md#csv-export)
+        - [Tags OHE](USER_DOCUMENTATION.md#csv-export)
 * Tooling
-    - [CLI](User-documentation.md#cli)
+    - [CLI](USER_DOCUMENTATION.md#cli)
 * Configuration
     - Appearance themes
     - Fonts
@@ -144,31 +144,31 @@
 <!-- wiki file -->
 **Developer documentation**: 
 
-* [Contribute](Developer-documentation.md#contribute)
-* [Build](Installation.md#build-from-source-code)
-    - [Build on macOS](Installation.md#build-on-macos)
-    - [Build on Windows](Installation.md#build-on-windows)
-    - [Build on Ubuntu](Installation.md#build-on-ubuntu)
-    - [Build on Debian](Installation.md#build-on-debian)
-    - [Build on Fedora](Installation.md#build-on-fedora)
-    - [Build on Gentoo](Installation.md#build-on-gentoo)
-    - [Build on NixOS](Installation.md#build-on-nixos)
-    - [Build on WSL](Installation.md#build-on-wsl)
-    - [Build and run Docker](Installation.md#docker)
+* [Contribute](DEVELOPER_DOCUMENTATION.md#contribute)
+* [Build](INSTALLATION.md#build-from-source-code)
+    - [Build on macOS](INSTALLATION.md#build-on-macos)
+    - [Build on Windows](INSTALLATION.md#build-on-windows)
+    - [Build on Ubuntu](INSTALLATION.md#build-on-ubuntu)
+    - [Build on Debian](INSTALLATION.md#build-on-debian)
+    - [Build on Fedora](INSTALLATION.md#build-on-fedora)
+    - [Build on Gentoo](INSTALLATION.md#build-on-gentoo)
+    - [Build on NixOS](INSTALLATION.md#build-on-nixos)
+    - [Build on WSL](INSTALLATION.md#build-on-wsl)
+    - [Build and run Docker](INSTALLATION.md#docker)
 * Development environment
-    - [Linux development environment](Developer-documentation.md#linux-development-environment)
-    - [Windows development environment](Developer-documentation.md#windows-development-environment)
+    - [Linux development environment](DEVELOPER_DOCUMENTATION.md#linux-development-environment)
+    - [Windows development environment](DEVELOPER_DOCUMENTATION.md#windows-development-environment)
     - macOS development environment
 * Automation
     - Makefile and build/ directory
-* [Continuous Integration (CI)](Developer-documentation.md#continuous-integration--ci)
-    - [GitHub Actions](Developer-documentation.md#github-actions)
-    - [AppVeyor](Developer-documentation.md#appveyor)
+* [Continuous Integration (CI)](DEVELOPER_DOCUMENTATION.md#continuous-integration--ci)
+    - [GitHub Actions](DEVELOPER_DOCUMENTATION.md#github-actions)
+    - [AppVeyor](DEVELOPER_DOCUMENTATION.md#appveyor)
     - nightly builds: [.dmg](https://github.com/dvorka/mindforger/actions/workflows/build_macos.yml) | [Win installer](https://ci.appveyor.com/project/dvorka/mindforger) 
 * Implementation
     - Incremental Markdown recursive descent parser
     - Magnets and rubbers: Force-directed Graph
-    - [Model View Presenter front-end pattern](Developer-documentation.md#model-view-presenter)
+    - [Model View Presenter front-end pattern](DEVELOPER_DOCUMENTATION.md#model-view-presenter)
     - NLP: stemmer, lexicon and bag of words
     - Repository layout specification
     - Outline document format specification (Markdown hosted DSL)
@@ -191,4 +191,4 @@
 
 <!-- wiki file -->
 **Frequently Asked Questions**
-* [FAQs](FAQs.md)
+* [FAQs](FAQS.md)

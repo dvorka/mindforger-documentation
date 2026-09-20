@@ -110,29 +110,29 @@ This document _briefly_ describes key MindForger features.
 
 
 # Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 56; read: 2024-02-16 16:17:01; revision: 7; modified: 2024-02-13 08:16:32; -->
-![desktop](user-documentation.basic-concepts-overview.png)
+![desktop](GETTING_STARTED.basic-concepts-overview.png)
 
 MindForger uses the following terminology:
 
-* [Workspace](Getting-started.md#workspace)
-* [Notebook](Getting-started.md#notebook)
-* [Note](Getting-started.md#note)
+* [Workspace](GETTING_STARTED.md#workspace)
+* [Notebook](GETTING_STARTED.md#notebook)
+* [Note](GETTING_STARTED.md#note)
 
 In short:
 
-* The MindForger [workspace](Getting-started.md#workspace) is analogous **the desktop** of an office desk.
-    * The MindForger [notebook](Getting-started.md#notebook) analogous to **a notepad** on the desktop.
-        * A MindForger [note](Getting-started.md#note) is analogous to **a page with the note** from a **notepad**.
+* The MindForger [workspace](GETTING_STARTED.md#workspace) is analogous **the desktop** of an office desk.
+    * The MindForger [notebook](GETTING_STARTED.md#notebook) analogous to **a notepad** on the desktop.
+        * A MindForger [note](GETTING_STARTED.md#note) is analogous to **a page with the note** from a **notepad**.
 
-For more details see [Basics](Getting-started.md#basics) section in the [Getting Started](Getting-started.md) guide.
+For more details see [Basics](GETTING_STARTED.md#basics) section in the [Getting Started](GETTING_STARTED.md) guide.
 
 
 # Knowledge manager <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 114; read: 2024-02-16 16:17:02; revision: 10; modified: 2024-02-16 15:10:37; -->
-MindForger is **knowledge management tool** which means it is a software that helps you to organize, store, and access their knowledge effectively. With MindForger, you can create and maintain a [workspace](Getting-started.md#workspace) of your thoughts, ideas, notes, and any other kind of information they want to store.
+MindForger is **knowledge management tool** which means it is a software that helps you to organize, store, and access their knowledge effectively. With MindForger, you can create and maintain a [workspace](GETTING_STARTED.md#workspace) of your thoughts, ideas, notes, and any other kind of information they want to store.
 
-MindForger provides a range of **features** to assist in knowledge management. Youa can create [hierarchical outlines](#outliner), [mind maps](#knowledge-graph-navigator), and [tags](#tags) to categorize and structure your knowledge. You can also create [links](#auto-linking) between different pieces of information ([notes](Getting-started.md#note)), allowing for easy navigation and connections between related concepts.
+MindForger provides a range of **features** to assist in knowledge management. Youa can create [hierarchical outlines](#outliner), [mind maps](#knowledge-graph-navigator), and [tags](#tags) to categorize and structure your knowledge. You can also create [links](#auto-linking) between different pieces of information ([notes](GETTING_STARTED.md#note)), allowing for easy navigation and connections between related concepts.
 
-In addition to organizing information, MindForger also includes powerful [search functionality](Getting-started.md#find-note). This allows you to quickly locate specific pieces of information within your knowledge workspace. Whether you are searching for a keyword, a specific note, or a particular tag, MindForger helps you to find what you need efficiently.
+In addition to organizing information, MindForger also includes powerful [search functionality](GETTING_STARTED.md#find-note). This allows you to quickly locate specific pieces of information within your knowledge workspace. Whether you are searching for a keyword, a specific note, or a particular tag, MindForger helps you to find what you need efficiently.
 
 Overall, MindForger assists you in **organizing**, **accessing**, and **maximizing** the value of your **knowledge**, ultimately promoting **productivity** and **innovation**.
 
@@ -290,7 +290,7 @@ Easily toggle live HTML preview of edited Markdown with shortcut or edit panel b
 ### View and Edit mode <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 56; read: 2024-02-16 16:17:15; revision: 3; modified: 2024-02-10 23:28:19; -->
 <!-- new screnshot w/ overlay comments -->
 
-![Image](user-documentation.click-to-edit.png)
+![Image](USER_DOCUMENTATION.click-to-edit.png)
 
 If you want to **edit** a section either **double-click** anywhere in the 
 rendered preview on the right (MindForger window) or choose:
@@ -317,7 +317,7 @@ Wingman tool uses OpenAI as LLM provider. Therefore the first step is to **gener
 
 1. open https://platform.openai.com/api-keys
 1. click <kbd>+ Create new secret key</kbd> to **generate** new API key
-   ![i](wingman-openai-gen-key.png)
+   ![i](USER_DOCUMENTATION.wingman-openai-gen-key.png)
 1. save the key e.g. in your password manager
 
 There are **two** options how to **configure** OpenAI API key in MindForger:
@@ -341,11 +341,11 @@ There are **two** options how to **configure** OpenAI API key in MindForger:
 1. choose `Preferences` menu item
 1. select `Wingman` tab in the configuration dialog
 1. paste API key to the edit line in the dialog:
-   ![i](wingman-config-1.png)
+   ![i](USER_DOCUMENTATION.wingman-config-1.png)
 1. click <kbd>OK</kbd> to save **unencrypted** API key to `.mindforger.md` in your home directory
 1. restart MindForger
 1. open `Preferences` dialog to check that OpenAI is selected as the LLM Provider for Wingman
-   ![i](wingman-openai-done.png)
+   ![i](USER_DOCUMENTATION.wingman-openai-done.png)
 
 
 ## Fix grammar <!-- Metadata: type: Note; created: 2024-02-13 11:34:51; reads: 57; read: 2024-02-16 16:17:14; revision: 6; modified: 2024-02-16 13:52:16; -->
@@ -410,7 +410,7 @@ of Markdown documents, MindForger shows Markdown documents (**Notebooks**)
 as an **outline** of Markdown sections (**Notes**) allowing
 you to efficiently choose/read/edit/refactor a particular section.
 
-![Image](user-documentation.outliner-rules.png)
+![Image](FAQS.outliner-rules.png)
 
 Check side-by-side Markdown document **text view**
 and **MindForger view** in the image above:
@@ -427,7 +427,7 @@ as a **tree** - called an **outline**:
   on the second level is prefixed with `##` and shown on the second 
   level in the tree.
 
-![Image](faq.title-section-edit.png)
+![Image](FAQS.title-section-edit.png)
 
 * You can **open** Markdown document **title section** (`INSTALLATION`) by
   clicking its name `INSTALLATION` above **outline**.
@@ -437,11 +437,11 @@ For switching between section (pre)view and edit mode refer to the [next section
 
 
 ### Document ~ Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 49; read: 2024-02-16 16:17:11; revision: 4; modified: 2024-02-16 15:23:08; -->
-**Markdown document** (file) is represented as [notebook](Getting-started.md#notebook) in MindForger.
+**Markdown document** (file) is represented as [notebook](GETTING_STARTED.md#notebook) in MindForger.
 
 
 ### Section ~ Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 48; read: 2024-02-16 16:17:28; revision: 2; modified: 2024-02-16 15:21:32; -->
-Markdown document **section** is represented as [note](Getting-started.md#note) in MindForger.
+Markdown document **section** is represented as [note](GETTING_STARTED.md#note) in MindForger.
 
 
 ## Markdown format <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 38; read: 2024-02-16 16:17:29; revision: 3; modified: 2024-02-16 15:24:39; -->
@@ -485,7 +485,7 @@ Image from web:
 
 Image from current MindForger repository:
 
-![MF screenshot](./mindforger.png)
+![MF screenshot](./HISTORY.mindforger.png)
 
 ---
 
@@ -504,11 +504,11 @@ Automatic web link:
 
 Link to a Notebook in active MindForger repository:
 
-* [MF history](./history.md)
+* [MF history](./HISTORY.md)
 
 Link to a Note in active MindForger repository:
 
-* [MF motivation](./why-mindforger.md#motivation)
+* [MF motivation](ABOUT.md#why-mindforger)
 
 Link to a file on the filesystem:
 
@@ -673,7 +673,7 @@ public static void main(string[] args) {
 
 💡 edit this Note to see the syntax
 ### Math <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 43; read: 2026-09-13 15:49:47; revision: 6; modified: 2026-09-13 15:49:47; -->
-![i](user-documentation.math.png)
+![i](USER_DOCUMENTATION.math.png)
 
 [MathJax](https://www.mathjax.org/) handles **inline** expressions like: x^2 + y^2 = z^2 or **block** expressions like: $$\frac{D\rho}{Dt} = 0.$$
 
@@ -704,7 +704,7 @@ expression to image and include it in Markdown.
 
 
 #### MathJax <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 45; read: 2026-09-13 15:49:24; revision: 6; modified: 2026-09-13 15:33:04; -->
-![i](user-documentation.mathjax.png)
+![i](USER_DOCUMENTATION.mathjax.png)
 
 MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference):
 
@@ -884,7 +884,7 @@ For example, you can find an [interesting Git repository](#markdown-content-and-
 on GitHub or BitBucket, clone it to your machine and open it 
 with MindForger to easily navigate it.
 ### Multiple documents <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-16 16:18:03; revision: 2; modified: 2024-02-16 15:25:53; -->
-![Image](user-documentation.multiple-documents.png)
+![Image](USER_DOCUMENTATION.multiple-documents.png)
 
 You can open **any** directory and MindForger will find
 all Markdown files within that directory and all its 
@@ -902,7 +902,7 @@ containing Markdown documents.
 
 💡 if you openeded more than one MindForger document, you can see all documents indexed by MindForger by clicking menu `View/Notebooks`
 ## Stencils <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 21; read: 2024-02-16 16:18:04; revision: 1; modified: 2022-02-26 08:27:46; -->
-![Image](user-documentation.stencils.png)
+![Image](USER_DOCUMENTATION.stencils.png)
 
 Stencil represents a common pattern that can be used in
 various situations e.g. to solve a task. It might be a how to 
@@ -936,7 +936,7 @@ etc.
 You can easily **extend** outlines just by copying Markdown file
 to `stencils/notes` or `stencils/notebooks` directory.
 ## Refactoring <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 19; read: 2024-02-16 16:18:04; revision: 1; modified: 2022-02-26 08:27:46; -->
-![Image](user-documentation.note-refactoring.png)
+![Image](USER_DOCUMENTATION.note-refactoring.png)
 
 Hierarchy of **Notes** (Markdown document sections) can be easily
 changed using operations introduced by [outliners](https://en.wikipedia.org/wiki/Outliner).
@@ -1038,9 +1038,9 @@ MindForger can be used to learn:
 * edit [multiple Markdown files](#markdown-directory) in given (sub)directories
 ### MindForger repository <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 15; read: 2024-02-16 16:18:07; revision: 1; modified: 2022-02-26 08:27:46; -->
 MindForger repository is a directory with specific 
-[structure](developer-documentation.md#repository-layout) 
+[structure](DEVELOPER_DOCUMENTATION.md#repository-layout) 
 where MindForger stores your **knowledge**. It contains Markdown 
-files ([Markdown hosted DSL](developer-documentation.md#markdown-hosted-dsl)) 
+files ([Markdown hosted DSL](DEVELOPER_DOCUMENTATION.md#markdown-hosted-dsl)) 
 allowing you to get most of MindForger capabilities.
 
 If you run MindForger without parameters, then it opens the
@@ -1085,7 +1085,7 @@ mindforger-repository/
 ### Relationships <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 17; read: 2024-02-16 16:18:26; revision: 1; modified: 2022-02-26 08:27:46; -->
 
 ## Auto-linking <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 21; read: 2024-02-16 16:18:27; revision: 5; modified: 2024-02-16 14:02:38; -->
-![Autolinking](user-documentation.autolinking.png)
+![Autolinking](USER_DOCUMENTATION.autolinking.png)
 
 Autolinking discovers relevant notes in your MindForger repository and/or Markdown document
 and automatically injects links to the text. In the screenshot above all links were injected
@@ -1109,7 +1109,7 @@ Tips and tricks:
 * Autolinking can be quickly toggled using menu.
      
 ## TaYR: Think as you Read <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 15; read: 2024-02-16 16:18:27; revision: 1; modified: 2022-02-26 08:27:46; -->
-![TAYR](user-documentation.tayr.png)
+![TAYR](USER_DOCUMENTATION.tayr.png)
 
 MindForger is able to **suggest relevant notes** as you browse and
 read:
@@ -1124,7 +1124,7 @@ note `My 3D Printer MK2S by Prusa RESEARCH`.
 
 See also: [think vs. sleep mode](#think-vs--sleep-mode)
 ## TaYW: Think as you Write <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 13; read: 2024-02-16 16:18:28; revision: 1; modified: 2022-02-26 08:27:46; -->
-![TAYW](user-documentation.tayw.png)
+![TAYW](USER_DOCUMENTATION.tayw.png)
 
 MindForger is able to **suggest relevant notes** as you write note
 content in the editor:
@@ -1138,7 +1138,7 @@ content in the editor:
 In the screenshot above you can see relevant notes (lower left corner) for the selected
 word `graph` (notice cursor between letter `g` and `r` on the current line with light-gray background).
 ## TaYB: Think as you Browse <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 15; read: 2024-02-16 16:18:28; revision: 1; modified: 2022-02-26 08:27:46; -->
-![Navigator](user-documentation.knowledge-graph-navigator.png)
+![Navigator](USER_DOCUMENTATION.knowledge-graph-navigator.png)
 
 **Knowledge graph navigator** allows you to browse notebooks, notes, tags and other resources
 in **visually**.
@@ -1239,7 +1239,7 @@ Scoping using tags can be combined (`AND`) with [scoping using time](#time-scope
 
 
 ### Named-entity recognition <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 19; read: 2024-02-16 16:18:51; revision: 1; modified: 2022-02-26 08:27:46; -->
-![Image](user-documentation.ner.png)
+![Image](USER_DOCUMENTATION.ner.png)
 
 _This feature is being implemented._
 ### Semantic search and domains <!-- Metadata: type: Note; tags: todo; created: 2022-02-26 08:27:46; reads: 17; read: 2024-02-16 16:18:56; revision: 4; modified: 2024-02-16 16:18:56; -->
@@ -1314,7 +1314,7 @@ Therefore it enables you to...
 * track **progress** in %
 * specify **deadlines** (for notes)
 ## Urgency and Importance <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-16 16:19:07; revision: 1; modified: 2022-02-26 08:27:46; -->
-![Image](user-documentation.importance-urgency-edit.png)
+![Image](USER_DOCUMENTATION.importance-urgency-edit.png)
 
 When creating (menu `Notebook/New`) or editing **notebook** (edit mode `More...` button) you
 can specify:
@@ -1322,11 +1322,11 @@ can specify:
 * **importance** property ~ how important is the notebook
 * **urgency** property ~ how important is (study/challenge/...) task related to notebook (or notebook content itself)
 
-![Image](user-documentation.importance-urgency-view.png)
+![Image](USER_DOCUMENTATION.importance-urgency-view.png)
 
 These properties are in turn shown in **notebooks view** (menu `View/Notebooks`) and [Eisenhower matrix](#eisenhower-matrix).
 ### Eisenhower matrix <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 29; read: 2024-02-16 16:19:08; revision: 1; modified: 2022-02-26 08:27:46; -->
-![Image](user-documentation.eisenhower-matrix.png)
+![Image](USER_DOCUMENTATION.eisenhower-matrix.png)
 
 
 **Wikipedia**: [Eisenhower matrix](https://en.wikipedia.org/wiki/Time_management#The_Eisenhower_Method) stems from a quote attributed to Dwight D. Eisenhower: "I have two kinds of problems, the urgent and the important. The urgent are not important, and the important are never urgent."
@@ -1346,7 +1346,7 @@ This method is said to have been used by U.S. President Dwight D. Eisenhower.
 
 
 ### Eisenhower matrix on tags <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 41; read: 2024-02-16 16:19:15; revision: 6; modified: 2024-02-16 15:35:56; -->
-![i](user-documentation.eisenhower-matrix.png)
+![i](USER_DOCUMENTATION.eisenhower-matrix.png)
 
 The **Eisenhower Matrix**, also known as the **Eisenhower Decision Matrix** or simply the **Eisenhower Box**, is a time management tool that helps prioritize tasks based on their urgency and importance. It is named after Dwight D. Eisenhower, the 34th President of the United States, who was known for his effective time management skills.
 
@@ -1372,15 +1372,15 @@ In Kanban, the work is represented as cards or sticky notes, which are placed on
 
 The key principles of Kanban include visualizing workflow, limiting work in progress, and focusing on continuous improvement. By visualizing the work, you can identify **bottlenecks** and areas for **improvement**.
 
-MindForger allows you to create **Kanban boards** and organize [notes](Getting-started.md#note) to **columns** using [tags](#tags).
+MindForger allows you to create **Kanban boards** and organize [notes](GETTING_STARTED.md#note) to **columns** using [tags](#tags).
 
 
 # Machine learning: NLP <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 21; read: 2024-02-16 16:19:16; revision: 1; modified: 2022-02-26 08:27:46; -->
 > _"Artificial intelligence will overcome natural intelligence soon. However, natural stupidity can never be replaced by the artificial one." -- Jára da Cimrman_
 ## CSV export <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 26; read: 2024-02-16 16:19:17; revision: 13; modified: 2024-02-16 15:53:09; -->
-![i](user-documentation.export-workspace-to-csv.png)
+![i](USER_DOCUMENTATION.export-workspace-to-csv.png)
 
-You can export [workspace](Getting-started.md#workspace) to comma separated file (CSV):
+You can export [workspace](GETTING_STARTED.md#workspace) to comma separated file (CSV):
 
 1. open menu `Workspace`
 1. choose `Export` menu item
@@ -1403,11 +1403,11 @@ MindForger can be used as an **auto coaching tool**.
 
 
 ## GROW model <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-16 16:19:18; revision: 5; modified: 2024-02-16 15:58:48; -->
-![Image](screenshot.grow-model.png)
+![Image](USER_DOCUMENTATION.screenshot-grow-model.png)
 
 The **GROW model** is a popular (auto) **coaching** framework that is used to structure a conversation or coaching session. GROW stands for **Goal**, **Reality**, **Options**, and **Way Forward**. The model helps individuals or teams set clear goals, explore the current reality, generate options for actions, and establish a plan to move forward. It is widely used in areas such as personal development, career coaching, and leadership coaching.
 
-Use MindForger GROW model [stencil](#stencils) to create G.R.O.W. [notebook](Getting-started.md#notebook) with **questions** allowing you to efficiently use the G.R.O.W method.
+Use MindForger GROW model [stencil](#stencils) to create G.R.O.W. [notebook](GETTING_STARTED.md#notebook) with **questions** allowing you to efficiently use the G.R.O.W method.
 
 
 ## SMARTER goals <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 20; read: 2024-02-16 16:19:18; revision: 2; modified: 2024-02-16 16:00:13; -->
@@ -1441,7 +1441,7 @@ In certain situations, it is faster to use commands to navigate around the MindF
     - <kbd>Alt-x</kbd>
     - choose `View` menu, `CLI` sub-menu
 * type `?` to get help
-* type `/` to find [notebooks](Getting-started.md#notebooks) and [notes](Getting-started.md#note)
+* type `/` to find [notebooks](GETTING_STARTED.md#notebooks) and [notes](GETTING_STARTED.md#note)
 * type `@` to search internet sites like arXiv or Wikipedia for knowledge
 * type `>` to run a command
 
@@ -1524,7 +1524,7 @@ Arguments:
                                  Markdown file(s) to open
 ```
 # Library <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 26; read: 2024-02-16 16:19:35; revision: 6; modified: 2024-02-16 15:52:41; -->
-![i](user-documentation.library-add.png)
+![i](USER_DOCUMENTATION.library-add.png)
 
 <!--- example content, how to open it, link it from MD sections at the beginning of doc - list it here, awesome-markdown-repositories/ update and copy paste here, link and encourage to suggest -->
 

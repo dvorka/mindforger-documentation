@@ -125,7 +125,7 @@ also why the first release screenshot and the web page will be based on Eddie
 character from [Venom](https://www.imdb.com/title/tt1270797/) movie
 (Tom Hardy w/ symbiont).
 
-![42nd birthday](History.42nd-birthday.jpg)
+![42nd birthday](HISTORY.42nd-birthday.jpg)
 
 It's my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy)
 birthday and I just announced the first public release - `MindForger 0.42.0` - to
@@ -134,7 +134,7 @@ the Ultimate Question of life, the Universe, and Everything.
 Sabbatical mission accomplished, but I believe that this is just
 a beginning - _Adventure is out there!_
 # RDF Spiders <!-- Metadata: type: Note; created: 2018-03-18 09:12:54; reads: 49; read: 2022-02-05 22:37:13; revision: 38; modified: 2022-02-05 22:37:13; -->
-![RDF Spiders](History.spiders.jpg)
+![RDF Spiders](HISTORY.spiders.jpg)
 
 [RDF Spiders](http://mindraider.sourceforge.net/gallery/mindraider-incubator/index.html) was
 a 90s Java-based application which visualized RDF models. RDF was a core format specification
@@ -146,7 +146,7 @@ It required good knowledge of RDF which obviously limited
 number of potential users to almost zero. This is why I decided to implement less geeky and more user friendly
 [MindRaider](#mindraider).
 # MindRaider <!-- Metadata: type: Note; created: 2018-03-18 09:12:59; reads: 24; read: 2022-02-05 22:37:35; revision: 6; modified: 2022-02-05 22:37:35; -->
-![MindRaider](History.mr.jpg)
+![MindRaider](HISTORY.mr.jpg)
 
 [MindRaider](http://mindraider.sourceforge.net/) is a 90s Java-based
 Semantic Web desktop application which is an outliner with RDF runtime.
@@ -155,7 +155,7 @@ it became morally obsolete and I didn't want to invest my time to deliver new fe
 on top of dying UI and runtime technology. Therefore I decided to start a new project.
 
 # Coaching Notebook <!-- Metadata: type: Note; created: 2018-03-18 09:13:06; reads: 15; read: 2022-02-05 22:38:04; revision: 8; modified: 2018-03-18 09:19:34; -->
-![Coaching Notebook](History.mf.png)
+![Coaching Notebook](HISTORY.mf.png)
 
 [CoachingNotebook](https://github.com/dvorka/coaching-notebook) is a successor of MindRaider.
 At the beginning it was a combination of auto-coaching tool and outliner.
@@ -164,7 +164,7 @@ technologies. After a few years I determined
 that coaching aspect of MindForger has questionable future, application is too big,
 complex and basically all coaching features can be realized using a mature outliner.
 
-![CoachingNotebook](History.coaching-notebook.png)
+![CoachingNotebook](HISTORY.coaching-notebook.png)
 
 Therefore I decided to split CoachingNotebook project to two focused applications:
 auto-coaching and outliner. I opensourced CoachingNotebook (w/o outliner)
@@ -172,7 +172,7 @@ on [GitHub](https://github.com/dvorka/coaching-notebook) under Apache license.
 
 Then I decided to return back to the roots.
 # MindForger <!-- Metadata: type: Note; created: 2018-03-18 09:14:07; reads: 17; read: 2022-02-05 22:45:32; revision: 10; modified: 2022-02-05 22:45:32; -->
-![MindForger](mindforger.png)
+![MindForger](HISTORY.mindforger.png)
 
 [MindForger](https://github.com/dvorka/mindforger) is desktop
 application built with lessons learned/fails/experience from all my past projects.
