@@ -1,6 +1,6 @@
 # Home <!-- Metadata: type: Outline; created: 2022-01-12 09:45:45; reads: 200; read: 2024-02-16 13:39:17; revision: 200; modified: 2024-02-16 13:39:17; importance: 0/5; urgency: 0/5; -->
 # MindForger Documentation <!-- Metadata: type: Note; created: 2022-01-30 08:59:13; reads: 74; read: 2024-02-16 13:39:17; revision: 74; modified: 2024-02-16 13:39:17; -->
-[![MindForger](screenshot.tayr.png)](https://www.youtube.com/playlist?list=PLkTlgXXVRbUDdvysdslnAt_mU15oNPWNS)
+[![MindForger](HOME.screenshot-tayr.png)](https://www.youtube.com/playlist?list=PLkTlgXXVRbUDdvysdslnAt_mU15oNPWNS)
 
 Are you **drowning** in **information**, but starving for knowledge?
 
@@ -8,23 +8,23 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
 
 **MindForger** is thinking notebook and [Markdown](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) editor:
 
-* [Installation](Installation.md)
-* [Getting started](Getting-started.md)
+* [Installation](INSTALLATION.md)
+* [Getting started](GETTING_STARTED.md)
 * [YouTube tutorials](https://www.youtube.com/playlist?list=PLkTlgXXVRbUDdvysdslnAt_mU15oNPWNS)
-* [User documentation](User-documentation.md)
-* [Developer documentation](Developer-documentation.md)
-* [History](History.md)
-* [FAQs](FAQs.md)
+* [User documentation](USER_DOCUMENTATION.md)
+* [Developer documentation](DEVELOPER_DOCUMENTATION.md)
+* [History](HISTORY.md)
+* [FAQs](FAQS.md)
 
 **MindForger** which aims to be human mind inspired personal knowledge management tool:
  
 * **Human mind**
     * MindForger aims to mimic human mind - 
-      [learning](User-documentation.md#learning),
-      [recalling](User-documentation.md#search),
-      [recognition](User-documentation.md#recognize-what-matters),
-      [associations](User-documentation.md#autolinking--associate-as-you-read),
-      [forgetting](User-documentation.md#forgetting) - in order to achieve
+      [learning](USER_DOCUMENTATION.md#learning),
+      [recalling](USER_DOCUMENTATION.md#search),
+      [recognition](USER_DOCUMENTATION.md#recognize-what-matters),
+      [associations](USER_DOCUMENTATION.md#autolinking--associate-as-you-read),
+      [forgetting](USER_DOCUMENTATION.md#forgetting) - in order to achieve
       synergy with your mind to make your searching, reading and writing 
       more productive.
 * **Personal**
@@ -38,14 +38,14 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
       and personal machine learning models creation.
 * **Management**	  
     * MindForger starts where editors and search engines end. It thinks as 
-      you [search](User-documentation.md#tays--think-as-you-search),
-      [browse](User-documentation.md#tayb--think-as-you-browse),
-      [read](User-documentation.md#tayr--think-as-you-read) and 
-      [write](User-documentation.md#tayw--think-as-you-write).
+      you [search](USER_DOCUMENTATION.md#tays--think-as-you-search),
+      [browse](USER_DOCUMENTATION.md#tayb--think-as-you-browse),
+      [read](USER_DOCUMENTATION.md#tayr--think-as-you-read) and 
+      [write](USER_DOCUMENTATION.md#tayw--think-as-you-write).
       Once you **find** a remark, MindForger
       brings its associations. As you **browse** notes and **read** them it looks up
       related relevant knowledge in your notebooks. If you **edit** a remark,
-      MindForger brings [associations](User-documentation.md#tayr--think-as-you-read)
+      MindForger brings [associations](USER_DOCUMENTATION.md#tayr--think-as-you-read)
       as you **write**.
       It reminds you about existing content related to the text being written.
     * MindForger is integrated with ([OpenAI](https://openai.com/)) **large language models**,
@@ -64,7 +64,7 @@ Where do you keep your **private remarks** like ideas, personal plans, exam prep
       of your knowledge, and collaborate seamlessly with others, all within a single platform.          
       MindForger has you covered.
 * **Tool**
-    * MindForger is a **desktop** application which runs on [Linux](Installation.md#ubuntu),
-      [macOS](Installation.md#macos) and [Windows](Installation.md#windows).
+    * MindForger is a **desktop** application which runs on [Linux](INSTALLATION.md#ubuntu),
+      [macOS](INSTALLATION.md#macos) and [Windows](INSTALLATION.md#windows).
 
-**MindForger** has been released on the day of my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) birthday to confirm [answer](https://www.youtube.com/watch?v=aboZctrHfK8) to the Ultimate Question of life, the Universe, and Everything, however, the project has longer [history](History.md).
+**MindForger** has been released on the day of my [42nd](https://en.wikipedia.org/wiki/42_(number)#The_Hitchhiker's_Guide_to_the_Galaxy) birthday to confirm [answer](https://www.youtube.com/watch?v=aboZctrHfK8) to the Ultimate Question of life, the Universe, and Everything, however, the project has longer [history](HISTORY.md).

@@ -1,0 +1,6 @@
+# build artifacts: generated documentation site (see build/Makefile)
+distro/
+
+# Python
+__pycache__/
+*.pyc
