@@ -73,7 +73,7 @@ MindForger **note**:
 
 Create **new** [workspace](#workspace) as follows:
 
-1. open menu `Workspace`
+1. open menu `Knowledge`
 1. choose `New` menu item
 1. choose `Workspace` sub-menu item
 1. `New Workspace` dialog is opened:
@@ -88,7 +88,7 @@ Create **new** [notebook](#notebook) as follows:
 1. open menu `Notebook`
     - 💡 if `Notebook` menu is disabled, 
       then open list of notebooks (menu `View` / `Notebooks`) or notebooks tree
-      (menu `View` / `Notebooks Tree`)
+      (menu `View` / `Notebook Shelves`)
 1. choose `New` menu item
 1. `New Notebook` dialog is opened:
    - type in notebook name 
@@ -186,7 +186,7 @@ You can **find** [notebooks](#notebook) and [notes](#note) using the following a
 For instance, to find [notes](#note) by text phrase:
 
 1. open menu `Find`
-1. choose `Full-text search` menu item
+1. choose `Full-text Search` menu item
 1. `Search` dialog is opened:
    - type in **search phrase**
 1. click <kbd>Search</kbd> to search for notes containing the phrase

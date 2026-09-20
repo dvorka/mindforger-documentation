@@ -143,7 +143,7 @@ Create **new** [notebook](#notebook) as follows:
 1. open menu `Notebook`
     - 💡 if `Notebook` menu is disabled, 
       then open list of notebooks (menu `View` / `Notebooks`) or notebooks tree
-      (menu `View` / `Notebooks Tree`)
+      (menu `View` / `Notebook Shelves`)
 1. choose `New` menu item
 1. `New Notebook` dialog is opened:
    - type in notebook name 
@@ -181,7 +181,7 @@ Once you finish editing the [note](#note) you can save it and preview using one 
 **Open** [notebook](#notebook) as follows:
 
 1. open list of notebooks (menu `View` / `Notebooks`)
-   or notebooks tree (menu `View` / `Notebooks Tree`)
+   or notebooks tree (menu `View` / `Notebook Shelves`)
 1. choose the notebook you want to open
 1. open the notebook using one of the following options:
     * hit <kbd>Enter</kbd> key
@@ -329,12 +329,12 @@ a **plan**, or simply **generate ideas**, Wingman can also:
 
 **Wingman in MindForger**:
 
-* menu `Mind/Wingman LLM` (<kbd>Ctrl-/</kbd> on Linux and Windows) opens the Wingman chat
+* menu `Knowledge/Wingman LLM` (<kbd>Ctrl-/</kbd> on Linux and Windows) opens the Wingman chat
   window where you run predefined or your own prompts, e.g. on the text selected in the
   Note editor
-* submenus `Wingman LLM` of the `Notebook` and `Note` menus run the most common prompts
-  directly - `Summarize`, `Explain`, `Find Tasks`, `Find Grammar Errors`,
-  `Translate to English` - and `More prompts...` offers the rest
+* submenus `Wingman LLM` of the `Notebook`, `Note` and `Edit` menus run the most common prompts
+  directly - `Summarize`, `Explain`, `Find Tasks`, `Find Grammar Errors`, `Translate to English`,
+  `Fix Grammar`, `Finish Text` or `Rewrite Text` - and `More prompts...` offers the rest
 * Wingman also powers the semantic search of similar Notes (associations) using text embeddings
 
 **SOTA models**: MindForger can talk to remote state-of-the-art (SOTA) large language
@@ -359,7 +359,7 @@ Wingman uses a local LLM (for privacy) or remote LLM (for SOTA performance) prov
 **Local** (or remote) LLM configuration:
 
 1. **add** LLM provider to MindForger:
-    1. open menu `Workspace`
+    1. open menu `Knowledge`
     1. choose `Preferences` menu item
     1. select `Wingman` tab in the configuration dialog
     1. click <kbd>Add LLM</kbd> and choose `ollama`
@@ -524,7 +524,7 @@ Image from current MindForger repository:
 ---
 
 💡 edit this Note to see the syntax <br/>
-💡 click menu `Format/Image` or press <kbd>Alt+f m</kbd> to insert image.
+💡 click menu `Format/Image` or press <kbd>Alt+f g</kbd> to insert image.
 ### Links <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-16 16:17:32; revision: 1; modified: 2022-02-26 08:27:46; -->
 See Markdown source of this Note to learn **link** syntax.
 
@@ -734,7 +734,7 @@ expression to image and include it in Markdown.
 ---
 
 💡 edit this Note to see the syntax <br/>
-💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu menu `Workspace/Preferences/Viewer/Math support`
+💡 if math expressions are **not** rendered, then you must **enable** MathJax using menu menu `Knowledge/Preferences/Viewer/Math support`
 
 
 #### MathJax <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 45; read: 2026-09-13 15:49:24; revision: 6; modified: 2026-09-13 15:33:04; -->
@@ -829,7 +829,7 @@ gantt
 ---
 
 💡 edit this Note to see the syntax <br/>
-💡 if diagram expressions are **not** rendered, then you must **enable** them using menu `Workspace/Preferences/Viewer/Diagram support`.
+💡 if diagram expressions are **not** rendered, then you must **enable** them using menu `Knowledge/Preferences/Viewer/Diagram support`.
 ### Comments <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 27; read: 2024-02-16 16:17:40; revision: 1; modified: 2022-02-26 08:27:46; -->
 If you want **line** or **multi-line** comment that 
 is strictly for yourself (readers of the converted 
@@ -990,7 +990,7 @@ Note (Markdown section) can be refactoring (along with its child notes)
 between different Notebooks (Markdown documents):
 
 * choose **source** note to be refactored in the outliner tree of notes
-* use menu `Note/Refactor` to specify **target** notebook
+* use menu `Note/Move to Notebook` to specify **target** notebook
 
 Note and its child notes will be moved to the target notebook.
 ## Home notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 19; read: 2024-02-16 16:18:05; revision: 1; modified: 2022-02-26 08:27:46; -->
@@ -999,7 +999,7 @@ You can mark any notebook as **home** and it will be opened:
 * on MindForger start
 * using <kbd>Ctrl</kbd><kbd>Shift</kbd><kbd>h</kbd> keyboard shortcut
 
-Home notebook can be **set**/unset using menu `Navigator/Make Home`.
+Home notebook can be **set**/unset using menu `Notebook/Make Home`.
 # Search <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 17; read: 2024-02-16 16:18:05; revision: 1; modified: 2022-02-26 08:27:46; -->
 Ability to find a specific Notebook or Note is one of the 
 most important MindForger features. Notebooks and Notes
@@ -1011,9 +1011,9 @@ can be found by:
 
 ---
 
-💡 see menu `Recall` for search options
+💡 see menu `Find` for search options
 ## Fulltext <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 17; read: 2024-02-16 16:18:06; revision: 1; modified: 2022-02-26 08:27:46; -->
-Use menu `Recall/Full-text Search` to search for **notes**
+Use menu `Find/Full-text Search` to search for **notes**
 using full-text search. Result shows notes Markdown source
 with **highlighted** matches.
 
@@ -1026,7 +1026,7 @@ Search **scope**:
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
 ## Name <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 17; read: 2024-02-16 16:18:06; revision: 1; modified: 2022-02-26 08:27:46; -->
-Use menu `Recall/Recall Notebook by Name` / `Recall/Recall Note by Name`
+Use menu `Find/Find Notebook by Name` / `Find/Find Note by Name`
 to search for **notebooks** / **notes** by name. Result shows as you
 write the name in the dialog.
 
@@ -1039,7 +1039,7 @@ Search **scope**:
   (notes outline on the left, note view/editor on the right),
   then **only** notes of that particular notebook are searched.
 ## Tag <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 18; read: 2024-02-16 16:18:06; revision: 1; modified: 2022-02-26 08:27:46; -->
-Use menu `Recall/Recall Notebook by Tag` / `Recall/Recall Note by Tag`
+Use menu `Find/Find Notebook by Tags` / `Find/Find Note by Tags`
 to search for **notebooks** / **notes** by tag(s). Result shows as you
 add/remove tags in the dialog.
 
@@ -1140,7 +1140,7 @@ Tips and tricks:
   in note names.
     * Example: if "Stencils" is note name, then text is searched **also** for "stencils"
       as it brings more matcheds.
-* Autolinking can be quickly toggled using menu.
+* Autolinking can be quickly toggled using menu `Knowledge/Autolink`.
      
 ## TaYR: Think as you Read <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 15; read: 2024-02-16 16:18:27; revision: 1; modified: 2022-02-26 08:27:46; -->
 ![TAYR](USER_DOCUMENTATION.tayr.png)
@@ -1200,7 +1200,7 @@ MindForger works with two types of scopes:
 
 
 ### Time Scope <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 23; read: 2024-02-16 16:18:38; revision: 1; modified: 2022-02-26 08:27:46; -->
-Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **time** scope.
+Use menu `Knowledge/Scope` or <kbd>Alt+k c</kbd> to configure **time** scope.
 
 ---
 
@@ -1259,7 +1259,7 @@ In particular you can set **note** specific time scope that overrides global tim
 
 * ... behaviour is the same as above except that this setting has no effect on notebooks listing ...
 ### Tag Scope <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 15; read: 2024-02-16 16:18:39; revision: 1; modified: 2022-02-26 08:27:46; -->
-Use menu `Mind/Scope` or <kbd>Alt+m c</kbd> to configure **tag(s)** scope.
+Use menu `Knowledge/Scope` or <kbd>Alt+k c</kbd> to configure **tag(s)** scope.
 
 ---
 
@@ -1330,7 +1330,7 @@ can be found in `${ACTIVE_MF_REPOSITORY}/limbo`. This is where you can delete Ma
 documents permanently.
 
 MindForger, in its current implementation, **does** delete notes. They are not moved to a note Limbo.
-If you use menu `Note/Forget`, then the note is deleted. 
+If you use menu `Note/Delete`, then the note is deleted. 
 
 Side note: I personally use CMS (Git) - I have full history of notebooks and notes. Tracking of
 all notes would be useful, however HW resource consumption intensive. This is also
@@ -1416,7 +1416,7 @@ MindForger allows you to create **Kanban boards** and organize [notes](GETTING_S
 
 You can export [workspace](GETTING_STARTED.md#workspace) to comma separated file (CSV):
 
-1. open menu `Workspace`
+1. open menu `Knowledge`
 1. choose `Export` menu item
 1. choose `CSV` sub-menu item
 1. `Export Workspace to CSV` dialog is opened:
@@ -1497,9 +1497,9 @@ See [MathJax cheat sheet](#mathjax).
 
 Prefer menu based keyboard shortcuts which are self-documented e.g.
 
-* <kbd>Alt+o n</kbd>
+* <kbd>Alt+b n</kbd>
     * create new notebook
-* <kbd>Alt+o e</kbd>
+* <kbd>Alt+b e</kbd>
     * edit currently viewed notebook
 * <kbd>Alt+n n</kbd>
     * create new note
@@ -1517,10 +1517,12 @@ Editor:
 
 Views:
 
-* <kbd>Ctrl+Shift+o</kbd>
-    * ... recall n**o**tebook.
+* <kbd>Ctrl+Shift+b</kbd>
+    * ... find note**b**ook by name.
 * <kbd>Ctrl+Shift+n</kbd> 
-    * ... recall **n**ote.
+    * ... find **n**ote by name.
+* <kbd>Ctrl+Shift+o</kbd>
+    * ... show list of n**o**tebooks.
 ## Linux keyboard shortcuts <!-- Metadata: type: Note; tags: todo; created: 2022-03-10 08:49:39; reads: 34; read: 2024-02-16 16:19:27; revision: 5; modified: 2024-02-16 16:19:27; -->
 ...
 

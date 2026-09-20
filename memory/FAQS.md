@@ -21,7 +21,7 @@ Simply click notebook **name** above the note tree outline.
 # How can I stop Note HTML preview "bouncing" while editing its text? <!-- Metadata: type: Note; created: 2022-02-26 08:29:03; reads: 34; read: 2022-08-27 07:55:33; revision: 2; modified: 2022-02-26 08:30:12; -->
 This is unfortunately know issue - you can get rid of it by disabling math expressions preview:
 
-* go to menu `File`, `Preferences`
+* go to menu `Knowledge`, `Preferences`
 * click `Viewer` tab
 * disable (uncheck) `math support`
 # How can I open Markdown file in MindForger? <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 35; read: 2022-08-27 07:55:33; revision: 1; modified: 2022-02-26 08:27:46; -->

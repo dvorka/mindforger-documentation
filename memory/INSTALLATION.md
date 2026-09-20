@@ -787,7 +787,7 @@ Nightly builds:
 # Configure <!-- Metadata: type: Note; created: 2022-01-30 18:02:50; reads: 72; read: 2024-02-19 08:07:02; revision: 5; modified: 2024-02-19 08:07:02; -->
 MindForger can be configured either from UI:
 
-* menu `Workspace/Preferences` or `Mind/Adapt`
+* menu `Knowledge/Preferences`
 
 ... or using configuration file (while MindForger is **NOT** running):
 
@@ -863,13 +863,13 @@ C:\Users\<profile>\AppData\Local\dictionaries
 ## Think vs. Sleep mode <!-- Metadata: type: Note; created: 2022-01-30 18:02:50; reads: 49; read: 2024-02-19 08:06:31; revision: 6; modified: 2022-02-05 16:42:16; -->
 MindForger can be either in **thinking** or **sleeping** mode:
 
-* **Thinking** mode can be activated from menu `Mind/Think` and it's also
+* **Thinking** mode can be activated by checking menu item `Knowledge/Think` and it's also
   indicated by the `Thinking` indicator in main window status bar.
     * MindForger runs background mind-related computations/tasks that can be **CPU intensive**
     * MindForger suggests relevant notes as you browse/read/write
     * MindForger named-entity recognition model is loaded and enabled
     * ...
-* **Sleeping** mode can be activated from menu `Mind/Sleep` and it's also
+* **Sleeping** mode can be activated by unchecking menu item `Knowledge/Think` and it's also
   indicated by the `Sleeping` indicator in main window status bar.
     * MindForger runs **no** background mind-related computations/tasks i.e. it 
       does **not** consume any extra CPU power and does **not** show any async information
