@@ -65,5 +65,7 @@ Format:
 ### Changelog
 * [url](https://github.com/dvorka/mindforger/blob/master/Changelog)
 
+### ---
+
 ### RSS
 * [url](rss.xml)
