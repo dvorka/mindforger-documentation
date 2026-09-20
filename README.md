@@ -1,5 +1,5 @@
 # MindForger Documentation Repository
-This **private** repository is where MindForger documentation is written. 
+This repository is where MindForger documentation is written. 
 
 * [Sidebar](./memory/_Sidebar.md)
 * [Home](./memory/HOME.md)
@@ -44,7 +44,10 @@ uploaded to the web hosting.
 are broken in `memory/` and should be fixed there.
 
 
-The content of this repository is processed as follows:
+## MindForger GitHub Wiki
+In the past was this repository used to generate topics for MindForger
+[GitHub Wiki](https://github.com/dvorka/mindforger/wiki). The content
+of this repository can be processed as follows:
 
 * `git:mindforger.wiki` is generated from 
   `git:mindforger-documentation/memory`
@@ -67,3 +70,5 @@ The content of this repository is processed as follows:
 * `www.mindforger.com/index.html#Documentation`
 
 ^ must be updated whenever this repository is changed.
+
+
