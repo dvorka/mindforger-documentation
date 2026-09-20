@@ -11,6 +11,9 @@ SOURCE := $(ROOT)/memory
 DISTRO := $(ROOT)/distro
 OUT := $(DISTRO)/www.mindforger.com/docs
 
+# checkout of the www.mindforger.com website - the docs are copied to its docs/ directory
+WWW ?= /home/dvorka/p/mindforger/webs/git/www.mindforger.com/www
+
 PYTHON ?= python3
 PORT ?= 8080
 
@@ -61,6 +64,13 @@ doc-live: doc ## serve documentation locally for preview
 .PHONY: doc-assets
 doc-assets: ## download vendored web assets (Tabler, KaTeX, Lato) to build/assets
 	$(PYTHON) $(BUILD)/make/download_assets.py --assets-dir $(BUILD)/assets
+
+.PHONY: doc-to-www
+doc-to-www: doc-clean doc ## rebuild documentation from scratch and copy it to the www.mindforger.com checkout
+	@test -d "$(WWW)" || { echo "Error: website directory not found: $(WWW) - set WWW=/path/to/www"; exit 1; }
+	mkdir -p "$(WWW)/docs"
+	rsync -a --delete "$(OUT)/" "$(WWW)/docs/"
+	@echo "DONE documentation copied to $(WWW)/docs - review and commit it in the website repository"
 
 .PHONY: doc-upload-info
 doc-upload-info: ## show what to upload to www.mindforger.com/docs
