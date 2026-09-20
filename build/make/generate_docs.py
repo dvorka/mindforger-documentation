@@ -581,7 +581,7 @@ def generate_navbar_html(
               <a href="index.html" class="mf-brand">
                 <img src="assets/mind-forger.png" alt="MindForger" class="mf-brand-logo">
                 <span class="mf-brand-text">MindForger</span>
-              </a>
+              </a><span style="font-weight: normal;">Docs</span>
             </div>
             <!-- END NAVBAR LOGO -->
             <div class="navbar-nav flex-row order-md-last">

@@ -7,7 +7,7 @@ News and articles about MindForger - one post per [release](RELEASES.md), newest
 
 ![You & MindForger comic](BLOG.comics-you-and-mindforger.png)
 
-Knowledge hits you from everywhere - papers, lectures, podcasts, chats - and most of it is gone by Friday, unless you give it a home. To explain what MindForger is about without a wall of text, I turned the idea into a comic: meet **You & MindForger** - it follows one confused knowledge worker from the chaos of browser tabs and sticky notes, through typed Notes, outlines, notebooks and shelves, Kanban and the Eisenhower matrix, private AI and finding what he wrote weeks ago, all the way to a thinking notebook that is private, free and his. [Read the comic](https://www.mindforger.com/docs/assets/comics/index.html) you can use the buttons or arrow keys to turn the pages. Enjoy!
+Knowledge hits you from everywhere - papers, lectures, podcasts, chats - and most of it is gone by Friday, unless you give it a home. To explain what MindForger is about without a wall of text, I turned the idea into a comic: meet **You & MindForger** - it follows one confused knowledge worker from the chaos of browser tabs and sticky notes, through typed Notes, outlines, notebooks and shelves, Kanban and the Eisenhower matrix, private AI and finding what he wrote weeks ago, all the way to a thinking notebook that is private, free and his. [Read the comic](https://www.mindforger.com/docs/assets/comics/index.html)!
 
 ## Nerdview for the MindForger documentation  <!-- Metadata: type: Note; created: 2026-09-20 07:20:01; reads: 19; read: 2026-09-20 07:33:23; revision: 19; modified: 2026-09-20 07:33:23; -->
 
