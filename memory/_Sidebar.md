@@ -57,7 +57,7 @@
     - [Custom HTML Preview CSS](Installation.md#custom-html-preview-css)
     - [Spell check](Installation.md#spell-check)
     - [Think vs. Sleep mode](Installation.md#think-vs--sleep-mode)
-* [Releases](Installation.md#releases)
+* [Releases](RELEASES.md)
 * [Changelog](Installation.md#changelog)
 * [Nightly builds](Installation.md#nightly-builds)
 
@@ -139,7 +139,7 @@
     - Fonts
     - Spellcheck
     - AA poller
-* [Credits](User-documentation.md#credits)
+* [Credits](CREDITS.md)
 
 <!-- wiki file -->
 **Developer documentation**: 

@@ -37,8 +37,8 @@ Package for a new distribution or OS:
 
 Look up:
 
-* [release](#releases)
-* [change](#changelog)
+* [release](RELEASES.md)
+* [change](RELEASES.md#changelog)
 # Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 85; read: 2023-11-19 17:07:13; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
@@ -869,22 +869,3 @@ MindForger can be either in **thinking** or **sleeping** mode:
 Switch thinking/sleeping mode based on whether you **need** mind features for the particular
 repository or not - consider performance/CPU consumption vs features trade-off.
 ### AA poler preferences <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 34; read: 2024-02-19 08:06:30; revision: 6; modified: 2024-02-19 08:06:30; -->
-
-# Releases <!-- Metadata: type: Note; created: 2022-01-27 08:46:17; reads: 64; read: 2024-02-19 08:05:02; revision: 22; modified: 2024-02-19 08:00:23; -->
-MindForger [releases](https://github.com/dvorka/mindforger/releases):
-
-* [2.0.0](https://github.com/dvorka/mindforger/releases/tag/2.0.0): LLM (OpenAI), Notebooks tree, Libraries, Web search
-* [1.54.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Smart(er) Markdown editor
-* [1.53.0](https://github.com/dvorka/mindforger/releases/tag/1.53.0): Spell check
-* [1.52.0](https://github.com/dvorka/mindforger/releases/tag/1.52.0): Autolinking
-* [1.51.0](https://github.com/dvorka/mindforger/releases/tag/1.51.0): Live preview
-* [1.50.0](https://github.com/dvorka/mindforger/releases/tag/1.50.0): Dashboard, link completion, image Drag&Drop, full-text search (FTS)
-* [1.49.0](https://github.com/dvorka/mindforger/releases/tag/1.49.0): Microsoft Windows and GitHub flavored Markdown
-* [1.48.0](https://github.com/dvorka/mindforger/releases/tag/1.48.0): CSV export and MathJax menu
-* [1.47.0](https://github.com/dvorka/mindforger/releases/tag/1.47.0): Knowledge graph navigator
-* [1.46.0](https://github.com/dvorka/mindforger/releases/tag/1.46.0): Standard terminology and toolbar
-* [1.43.0](https://github.com/dvorka/mindforger/releases/tag/1.43.0): Eisenhower matrix, tags view and recent notes
-* [1.42.0](https://github.com/dvorka/mindforger/releases/tag/1.42.0): Initial release
-## Changelog <!-- Metadata: type: Note; created: 2022-01-30 17:18:30; reads: 27; read: 2024-02-19 08:05:00; revision: 6; modified: 2022-01-30 17:19:08; -->
-See per-release [changelog](https://raw.githubusercontent.com/dvorka/mindforger/master/Changelog) for more details.
-

@@ -8,6 +8,7 @@ Format:
 * `## Section` ... top level menu (navbar dropdown)
 * `### Item` ... menu item, `### ---` is a menu separator
 * `* [source](Notebook.md)` ... Markdown source of the item in `memory/`
+* `* [url](https://...)` ... external link (opens in a new tab) instead of a page
 * `* [output](notebook.html)` ... optional output file name override
 * `* [title](Page Title)` ... optional page title override
 
@@ -20,6 +21,9 @@ Format:
 
 ### Project History
 * [source](History.md)
+
+### Credits
+* [source](CREDITS.md)
 
 ### ---
 
@@ -46,3 +50,14 @@ Format:
 
 ### Developer Guide
 * [source](Developer-documentation.md)
+
+## News
+
+### Blog
+* [source](BLOG.md)
+
+### Releases
+* [source](RELEASES.md)
+
+### Changelog
+* [url](https://github.com/dvorka/mindforger/blob/master/Changelog)

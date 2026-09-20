@@ -17,6 +17,7 @@ import re
 import shutil
 import sys
 from dataclasses import dataclass, field
+from html import escape
 from pathlib import Path
 from typing import Optional
 
@@ -45,6 +46,7 @@ IMAGE_SUFFIXES = {".png", ".jpg", ".jpeg", ".gif", ".svg", ".webp", ".ico"}
 ICON_HOME = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M5 12l-2 0l9 -9l9 9l-2 0" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>'
 ICON_BOOK = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M3 19a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6a9 9 0 0 1 9 0a9 9 0 0 1 9 0" /><path d="M3 6l0 13" /><path d="M12 6l0 13" /><path d="M21 6l0 13" /></svg>'
 ICON_CODE = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M7 8l-4 4l4 4" /><path d="M17 8l4 4l-4 4" /><path d="M14 4l-4 16" /></svg>'
+ICON_NEWS = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M14 3v4a1 1 0 0 0 1 1h4" /><path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2" /><path d="M12 17a3 3 0 0 0 -3 -3" /><path d="M15 17a6 6 0 0 0 -6 -6" /><path d="M9 17h.01" /></svg>'
 ICON_WORLD = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" /><path d="M3.6 9h16.8" /><path d="M3.6 15h16.8" /><path d="M11.5 3a17 17 0 0 0 0 18" /><path d="M12.5 3a17 17 0 0 1 0 18" /></svg>'
 ICON_MOON = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>'
 ICON_SUN = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="icon icon-1"><path d="M12 12m-4 0a4 4 0 1 0 8 0a4 4 0 1 0 -8 0" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>'
@@ -56,6 +58,7 @@ class NavItem:
     title: str
     source: Optional[str] = None
     output: Optional[str] = None
+    url: Optional[str] = None
     page_title: Optional[str] = None
     is_separator: bool = False
 
@@ -77,6 +80,7 @@ def parse_sitemap(sitemap_path: Path) -> list[NavSection]:
     - ### --- (menu separator)
     - * [source](Notebook.md) (Markdown source of the item)
     - * [output](notebook.html) (optional output file name override)
+    - * [url](https://...) (external link instead of a generated page)
     - * [title](Page Title) (optional page title override)
 
     Args:
@@ -112,7 +116,7 @@ def parse_sitemap(sitemap_path: Path) -> list[NavSection]:
             continue
 
         # * [source|output|title](value)
-        match = re.match(r"^\*\s*\[(source|output|title)\]\(([^)]+)\)", line)
+        match = re.match(r"^\*\s*\[(source|output|url|title)\]\(([^)]+)\)", line)
         if match and current_section and current_section.items:
             key, value = match.group(1), match.group(2).strip()
             item = current_section.items[-1]
@@ -120,6 +124,8 @@ def parse_sitemap(sitemap_path: Path) -> list[NavSection]:
                 item.source = value
             elif key == "output":
                 item.output = value
+            elif key == "url":
+                item.url = value
             else:
                 item.page_title = value
 
@@ -436,6 +442,46 @@ def extract_description(md_content: str, title: str, max_length: int = 150) -> s
     return f"{title} - MindForger, {SITE_TAGLINE}"
 
 
+MATH_PATTERN = re.compile(r"\$\$.+?\$\$|\$(?=[^\s$])[^$\n]*?[^\s$\\]\$|\$[^\s$]\$", re.DOTALL)
+CODE_PATTERN = re.compile(r"(^```.*?^```|~~~.*?~~~|`[^`\n]+`)", re.DOTALL | re.MULTILINE)
+
+
+def protect_math(md_content: str) -> tuple[str, list[str]]:
+    """
+    Replace $...$ and $$...$$ math expressions with placeholders.
+
+    Markdown would otherwise mangle the math (e.g. `_` and `\\{`) before KaTeX
+    gets a chance to render it in the browser. Code blocks and code spans are
+    left untouched.
+
+    Args:
+        md_content: Markdown content
+
+    Returns:
+        Tuple of (Markdown with placeholders, math expressions)
+    """
+    expressions: list[str] = []
+
+    def stash(match: re.Match) -> str:
+        expressions.append(match.group(0))
+        return f"MFMATHPLACEHOLDER{len(expressions) - 1}X"
+
+    parts = CODE_PATTERN.split(md_content)
+    # split() with a group: odd items are code, even items are text
+    for i in range(0, len(parts), 2):
+        parts[i] = MATH_PATTERN.sub(stash, parts[i])
+    return "".join(parts), expressions
+
+
+def restore_math(html_content: str, expressions: list[str]) -> str:
+    """Put the math expressions back into the HTML (escaped for HTML text)."""
+    return re.sub(
+        r"MFMATHPLACEHOLDER(\d+)X",
+        lambda match: escape(expressions[int(match.group(1))], quote=False),
+        html_content,
+    )
+
+
 def markdown_to_html(md_content: str) -> str:
     """
     Convert Markdown to HTML.
@@ -473,6 +519,11 @@ def generate_navbar_html(
         for item in section.items:
             if item.is_separator:
                 items_html.append('<div class="dropdown-divider"></div>')
+            elif item.url:
+                items_html.append(
+                    f'<a class="dropdown-item" href="{item.url}" target="_blank" '
+                    f'rel="noopener">{item.title}</a>'
+                )
             elif item.source:
                 href = page_map[item.source]
                 active = " active" if href == active_page else ""
@@ -485,6 +536,8 @@ def generate_navbar_html(
             icon = ICON_CODE
         elif "home" in title:
             icon = ICON_HOME
+        elif "news" in title:
+            icon = ICON_NEWS
         else:
             icon = ICON_BOOK
 
@@ -556,7 +609,7 @@ def generate_navbar_html(
                       <li class="nav-item">
                         <a class="nav-link" href="{PROJECT_URL}" target="_blank">
                           <span class="nav-link-icon d-md-none d-lg-inline-block">{ICON_WORLD}</span>
-                          <span class="nav-link-title">www.mindforger.com</span>
+                          <span class="nav-link-title">mindforger.com</span>
                         </a>
                       </li>
                     </ul>
@@ -618,6 +671,23 @@ def generate_footer_html(md_filename: str) -> str:
         </footer>'''
 
 
+# KaTeX is loaded only by the pages which contain math ($...$ and $$...$$ - the
+# same delimiters as in the MindForger app)
+KATEX_STYLES = '<link href="assets/katex/katex.min.css" rel="stylesheet" />'
+KATEX_SCRIPTS = """<script src="assets/katex/katex.min.js" defer></script>
+    <script src="assets/katex/auto-render.min.js" defer></script>
+    <script defer>
+      document.addEventListener("DOMContentLoaded", function () {
+        renderMathInElement(document.body, {
+          delimiters: [
+            {left: "$$", right: "$$", display: true},
+            {left: "$", right: "$", display: false}
+          ]
+        });
+      });
+    </script>"""
+
+
 def get_html_template() -> str:
     """
     Get the base HTML template for documentation pages.
@@ -657,6 +727,7 @@ def get_html_template() -> str:
     <link href="assets/tabler/css/tabler-themes.min.css" rel="stylesheet" />
     <link href="assets/pygments.css" rel="stylesheet" />
     <link href="assets/mindforger-docs.css" rel="stylesheet" />
+    {{KATEX_STYLES}}
     <!-- END STYLES -->
 
     <!-- BEGIN THEME SCRIPT: light/dark theme, must run before the page renders -->
@@ -705,6 +776,7 @@ def get_html_template() -> str:
       </div>
     </div>
     <script src="assets/tabler/js/tabler.min.js" defer></script>
+    {{KATEX_SCRIPTS}}
   </body>
 </html>
 '''
@@ -747,11 +819,15 @@ def generate_page(
     md_content = demote_headings(md_content)
     md_content = rewrite_links(md_content, page_map, item.source)
 
+    md_content, math = protect_math(md_content)
     html_content = markdown_to_html(md_content)
+    html_content = restore_math(html_content, math)
     html_content, headings = add_heading_ids(html_content)
     html_content = style_content(html_content)
 
     html = get_html_template()
+    html = html.replace("{{KATEX_STYLES}}", KATEX_STYLES if math else "")
+    html = html.replace("{{KATEX_SCRIPTS}}", KATEX_SCRIPTS if math else "")
     html = html.replace("{{NAVBAR}}", generate_navbar_html(sections, page_map, html_name))
     html = html.replace("{{TOC}}", generate_toc_html(headings))
     html = html.replace("{{FOOTER}}", generate_footer_html(item.source))

@@ -51,7 +51,7 @@ doc-live: doc ## serve documentation locally for preview
 	$(PYTHON) -m http.server $(PORT) --directory $(OUT)
 
 .PHONY: doc-assets
-doc-assets: ## download vendored web assets (Tabler, Lato) to build/assets
+doc-assets: ## download vendored web assets (Tabler, KaTeX, Lato) to build/assets
 	$(PYTHON) $(BUILD)/make/download_assets.py --assets-dir $(BUILD)/assets
 
 .PHONY: doc-upload-info

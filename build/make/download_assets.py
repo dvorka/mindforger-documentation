@@ -2,7 +2,7 @@
 """
 Download 3rd party web assets vendored by the MindForger documentation build.
 
-Fetches the Tabler CSS framework (npm tarball) and the Lato web font (Google
+Fetches the Tabler CSS framework and the KaTeX math renderer (npm tarballs) and the Lato web font (Google
 Fonts) into build/assets/ so that the generated site at docs.mindforger.com is
 self-contained - no CDN is needed at build time nor by the site visitors.
 
@@ -35,6 +35,18 @@ TABLER_FILES = [
     "dist/js/tabler.min.js",
     "dist/js/tabler-theme.min.js",
 ]
+
+# KaTeX renders the math in the pages; the version matches the MindForger app
+KATEX_VERSION = "0.18.7"
+KATEX_TARBALL = "https://registry.npmjs.org/katex/-/katex-{version}.tgz"
+KATEX_FILES = [
+    "dist/katex.min.css",
+    "dist/katex.min.js",
+    "dist/contrib/auto-render.min.js",
+]
+# the stylesheet references fonts/*.woff2 relative to itself; woff2 is supported
+# by every current browser so the ttf/woff fallbacks are not vendored
+KATEX_FONTS_PREFIX = "package/dist/fonts/"
 
 # Lato: the font of www.mindforger.com
 GOOGLE_FONTS_CSS = "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
@@ -85,6 +97,48 @@ def download_tabler(version: str, assets_dir: Path) -> str:
             target.parent.mkdir(parents=True, exist_ok=True)
             target.write_bytes(source.read())
             print(f"  {target.relative_to(assets_dir)} ({target.stat().st_size:,} B)")
+
+    return version
+
+
+def download_katex(version: str, assets_dir: Path) -> str:
+    """
+    Download the KaTeX npm tarball and extract the vendored files.
+
+    Args:
+        version: KaTeX version to download
+        assets_dir: build/assets directory
+
+    Returns:
+        Version string of the KaTeX release written to disk
+    """
+    print(f"KaTeX {version}:")
+    tarball = fetch(KATEX_TARBALL.format(version=version))
+
+    katex_dir = assets_dir / "katex"
+    if katex_dir.exists():
+        shutil.rmtree(katex_dir)
+
+    with tarfile.open(fileobj=io.BytesIO(tarball), mode="r:gz") as tar:
+        wanted = {f"package/{name}": name for name in KATEX_FILES}
+        for member in tar.getmembers():
+            if member.name in wanted:
+                # dist/katex.min.css -> build/assets/katex/katex.min.css
+                # dist/contrib/auto-render.min.js -> build/assets/katex/auto-render.min.js
+                target = katex_dir / Path(wanted[member.name]).name
+            elif member.name.startswith(KATEX_FONTS_PREFIX) and member.name.endswith(".woff2"):
+                target = katex_dir / "fonts" / Path(member.name).name
+            else:
+                continue
+            source = tar.extractfile(member)
+            if source is None:
+                raise RuntimeError(f"Not a file in the KaTeX tarball: {member.name}")
+            target.parent.mkdir(parents=True, exist_ok=True)
+            target.write_bytes(source.read())
+            print(f"  {target.relative_to(assets_dir)} ({target.stat().st_size:,} B)")
+
+    if not (katex_dir / "katex.min.js").exists() or not (katex_dir / "auto-render.min.js").exists():
+        raise RuntimeError("KaTeX files not found in the tarball")
 
     return version
 
@@ -151,6 +205,7 @@ def main() -> int:
 
     try:
         tabler = download_tabler(args.tabler_version, assets_dir)
+        katex = download_katex(KATEX_VERSION, assets_dir)
         lato = download_lato(assets_dir)
     except Exception as exception:  # network, tarball layout, Google Fonts change
         print(f"Error: failed to download assets: {exception}", file=sys.stderr)
@@ -162,6 +217,7 @@ def main() -> int:
         f"Updated: {date.today().isoformat()}\n"
         "\n"
         f"Tabler: {tabler} (MIT) - https://tabler.io\n"
+        f"KaTeX:  {katex} (MIT) - https://katex.org\n"
         f"Lato:   {lato} (OFL) - https://fonts.google.com/specimen/Lato\n",
         encoding="utf-8",
     )

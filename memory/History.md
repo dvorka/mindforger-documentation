@@ -153,10 +153,11 @@ Semantic Web desktop application which is an outliner with RDF runtime.
 MindRaider was decently successful project with 100.000+ downloads. However
 it became morally obsolete and I didn't want to invest my time to deliver new features
 on top of dying UI and runtime technology. Therefore I decided to start a new project.
+
 # Coaching Notebook <!-- Metadata: type: Note; created: 2018-03-18 09:13:06; reads: 15; read: 2022-02-05 22:38:04; revision: 8; modified: 2018-03-18 09:19:34; -->
 ![Coaching Notebook](History.mf.png)
 
-[CoachingNotebook](http://web.mindforger.com/) is a successor of MindRaider.
+[CoachingNotebook](https://github.com/dvorka/coaching-notebook) is a successor of MindRaider.
 At the beginning it was a combination of auto-coaching tool and outliner.
 Implemented on Google App Engine PaaS (GAE) it served as a way to learn trendy
 technologies. After a few years I determined
