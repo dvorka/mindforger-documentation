@@ -47,6 +47,10 @@ Format:
 ### User Documentation
 * [source](USER_DOCUMENTATION.md)
 
+### Note Taking Best Practices
+* [source](NOTE_TAKING_BPS.md)
+* [output](note-taking-best-practices.html)
+
 ### ---
 
 ### FAQs
