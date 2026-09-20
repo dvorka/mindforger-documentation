@@ -1,6 +1,14 @@
 # Blog <!-- Metadata: type: Outline; created: 2026-09-20 07:17:46; reads: 38; read: 2026-09-20 07:33:23; revision: 38; modified: 2026-09-20 07:33:23; importance: 0/5; urgency: 0/5; -->
 News and articles about MindForger - one post per [release](RELEASES.md), newest first.
 
+## You & MindForger: a comic
+
+*2026-09-20*
+
+![You & MindForger comic](BLOG.comics-you-and-mindforger.png)
+
+Knowledge hits you from everywhere - papers, lectures, podcasts, chats - and most of it is gone by Friday, unless you give it a home. To explain what MindForger is about without a wall of text, I turned the idea into a comic: meet **You & MindForger** - it follows one confused knowledge worker from the chaos of browser tabs and sticky notes, through typed Notes, outlines, notebooks and shelves, Kanban and the Eisenhower matrix, private AI and finding what he wrote weeks ago, all the way to a thinking notebook that is private, free and his. [Read the comic](https://www.mindforger.com/docs/assets/comics/index.html) you can use the buttons or arrow keys to turn the pages. Enjoy!
+
 ## Nerdview for the MindForger documentation  <!-- Metadata: type: Note; created: 2026-09-20 07:20:01; reads: 19; read: 2026-09-20 07:33:23; revision: 19; modified: 2026-09-20 07:33:23; -->
 
 *2026-09-19*
@@ -36,7 +44,7 @@ in the knowledge graph, kanban and/or processed by Wingman.
 * **Autolinking**
     * Colors of autolinking generated Note/Outline interlinks are in blue.
     * Bare http(s):// URLs containing Markdown-special characters (e.g. '_') got backslash-escaped by the autolinking preprocessor's Markdown round-trip which corrupted the result - fixed by verbatim using CommonMark's <...>.
-* **Snap**      
+* **Snap**
     * Menu/toolbar icons are no longer missing in the strict Snap.
 
 ## MindForger 2.1.0: Snap, Autolinking colorization and Wingman <!-- Metadata: type: Note; created: 2026-09-20 07:17:46; reads: 1; read: 2026-09-20 07:17:46; revision: 1; modified: 2026-09-20 07:17:46; -->
@@ -53,7 +61,7 @@ This **minor** [MindForger](https://www.mindforger.com/) release brings improved
 * **Snap**
     * Install MindForger either from the [snapcraft.io](https://snapcraft.io/mindforger) (strict confinement) or by downloading the `.snap` (classic confinement).
 * **Wingman**:
-    * Added Ollama as local LLM provider (privacy) and OpenRouter as new remote LLM provider (100s of SOTA models).    
+    * Added Ollama as local LLM provider (privacy) and OpenRouter as new remote LLM provider (100s of SOTA models).
 * **Fixes and enhancements**:
     * Check various [minor fixes](https://github.com/dvorka/mindforger/blob/2.1.0/Changelog) and [enhancements](https://github.com/dvorka/mindforger/blob/2.1.0/Changelog).
 
@@ -72,7 +80,7 @@ This **major** [MindForger](https://www.mindforger.com/) release brings **wingma
     * By using a tree-like structure, you can organize your notebooks in a logical and **hierarchical** manner, similar to how folders and subfolders organize files on a computer. This allows you to break down your knowledge into smaller, more manageable chunks and helps you find and access specific information easily.
     * Structuring notebooks to form a tree promotes better organization and clarity. You can create a top-level notebook, representing a **broad** topic or category, and then create sub-notebooks within it to represent **more specific** subtopics or subcategories. This hierarchical arrangement enables you to maintain a clear overview of your knowledge and facilitates navigation within your notebooks.
 * **Libraries**:
-    * Library (directory with files) bring ability to index external PDF files and generate Notebooks which represent them in MindForger. 
+    * Library (directory with files) bring ability to index external PDF files and generate Notebooks which represent them in MindForger.
     * The notebook representing the PDF allows easy access to the PDF notebook. Notebook can be used to write ideas, thoughts and remarks related to the PDF document.
     * Synchronization of the library is supported as well.
 * **Web search**
@@ -233,7 +241,7 @@ This release aims to improve MindForger usability. Terminology has been changed 
 
 ![MindForger 1.43.0](BLOG.mindforger-1-43-0.png)
 
-This MindForger release brings [Eisenhower matrix](https://github.com/dvorka/mindforger-repository/blob/master/memory/mindforger/user-documentation.md#eisenhower-matrix-), tags view, recent notes view and [updated documentation](https://github.com/dvorka/mindforger-repository). 
+This MindForger release brings [Eisenhower matrix](https://github.com/dvorka/mindforger-repository/blob/master/memory/mindforger/user-documentation.md#eisenhower-matrix-), tags view, recent notes view and [updated documentation](https://github.com/dvorka/mindforger-repository).
 In addition it lays the foundation for [named-entity recognition (NER)](https://github.com/dvorka/mindforger-repository/blob/master/memory/mindforger/user-documentation.md#named-entity-recognition-) and [knowledge graph navigator](https://github.com/dvorka/mindforger-repository/blob/master/memory/mindforger/user-documentation.md#knowledge-graph-navigator-). I also fixed several issues - both in frontend and backend (parsing huge repositories).
 
 ## MindForger 1.42.0: Initial MindForger Release <!-- Metadata: type: Note; created: 2026-09-20 07:17:46; reads: 1; read: 2026-09-20 07:17:46; revision: 1; modified: 2026-09-20 07:17:46; -->

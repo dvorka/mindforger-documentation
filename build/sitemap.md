@@ -35,6 +35,9 @@ Format:
 
 ## User Documentation
 
+### Comics
+* [url](assets/comics/index.html)
+
 ### Installation
 * [source](INSTALLATION.md)
 

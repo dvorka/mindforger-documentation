@@ -521,9 +521,12 @@ def generate_navbar_html(
             if item.is_separator:
                 items_html.append('<div class="dropdown-divider"></div>')
             elif item.url:
+                # pages of the site open in the same tab, everything else (external
+                # sites, the RSS feed) in a new one
+                same_tab = item.url.endswith(".html") and not re.match(r"^[a-z][a-z0-9+.-]*:", item.url, re.IGNORECASE)
+                target = "" if same_tab else ' target="_blank" rel="noopener"'
                 items_html.append(
-                    f'<a class="dropdown-item" href="{item.url}" target="_blank" '
-                    f'rel="noopener">{item.title}</a>'
+                    f'<a class="dropdown-item" href="{item.url}"{target}>{item.title}</a>'
                 )
             elif item.source:
                 href = page_map[item.source]

@@ -15,6 +15,8 @@ are recorded in `build/assets/VERSIONS.txt`.
 |-----------|---------|---------|-------|--------|
 | Tabler (UI framework, based on Bootstrap) | 1.5.1 | MIT | `build/assets/tabler/` | https://tabler.io |
 | KaTeX (math rendering) | 0.18.7 | MIT | `build/assets/katex/` | https://katex.org |
+| Bangers (comics display font, latin) | Google Fonts | SIL OFL 1.1 | `build/assets/comics/fonts/bangers.woff2` | https://fonts.google.com/specimen/Bangers |
+| Comic Neue Bold (comics font, latin) | Google Fonts | SIL OFL 1.1 | `build/assets/comics/fonts/comic-neue-700.woff2` | https://fonts.google.com/specimen/Comic+Neue |
 | Lato (font, latin 400 and 700) | Google Fonts v25 | SIL OFL 1.1 | `build/assets/fonts/` | https://fonts.google.com/specimen/Lato |
 
 Copyright notices:

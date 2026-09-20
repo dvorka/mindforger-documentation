@@ -39,7 +39,10 @@ uploaded to the web hosting.
 
 * `build/sitemap.md` defines the site structure - the `Home`,
   `User Documentation`, `Technical Documentation` and `News` menus.
-* `build/assets/` holds the vendored 3rd party assets (Tabler, Lato) and the
+* `build/assets/comics/` is the standalone MindForger comic (`index.html`, `comics.css`,
+  `comics.js`) linked from the `User Documentation / Comics` menu; it is copied to the
+  site as is with the other assets.
+* `build/assets/` holds the vendored 3rd party assets (Tabler, KaTeX, Lato) and the
   MindForger branding - they are committed to this repository.
 * `build/make/` holds the Python scripts used by the `Makefile`. They require
   the `markdown` and `pygments` Python packages.

@@ -174,6 +174,7 @@
 **News**:
 
 * [Blog](BLOG.md)
+    * [You & MindForger: a comic](BLOG.md#you--amp--mindforger--a-comic)
     * [Nerdview for the MindForger documentation](BLOG.md#nerdview-for-the-mindforger-documentation)
     * [MindForger 2.2.0: Rewrap, Snap, WebEngine, KaTeX and Mermaid](BLOG.md#mindforger-2-2-0--rewrap--snap--webengine--katex-and-mermaid)
     * [MindForger 2.1.0: Snap, Autolinking colorization and Wingman](BLOG.md#mindforger-2-1-0--snap--autolinking-colorization-and-wingman)

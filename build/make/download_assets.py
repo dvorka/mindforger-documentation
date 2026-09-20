@@ -48,6 +48,13 @@ KATEX_FILES = [
 # by every current browser so the ttf/woff fallbacks are not vendored
 KATEX_FONTS_PREFIX = "package/dist/fonts/"
 
+# fonts of the comics: (family, Google Fonts query, file name)
+GOOGLE_FONTS_API = "https://fonts.googleapis.com/css2?family={query}&display=swap"
+COMIC_FONTS = [
+    ("Bangers", "Bangers", "bangers.woff2"),
+    ("Comic Neue", "Comic+Neue:wght@700", "comic-neue-700.woff2"),
+]
+
 # Lato: the font of www.mindforger.com
 GOOGLE_FONTS_CSS = "https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
 # a modern browser UA is required, otherwise Google Fonts serves legacy formats
@@ -182,6 +189,36 @@ def download_lato(assets_dir: Path) -> str:
     return "latin 400, 700"
 
 
+def download_comic_fonts(assets_dir: Path) -> str:
+    """
+    Download the display fonts of the comics (Bangers and Comic Neue Bold).
+
+    Only the latin subset is kept, the fonts are referenced from
+    build/assets/comics/comics.css.
+
+    Args:
+        assets_dir: build/assets directory
+
+    Returns:
+        Description of what was written to disk
+    """
+    print("Comics fonts (Google Fonts):")
+    fonts_dir = assets_dir / "comics" / "fonts"
+    fonts_dir.mkdir(parents=True, exist_ok=True)
+
+    for family, query, target_name in COMIC_FONTS:
+        css = fetch(GOOGLE_FONTS_API.format(query=query), accept_any_format=True).decode("utf-8")
+        # the latin subset comes last in the stylesheet
+        urls = re.findall(r"url\((https://[^)]+\.woff2)\)", css)
+        if not urls:
+            raise RuntimeError(f"woff2 not found for {family}")
+        target = fonts_dir / target_name
+        target.write_bytes(fetch(urls[-1], accept_any_format=True))
+        print(f"  {target.relative_to(assets_dir)} ({target.stat().st_size:,} B)")
+
+    return "Bangers, Comic Neue 700"
+
+
 def main() -> int:
     """Main entry point."""
     parser = argparse.ArgumentParser(
@@ -207,6 +244,7 @@ def main() -> int:
         tabler = download_tabler(args.tabler_version, assets_dir)
         katex = download_katex(KATEX_VERSION, assets_dir)
         lato = download_lato(assets_dir)
+        comic_fonts = download_comic_fonts(assets_dir)
     except Exception as exception:  # network, tarball layout, Google Fonts change
         print(f"Error: failed to download assets: {exception}", file=sys.stderr)
         return 1
@@ -218,6 +256,7 @@ def main() -> int:
         "\n"
         f"Tabler: {tabler} (MIT) - https://tabler.io\n"
         f"KaTeX:  {katex} (MIT) - https://katex.org\n"
+        f"Comics: {comic_fonts} (OFL) - https://fonts.google.com\n"
         f"Lato:   {lato} (OFL) - https://fonts.google.com/specimen/Lato\n",
         encoding="utf-8",
     )
