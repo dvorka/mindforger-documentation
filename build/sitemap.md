@@ -1,6 +1,6 @@
 # MindForger Documentation Sitemap
 
-This document defines the structure of the https://docs.mindforger.com website
+This document defines the structure of the https://www.mindforger.com/docs website
 which is generated from the Markdown notebooks in `memory/` - see `build/Makefile`.
 
 Format:

@@ -3,7 +3,7 @@
 Download 3rd party web assets vendored by the MindForger documentation build.
 
 Fetches the Tabler CSS framework and the KaTeX math renderer (npm tarballs) and the Lato web font (Google
-Fonts) into build/assets/ so that the generated site at docs.mindforger.com is
+Fonts) into build/assets/ so that the generated site at www.mindforger.com/docs is
 self-contained - no CDN is needed at build time nor by the site visitors.
 
 The downloaded files are meant to be committed to this repository: run this

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Validate the generated docs.mindforger.com website.
+Validate the generated www.mindforger.com/docs website.
 
 Checks that every internal link, anchor and image of the generated pages can be
 resolved and that the MindForger metadata were stripped.
@@ -49,8 +49,8 @@ def main() -> int:
 
     parser = argparse.ArgumentParser(description="Validate the generated documentation")
     parser.add_argument(
-        "--output-dir", type=Path, default=root_dir / "distro" / "docs.mindforger.com",
-        help="Site root directory (default: distro/docs.mindforger.com)",
+        "--output-dir", type=Path, default=root_dir / "distro" / "www.mindforger.com/docs",
+        help="Site root directory (default: distro/www.mindforger.com/docs)",
     )
     args = parser.parse_args()
 

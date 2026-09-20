@@ -1,14 +1,15 @@
 # MindForger documentation build
 #
-# Generates https://docs.mindforger.com from the Markdown notebooks in memory/
-# to distro/docs.mindforger.com - see build/sitemap.md for the site structure.
+# Generates https://www.mindforger.com/docs from the Markdown notebooks in memory/
+# to distro/www.mindforger.com/docs - see build/sitemap.md for the site structure.
 #
 # Run: cd build && make doc  (or: make -C build doc)
 
 ROOT := $(abspath $(dir $(lastword $(MAKEFILE_LIST)))/..)
 BUILD := $(ROOT)/build
 SOURCE := $(ROOT)/memory
-OUT := $(ROOT)/distro/docs.mindforger.com
+DISTRO := $(ROOT)/distro
+OUT := $(DISTRO)/www.mindforger.com/docs
 
 PYTHON ?= python3
 PORT ?= 8080
@@ -27,8 +28,8 @@ doc-deps:
 		     echo "       pip3 install --user markdown pygments"; exit 1; }
 
 .PHONY: doc-clean
-doc-clean: ## clean generated documentation
-	rm -rf $(OUT)
+doc-clean: ## purge the distro/ directory with generated documentation
+	rm -rf $(DISTRO)
 	@echo "DONE documentation cleaned"
 
 .PHONY: doc
@@ -55,7 +56,7 @@ doc-assets: ## download vendored web assets (Tabler, KaTeX, Lato) to build/asset
 	$(PYTHON) $(BUILD)/make/download_assets.py --assets-dir $(BUILD)/assets
 
 .PHONY: doc-upload-info
-doc-upload-info: ## show what to upload to docs.mindforger.com
-	@echo "Upload the content of the following directory to docs.mindforger.com:"
+doc-upload-info: ## show what to upload to www.mindforger.com/docs
+	@echo "Upload the content of the following directory to www.mindforger.com/docs:"
 	@echo "  $(OUT)"
 	@du -sh $(OUT) 2>/dev/null || echo "  (not generated yet - run 'make doc')"

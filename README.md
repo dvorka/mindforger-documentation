@@ -12,16 +12,16 @@ This **private** repository is where MindForger documentation is written.
 * [Footer](./memory/_Footer.md)
 
 
-## docs.mindforger.com
+## www.mindforger.com/docs
 
-The https://docs.mindforger.com website is generated from `memory/` by the
+The https://www.mindforger.com/docs website is generated from `memory/` by the
 build in `build/`:
 
 ```bash
 cd build
 
 make               # show all targets
-make doc           # generate the website to distro/docs.mindforger.com
+make doc           # generate the website to distro/www.mindforger.com/docs
 make doc-live      # generate and preview at http://localhost:8080
 make doc-check     # check the generated site for broken links and images
 make doc-clean     # delete the generated site
@@ -30,7 +30,7 @@ make doc-assets    # re-download the vendored Tabler and Lato assets
 
 `make doc` renders Tabler styled HTML pages, copies the images and the assets,
 and writes `sitemap.xml` and `robots.txt`. The result in
-`distro/docs.mindforger.com/` (git ignored, purged on every build) is what is
+`distro/www.mindforger.com/docs/` (git ignored, purged on every build) is what is
 uploaded to the web hosting.
 
 * `build/sitemap.md` defines the site structure - the `Home`,

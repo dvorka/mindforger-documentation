@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Generate the docs.mindforger.com website from MindForger Markdown sources.
+Generate the www.mindforger.com/docs website from MindForger Markdown sources.
 
 This script reads the MindForger documentation notebooks from memory/ and
 generates styled HTML pages using the Tabler CSS framework - the same approach
@@ -8,7 +8,7 @@ as MyTraL's make/generate_docs_from_markdown.py, adapted to the MindForger
 Markdown dialect (metadata comments, notes written as '#' headings).
 
 The navigation structure is defined by build/sitemap.md, the result is written
-to distro/docs.mindforger.com/ and uploaded to https://docs.mindforger.com
+to distro/www.mindforger.com/docs/ and uploaded to https://www.mindforger.com/docs
 """
 
 import argparse
@@ -27,7 +27,7 @@ from pygments.formatters import HtmlFormatter
 
 # Configuration
 SITE_NAME = "MindForger Documentation"
-SITE_BASE_URL = "https://docs.mindforger.com"
+SITE_BASE_URL = "https://www.mindforger.com/docs"
 SITE_TAGLINE = "Thinking notebook and Markdown editor."
 PROJECT_URL = "https://www.mindforger.com"
 GITHUB_DOC_EDIT = "https://github.com/dvorka/mindforger-documentation/edit/main/memory/"
@@ -932,7 +932,7 @@ def main() -> int:
     root_dir = build_dir.parent
 
     parser = argparse.ArgumentParser(
-        description="Generate the docs.mindforger.com website from Markdown sources"
+        description="Generate the www.mindforger.com/docs website from Markdown sources"
     )
     parser.add_argument(
         "--source-dir", type=Path, default=root_dir / "memory",
@@ -947,8 +947,8 @@ def main() -> int:
         help="Directory with the vendored web assets (default: build/assets)",
     )
     parser.add_argument(
-        "--output-dir", type=Path, default=root_dir / "distro" / "docs.mindforger.com",
-        help="Site root directory (default: distro/docs.mindforger.com)",
+        "--output-dir", type=Path, default=root_dir / "distro" / "www.mindforger.com/docs",
+        help="Site root directory (default: distro/www.mindforger.com/docs)",
     )
     args = parser.parse_args()
 
