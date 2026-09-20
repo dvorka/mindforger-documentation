@@ -249,3 +249,30 @@ Although it's the first release, it brings several unique features and there is 
 I didn't choose the date randomly - MindForger is released on the day of my 42nd birthday... and yes, it can confirm answer to the Ultimate Question of life, the Universe, and Everything!
 
 Stay tuned - distribution/platform support, new features and demos will be releases in the upcoming weeks.
+
+
+## Computers Need To Forget
+
+*2007-11-16* | [original post](http://blog.mindforger.com/2007/11/computers-need-to-forget.html) | labels: cognition, memory, mind
+
+> A Harvard professor argues that [too much information is being retained by computers](http://arstechnica.com/news.ars/post/20070509-escaping-the-data-panopticon-teaching-computers-to-forget.html), and the machines need to learn how to forget things as humans always have. "If whatever we do can be held against us years later, if all our impulsive comments are preserved, they can easily be combined into a composite picture of ourselves," he writes in the paper.
+
+This is exactly the idea I have in my mind for some time. Having installed the same system for three years and looking to my desktop, downloaded documents, mailbox and mind maps I can see how it is spoiled and contaminated by zombie items.
+
+The purpose of computers is to remember everything. Actually I think that human brain remembers every single piece of information as well (cognition, experience, perception). Human beings just differ in ability to look up the particular "thing" - it's there, but an appropriate stimulus that triggers the association queue is needed (scent, sensual perception, event).
+
+![Computers Need To Forget](BLOG.computers-need-to-forget.jpg)
+
+The right question to ask is "What does it mean to forget?"
+
+In my opinion it is a function of the mind that protects it from madness. Presume that your memory is a graph - "things" are nodes and associations are edges (pretty common model). There is an entry node. A new stimulus is put right behind the entry node. As the stimulus get older and older it dives deeper and deeper. If there are no fresh associations which would keep it near enough to the entry node, it is forgot. Say that the distance is defined as number of hops from entry node to the stimulus node and there is some threshold (let me call it Rubicon). The piece of information is forgot once the distance from the entry is is bigger then Rubicon.
+
+The same approach could be applied to computers...
+
+* Imagine that there is hades - an underground where old bookmarks, applications, emails and mind maps stay.
+* Once the application is not used for some time, it gets across Rubicon and ends in hades, the same applies to emails and comments which are not read, etc.
+* The important thing is that e.g. icons @ desktop are not deleted (like windows icon sweep offers), but just moved to hades, and might be rescued later.
+* If you search "live" part of the system, hades is searched as well. You might ask system to union live and hades icons on your desktop, etc.
+* If you use GMail, you know I mean ;-)
+
+In other words I just wanted to say: "to forget doesn't mean to delete". Does it make sense?

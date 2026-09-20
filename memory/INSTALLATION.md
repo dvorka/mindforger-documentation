@@ -1,8 +1,9 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1554; read: 2024-02-19 08:08:06; revision: 1554; modified: 2024-02-19 08:08:06; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1563; read: 2026-09-20 07:49:47; revision: 1563; modified: 2026-09-20 07:49:47; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
 * [Windows](#windows)
+* [Snap](#snap)
 * [Ubuntu](#ubuntu)
 * [Debian](#debian)
 * [Fedora](#fedora)
@@ -39,11 +40,11 @@ Look up:
 
 * [release](RELEASES.md)
 * [change](RELEASES.md#changelog)
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 85; read: 2023-11-19 17:07:13; revision: 20; modified: 2022-01-30 17:15:40; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 87; read: 2026-09-20 07:46:55; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
-## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 100; read: 2024-02-19 08:07:05; revision: 13; modified: 2021-12-31 10:09:00; -->
+## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 102; read: 2026-09-20 07:46:56; revision: 13; modified: 2021-12-31 10:09:00; -->
 Install MindForger on macOS either using `brew` or by downloading `.dmg`.
 
 **Homebrew**
@@ -67,13 +68,13 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 77; read: 2024-02-19 08:07:07; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 79; read: 2026-09-20 07:46:56; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
-## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 101; read: 2024-02-19 08:07:18; revision: 9; modified: 2020-03-08 17:03:04; -->
+## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 105; read: 2026-09-20 07:47:12; revision: 9; modified: 2020-03-08 17:03:04; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -104,7 +105,14 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 131; read: 2024-02-19 08:07:23; revision: 21; modified: 2020-03-08 17:02:23; -->
+## Snap <!-- Metadata: type: Note; created: 2026-09-20 07:47:03; reads: 7; read: 2026-09-20 07:49:24; revision: 3; modified: 2026-09-20 07:49:24; -->
+There are the following Snap distributions:
+
+* [SnapCraft.io](https://snapcraft.io/mindforger) package which uses strict confinement.
+* **Classic** confinement package downloadable from [GitHub Releases](https://github.com/dvorka/mindforger/releases) page.
+
+
+## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 133; read: 2026-09-20 07:46:57; revision: 21; modified: 2020-03-08 17:02:23; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -869,3 +877,4 @@ MindForger can be either in **thinking** or **sleeping** mode:
 Switch thinking/sleeping mode based on whether you **need** mind features for the particular
 repository or not - consider performance/CPU consumption vs features trade-off.
 ### AA poler preferences <!-- Metadata: type: Note; tags: todo; created: 2022-02-05 16:13:37; reads: 34; read: 2024-02-19 08:06:30; revision: 6; modified: 2024-02-19 08:06:30; -->
+
