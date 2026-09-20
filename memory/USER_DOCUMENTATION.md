@@ -1,4 +1,4 @@
-# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 847; read: 2026-09-13 15:58:05; revision: 847; modified: 2026-09-13 15:58:05; importance: 0/5; urgency: 0/5; -->
+# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 869; read: 2026-09-20 16:53:36; revision: 869; modified: 2026-09-20 16:53:36; importance: 0/5; urgency: 0/5; -->
 Table of contents:
 
 * [Basics](#basics)
@@ -17,7 +17,7 @@ Table of contents:
     * [Live Preview](#live-preview)
         * [View and Edit mode](#view-and-edit-mode)
 * [Wingman](#wingman)
-    * [Wingman LLM provider configuration](#wingman-llm-provider-configuration)
+    * [LLM provider configuration](#llm-provider-configuration)
     * [Fix grammar](#fix-grammar)
     * [Translate](#translate)
     * [Rewrite](#rewrite)
@@ -297,62 +297,96 @@ rendered preview on the right (MindForger window) or choose:
 
 *  menu `Notebook/Edit` for title section
 *  menu `Note/Edit` for any sub-section
-# Wingman <!-- Metadata: type: Note; created: 2024-02-13 11:34:18; reads: 64; read: 2024-02-16 16:17:15; revision: 28; modified: 2024-02-16 15:31:17; -->
+# Wingman <!-- Metadata: type: Note; created: 2024-02-13 11:34:18; reads: 66; read: 2026-09-20 16:48:15; revision: 28; modified: 2024-02-16 15:31:17; -->
 [![v](https://img.youtube.com/vi/eyLV5P_Bujs/0.jpg)](https://www.youtube.com/watch?v=eyLV5P_Bujs)
 
-Wingman is a [large language model](https://en.wikipedia.org/wiki/Large_language_model) (LLM) based MindForger's tool which brings note-taking and knowledge management to a new level. With the wingman you can easily expand your notes and knowledge by leveraging the power of artificial intelligence. Whether you need to write an **in-depth analysis**, draft a **blog post**, prepare a **plan**, or simply **generate ideas**. Wingman can also:
+Wingman is MindForger's **private AI assistant**. It brings the power of
+[large language models](https://en.wikipedia.org/wiki/Large_language_model) (LLM)
+to your notes and it **runs on your computer** - open-weight models like
+gpt-oss, Llama, GLM or Qwen hosted by [ollama](https://ollama.com) never send a
+single word of your notes anywhere.
+
+Why **local AI**:
+
+* **Privacy** - your notes, ideas and plans stay on your machine.
+* **Offline** - Wingman works without internet connection.
+* **Free** - no account, API key, subscription or per-token bill.
+* **Your choice** - pick the model which fits your hardware and your language.
+
+Whether you need to write an **in-depth analysis**, draft a **blog post**, prepare
+a **plan**, or simply **generate ideas**, Wingman can also:
 
 * summarize
 * [explain](#eli5--explain-like-i-m-5)
 * [translate](#translate)
-* [generate](#rewrite)
+* [rewrite / reformulate](#rewrite)
 * [fix grammar](#fix-grammar)
-* [reformulate](#rewrite)
+* [complete text](#complete-text)
+* find tasks in a Notebook or Note
+* suggest synonyms and antonyms
 
-... and much more.
+... and much more - ask it anything using your own prompt.
 
+**Wingman in MindForger**:
 
-## Wingman LLM provider configuration <!-- Metadata: type: Note; created: 2024-02-13 11:34:29; reads: 107; read: 2024-02-16 16:17:15; revision: 68; modified: 2024-02-14 21:23:11; -->
-Wingman tool uses OpenAI as LLM provider. Therefore the first step is to **generate API key** which will be used by Wingman:
+* menu `Mind/Wingman LLM` (<kbd>Ctrl-/</kbd> on Linux and Windows) opens the Wingman chat
+  window where you run predefined or your own prompts, e.g. on the text selected in the
+  Note editor
+* submenus `Wingman LLM` of the `Notebook` and `Note` menus run the most common prompts
+  directly - `Summarize`, `Explain`, `Find Tasks`, `Find Grammar Errors`,
+  `Translate to English` - and `More prompts...` offers the rest
+* Wingman also powers the semantic search of similar Notes (associations) using text embeddings
 
-1. open https://platform.openai.com/api-keys
-1. click <kbd>+ Create new secret key</kbd> to **generate** new API key
-   ![i](USER_DOCUMENTATION.wingman-openai-gen-key.png)
-1. save the key e.g. in your password manager
-
-There are **two** options how to **configure** OpenAI API key in MindForger:
-
-**Option A (safer)** - configure shell environment variable:
-
-1. add API key to your shell configuration:
-    * Linux:
-        * Bash:
-            * Add the following line into your `/home/${USER}/.bashrc`:
-                * `export MINDFORGER_OPENAI_API_KEY="...your API key..."`
-        * Zsh:
-            * Add the following line into your `/home/${USER}/.zshrc`:
-                * `export MINDFORGER_OPENAI_API_KEY="...your API key..."`
-1. start new shell
-1. run MindForger
-    
-**Option B** - set the API key in the MindForger configuration dialog:
-
-1. open menu `Workspace`
-1. choose `Preferences` menu item
-1. select `Wingman` tab in the configuration dialog
-1. paste API key to the edit line in the dialog:
-   ![i](USER_DOCUMENTATION.wingman-config-1.png)
-1. click <kbd>OK</kbd> to save **unencrypted** API key to `.mindforger.md` in your home directory
-1. restart MindForger
-1. open `Preferences` dialog to check that OpenAI is selected as the LLM Provider for Wingman
-   ![i](USER_DOCUMENTATION.wingman-openai-done.png)
+**SOTA models**: MindForger can talk to remote state-of-the-art (SOTA) large language
+models of the LLM cloud providers as well. Such models are **out of scope** of this
+documentation - your text is sent to a 3rd party when you use them. The `Your data privacy`
+indicator in the Wingman preferences tells you whether the selected LLM keeps your data on your
+machine or shares them. Local AI is the recommended way to use Wingman.
 
 
-## Fix grammar <!-- Metadata: type: Note; created: 2024-02-13 11:34:51; reads: 57; read: 2024-02-16 16:17:14; revision: 6; modified: 2024-02-16 13:52:16; -->
+## LLM provider configuration <!-- Metadata: type: Note; created: 2024-02-13 11:34:29; reads: 113; read: 2026-09-20 16:53:36; revision: 79; modified: 2026-09-20 16:53:36; -->
+Wingman uses a local LLM (for privacy) or remote LLM (for SOTA performance) provider. **Local** LLM provider as prerequisite: 
+
+1. **install ollama** from https://ollama.com for macOS and Windows
+    - run `curl -fsSL https://ollama.com/install.sh | sh` on Linux
+1. **download a model** e.g. `ollama pull llama3.2` - browse the
+   [model library](https://ollama.com/library) for more (gpt-oss, Qwen, GLM, ...).
+   Bigger models give better answers, but need more memory (RAM/GPU) and are slower - start with
+   a small one and upgrade if your hardware allows
+1. **check** that ollama is running and the model is installed: `ollama list`
+   (ollama serves its API at `http://localhost:11434`)
+
+**Local** (or remote) LLM configuration:
+
+1. **add** LLM provider to MindForger:
+    1. open menu `Workspace`
+    1. choose `Preferences` menu item
+    1. select `Wingman` tab in the configuration dialog
+    1. click <kbd>Add LLM</kbd> and choose `ollama`
+    1. keep the default `ollama Server URL` (`http://localhost:11434`) - change it only if ollama runs on
+       another machine
+    1. choose the `LLM Model` from the list (<kbd>Refresh</kbd> loads the models installed in ollama)
+       or type its name
+    1. click <kbd>Probe</kbd> to check the configuration and <kbd>Add</kbd> to save it
+1. select the ollama model in the `Use LLM` drop down of the `Wingman` tab and click <kbd>Test Connection</kbd>
+   to make sure that MindForger can talk to it - `Your data privacy` of the selected LLM
+   confirms that your data are **not** shared with any 3rd party
+1. click <kbd>OK</kbd> to save the preferences
+
+If something goes wrong:
+
+* `Could not connect to the ollama server` - check that ollama is running (`ollama serve`)
+  and that the URL is correct
+* `No models found on ollama server` - install a model using `ollama pull`
+
+Now open Wingman using <kbd>Ctrl-/</kbd> and enjoy your **private AI**.
+
+
+## Fix grammar <!-- Metadata: type: Note; created: 2024-02-13 11:34:51; reads: 59; read: 2026-09-20 16:47:11; revision: 6; modified: 2024-02-16 13:52:16; -->
 [![v](https://img.youtube.com/vi/QLX9CWzzEa8/0.jpg)](https://www.youtube.com/watch?v=QLX9CWzzEa8)
 
 
-## Translate <!-- Metadata: type: Note; created: 2024-02-14 21:23:34; reads: 43; read: 2024-02-16 16:17:14; revision: 8; modified: 2024-02-16 13:46:41; -->
+## Translate <!-- Metadata: type: Note; created: 2024-02-14 21:23:34; reads: 45; read: 2026-09-20 16:47:10; revision: 8; modified: 2024-02-16 13:46:41; -->
 [![v](https://img.youtube.com/vi/akesdLhWZ-I/0.jpg)](https://www.youtube.com/watch?v=akesdLhWZ-I)
 
 Otto Wichterle byl světově proslulý český vědec a vynálezce, pracující zejména v oblasti makromolekulární organické chemie, mezi jejíž zakladatele patřil. Proslulý je především svými objevy a vynálezy, které vedly k zásadnímu zdokonalení a celosvětovému rozšíření měkkých kontaktních čoček. Tyto výsledky vycházely z jeho původní vědecké práce v oblasti hydrogelů. Wichterle se proslavil též objevem umělého polyamidového vlákna – silonu.

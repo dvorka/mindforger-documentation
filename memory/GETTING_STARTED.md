@@ -125,6 +125,8 @@ Once you finish editing the [note](#note) you can save it and preview using one 
 ### Fix Grammar with Wingman <!-- Metadata: type: Note; created: 2024-02-13 08:22:36; reads: 156; read: 2024-02-16 15:42:49; revision: 25; modified: 2024-02-14 08:33:34; -->
 [![v](https://img.youtube.com/vi/QLX9CWzzEa8/0.jpg)](https://www.youtube.com/watch?v=QLX9CWzzEa8)
 
+Wingman is MindForger's private AI assistant which runs a large language model on your computer - to set it up
+see [LLM provider configuration](USER_DOCUMENTATION.md#llm-provider-configuration).
 While you are editing a [note](#note), you can **fix grammar** of the text as follows:
 
 1. select a text withing the note editor

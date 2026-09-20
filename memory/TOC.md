@@ -72,7 +72,7 @@
         * [Outliner](USER_DOCUMENTATION.md#outliner)
         * [Live Preview](USER_DOCUMENTATION.md#live-preview)
     * [Wingman](USER_DOCUMENTATION.md#wingman)
-        * [Wingman LLM provider configuration](USER_DOCUMENTATION.md#wingman-llm-provider-configuration)
+        * [LLM provider configuration](USER_DOCUMENTATION.md#llm-provider-configuration)
         * [Fix grammar](USER_DOCUMENTATION.md#fix-grammar)
         * [Translate](USER_DOCUMENTATION.md#translate)
         * [Rewrite](USER_DOCUMENTATION.md#rewrite)

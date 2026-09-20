@@ -74,7 +74,7 @@
     - Edit Notebook and it's description
     - Deprecate Notebook and Limbo
 * [Wingman](USER_DOCUMENTATION.md#wingman) @ LLM
-    * [Wingman LLM provider configuration](USER_DOCUMENTATION.md#wingman-llm-provider-configuration)
+    * [LLM provider configuration](USER_DOCUMENTATION.md#llm-provider-configuration)
 * [Markdown editor](USER_DOCUMENTATION.md#markdown-editor)
     - From Markdown to MindForger
         - Markdown document
