@@ -1,9 +1,11 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1567; read: 2026-09-22 17:57:35; revision: 1567; modified: 2026-09-22 17:57:35; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1577; read: 2026-09-22 18:25:56; revision: 1577; modified: 2026-09-22 18:25:56; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
 * [Windows](#windows)
+* [WSL](#wsl)
 * [Snap](#snap)
+* [Flatpak](#flatpak)
 * [Ubuntu](#ubuntu)
 * [Debian](#debian)
 * [Fedora](#fedora)
@@ -11,18 +13,17 @@ Install:
 * [Arch Linux](#arch-linux)
 * [NixOS](#nixos-)
 * [openSUSE](#opensuse)
-* [WSL](#wsl)
 
 Build:
 
 * [build on macOS](#build-on-macos)
 * [build on Windows](#build-on-windows)
+* [build on WSL](#build-on-wsl)
 * [build on Ubuntu](#build-on-ubuntu)
 * [build on Debian](#build-on-debian)
 * [build on Fedora](#build-on-fedora)
 * [build on Gentoo](#build-on-gentoo)
 * [build on NixOS](#build-on-nixos)
-* [build on WSL](#build-on-wsl)
 * [build and run container](#build-and-run-in-container)
 
 Configure:
@@ -40,11 +41,11 @@ Look up:
 
 * [release](RELEASES.md)
 * [change](RELEASES.md#changelog)
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 87; read: 2026-09-20 07:46:55; revision: 20; modified: 2022-01-30 17:15:40; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 89; read: 2026-09-22 18:24:03; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
-## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 102; read: 2026-09-20 07:46:56; revision: 13; modified: 2021-12-31 10:09:00; -->
+## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 104; read: 2026-09-22 18:24:03; revision: 13; modified: 2021-12-31 10:09:00; -->
 Install MindForger on macOS either using `brew` or by downloading `.dmg`.
 
 **Homebrew**
@@ -68,13 +69,13 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 79; read: 2026-09-20 07:46:56; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 81; read: 2026-09-22 18:24:03; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
-## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 105; read: 2026-09-20 07:47:12; revision: 9; modified: 2020-03-08 17:03:04; -->
+## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 107; read: 2026-09-22 18:24:04; revision: 9; modified: 2020-03-08 17:03:04; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -105,7 +106,7 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-## Snap <!-- Metadata: type: Note; tags: linux; created: 2026-09-20 07:47:03; reads: 10; read: 2026-09-22 17:57:35; revision: 6; modified: 2026-09-22 17:57:35; -->
+## Snap <!-- Metadata: type: Note; tags: linux; created: 2026-09-20 07:47:03; reads: 12; read: 2026-09-22 18:24:04; revision: 6; modified: 2026-09-22 17:57:35; -->
 [Snap](https://snapcraft.io/docs) is a self-contained package which runs on all major Linux distros. There are the following MindForger Snap distributions:
 
 * [SnapCraft.io](https://snapcraft.io/mindforger) package which uses strict confinement.
@@ -196,6 +197,121 @@ sudo snap remove mindforger
 
 `snap remove` deletes the snap and its `~/snap/mindforger` directory -
 `~/mindforger-repository` and `~/.mindforger.md` are **not** touched.
+
+
+## Flatpak <!-- Metadata: type: Note; tags: linux; created: 2026-09-22 09:00:00; reads: 4; read: 2026-09-22 18:24:25; revision: 2; modified: 2026-09-22 18:24:25; -->
+[Flatpak](https://flatpak.org) is a sandboxed package which runs on all major Linux
+distributions. MindForger is distributed as a single-file `.flatpak` **bundle**
+downloadable from the [GitHub Releases](https://github.com/dvorka/mindforger/releases)
+page (it is not a Flathub hosted application).
+
+**Prerequisites**
+
+Install `flatpak` (if it is not installed already):
+
+Ubuntu/Debian:
+
+```sh
+sudo apt update
+sudo apt install flatpak
+```
+
+Fedora:
+
+```sh
+sudo dnf install flatpak
+```
+
+Arch Linux:
+
+```sh
+sudo pacman -S flatpak
+```
+
+openSUSE:
+
+```sh
+sudo zypper install flatpak
+```
+
+See [Flatpak setup](https://flatpak.org/setup/) for other distributions. Log out and
+log in again after the **first** installation of Flatpak so that your desktop picks up
+the applications installed by it.
+
+**Download**
+
+Download `mindforger-<version>.flatpak` from the **Assets** section of the latest:
+
+* [GitHub release](https://github.com/dvorka/mindforger/releases)
+
+**Install**
+
+Install the downloaded bundle for your user (no `root` privileges are needed):
+
+```sh
+# example: mindforger-2.4.0.flatpak
+flatpak install --user ./mindforger-2.4.0.flatpak
+```
+
+The bundle is self-contained - if the `org.kde.Platform` 5.15 runtime it needs is
+missing, then Flatpak offers to download it from [Flathub](https://flathub.org)
+automatically, you do **not** have to configure Flathub first. Should you prefer to add
+the Flathub remote yourself:
+
+```sh
+flatpak remote-add --if-not-exists --user flathub https://flathub.org/repo/flathub.flatpakrepo
+```
+
+Check the installation:
+
+```sh
+flatpak info com.mindforger.MindForger
+```
+
+**Run**
+
+Run MindForger either from the application menu (`MindForger`) or from the command line:
+
+```sh
+flatpak run com.mindforger.MindForger
+```
+
+On the **first** start MindForger creates a copy of the documentation and stencils in
+your home directory (`~/mindforger-repository`) and opens it as the default repository.
+
+**Data storage**
+
+The sandbox is granted access to your home directory, therefore MindForger stores the
+data in the same location as any other MindForger installation - your notebooks are not
+locked inside the Flatpak:
+
+```
+~/mindforger-repository   ... default repository with your Markdown files
+~/.mindforger.md          ... configuration
+```
+
+Markdown repositories on external/mounted media (`/media`, `/run/media`) can be opened
+as well. The sandbox is also granted network access which is used by
+[Wingman](USER_DOCUMENTATION.md#wingman) LLM providers.
+
+**Upgrade**
+
+A bundle installed from a file has no remote to be upgraded from (`flatpak update`
+refreshes the runtime only). Download the newer `.flatpak` and install it the same way -
+your repository and configuration are kept:
+
+```sh
+flatpak install --user --reinstall ./mindforger-<version>.flatpak
+```
+
+**Uninstall**
+
+```sh
+flatpak uninstall --user com.mindforger.MindForger
+```
+
+`~/mindforger-repository` and `~/.mindforger.md` are **not** removed by the uninstall -
+delete them manually if you want to get rid of them.
 
 
 ## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 133; read: 2026-09-20 07:46:57; revision: 21; modified: 2020-03-08 17:02:23; -->
