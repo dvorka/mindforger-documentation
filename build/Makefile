@@ -12,7 +12,7 @@ DISTRO := $(ROOT)/distro
 OUT := $(DISTRO)/www.mindforger.com/docs
 
 # checkout of the www.mindforger.com website - the docs are copied to its docs/ directory
-WWW ?= /home/dvorka/p/mindforger/webs/git/www.mindforger.com/www
+WWW ?= /home/dvorka/p/webs/www.mindforger.com/www
 
 PYTHON ?= python3
 PORT ?= 8080

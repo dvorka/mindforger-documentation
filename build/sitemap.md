@@ -44,6 +44,10 @@ Format:
 ### Getting Started
 * [source](GETTING_STARTED.md)
 
+### Video Tutorials
+* [source](VIDEO_TUTORIALS.md)
+* [output](video-tutorials.html)
+
 ### User Documentation
 * [source](USER_DOCUMENTATION.md)
 
