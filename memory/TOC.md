@@ -219,6 +219,8 @@
 **News**:
 
 * [Blog](BLOG.md)
+    * [MindForger 2.4.0: Flatpak](BLOG.md#mindforger-2-4-0--flatpak)
+    * [MindForger 2.3.0: Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation](BLOG.md#mindforger-2-3-0--notebook-shelves--localization-to-4-languages--lines-sorting--winget-packaging--markdown-export--non-ascii-links-navigation)
     * [You & MindForger: a comic](BLOG.md#you--amp--mindforger--a-comic)
     * [Nerdview for the MindForger documentation](BLOG.md#nerdview-for-the-mindforger-documentation)
     * [MindForger 2.2.0: Rewrap, Snap, WebEngine, KaTeX and Mermaid](BLOG.md#mindforger-2-2-0--rewrap--snap--webengine--katex-and-mermaid)

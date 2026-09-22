@@ -1,6 +1,44 @@
 # Blog <!-- Metadata: type: Outline; created: 2026-09-20 07:17:46; reads: 38; read: 2026-09-20 07:33:23; revision: 38; modified: 2026-09-20 07:33:23; importance: 0/5; urgency: 0/5; -->
 News and articles about MindForger - one post per [release](RELEASES.md), newest first.
 
+## MindForger 2.4.0: Flatpak
+
+*2026-09-22* | [release on GitHub](https://github.com/dvorka/mindforger/releases/tag/2.4.0)
+
+![MindForger 2.4.0](BLOG.mindforger-2-4-0.png)
+
+This **minor** [MindForger](https://www.mindforger.com/) release brings **Flatpak** distribution:
+
+* **Flatpak**
+    * Install MindForger on any major Linux distribution as a sandboxed single-file `.flatpak` bundle - see [Flatpak installation](INSTALLATION.md#flatpak).
+
+## MindForger 2.3.0: Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation
+
+*2026-09-22* | [release on GitHub](https://github.com/dvorka/mindforger/releases/tag/2.3.0)
+
+![MindForger 2.3.0](BLOG.mindforger-2-3-0.png)
+
+This **minor** [MindForger](https://www.mindforger.com/) release brings Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation, various fixes and small enhancements:
+
+* **Notebook shelves**
+    * Single notebook tree was rewritten to custom notebook shelves - create as many named notebook shelves for notebooks you want to group as needed and add Notebooks to them explicitly.
+* **Localization**
+    * Czech (`cs_CZ`) localization.
+    * Mandarin Chinese (simplified, `zh_CN`) localization (LLM - not reviewed by native speaker).
+    * Hindi (`hi_IN`) localization (LLM - not reviewed by native speaker).
+    * Spanish (`es_ES`) localization (LLM - not reviewed by native speaker).
+    * Preferences now let you pick the UI language - System default, English, Czech, Spanish or other available translation instead of following the OS locale.
+* **Export**
+    * `Notebook/Export/Markdown` - export a Notebook to a file in Markdown format.
+    * CSV export no longer freezes UI on big repo and/or slow(er) HW as export newly runs in the modal dialog w/ progress bar and it can be cancelled.
+    * CSV export reported success even when the CSV file could not be written and it did not check whether the target CSV file already exists.
+* **Edit**
+    * `Edit/Sort Lines` - sorts the selected lines - or the lines of the block under the cursor - alphabetically.
+    * Improved Emoji insert dialog so that it can be used w/o mouse, emojis can be filtered by name, selected using arrows - which move by the visual rows across the dialog sections - and inserted w/ `Enter` or `Ctrl-[number]` shortcuts.
+    * Changed in-app diagram support configuration from drop-down to checkbox.
+* **Search**
+    * Improved performance of the find Note/Notebook by Name dialog on large repositories - filtering as you type is debounced and no longer reallocates Qt strings per keystroke. The list is newly filtered via a proxy/cache model which fixed a serious lag when using backspace.
+
 ## You & MindForger: a comic
 
 *2026-09-20*

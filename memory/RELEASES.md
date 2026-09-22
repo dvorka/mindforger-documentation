@@ -1,6 +1,8 @@
 # Releases
 MindForger [releases](https://github.com/dvorka/mindforger/releases):
 
+* [2.4.0](https://github.com/dvorka/mindforger/releases/tag/2.4.0): Flatpak
+* [2.3.0](https://github.com/dvorka/mindforger/releases/tag/2.3.0): Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation
 * [2.2.0](https://github.com/dvorka/mindforger/releases/tag/2.2.0): Rewrap, Snap, WebEngine, KaTeX and Mermaid
 * [2.1.0](https://github.com/dvorka/mindforger/releases/tag/2.1.0): Snap, Autolinking colorization and Wingman
 * [2.0.0](https://github.com/dvorka/mindforger/releases/tag/2.0.0): LLM (OpenAI), Notebooks tree, Libraries, Web search
