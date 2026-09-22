@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1563; read: 2026-09-20 07:49:47; revision: 1563; modified: 2026-09-20 07:49:47; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1567; read: 2026-09-22 17:57:35; revision: 1567; modified: 2026-09-22 17:57:35; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -105,11 +105,97 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-## Snap <!-- Metadata: type: Note; created: 2026-09-20 07:47:03; reads: 7; read: 2026-09-20 07:49:24; revision: 3; modified: 2026-09-20 07:49:24; -->
-There are the following Snap distributions:
+## Snap <!-- Metadata: type: Note; tags: linux; created: 2026-09-20 07:47:03; reads: 10; read: 2026-09-22 17:57:35; revision: 6; modified: 2026-09-22 17:57:35; -->
+[Snap](https://snapcraft.io/docs) is a self-contained package which runs on all major Linux distros. There are the following MindForger Snap distributions:
 
 * [SnapCraft.io](https://snapcraft.io/mindforger) package which uses strict confinement.
 * **Classic** confinement package downloadable from [GitHub Releases](https://github.com/dvorka/mindforger/releases) page.
+
+Both packages require `snapd` - install it (if it is not installed already) by following
+the official guide for your distribution:
+
+* [Installing snapd](https://snapcraft.io/docs/installing-snapd)
+
+**Downloadable `.snap` package**
+
+The `.snap` package attached to every [GitHub release](https://github.com/dvorka/mindforger/releases)
+uses **classic** confinement. Unlike the strictly confined
+[SnapCraft.io](https://snapcraft.io/mindforger) package it has full access to the host,
+therefore it reads and writes your Markdown files and its configuration exactly like
+the `.deb` or tarball installation does. Classic confinement packages cannot be
+published to the Snap Store - the downloaded `.snap` file is installed directly
+(sideloaded).
+
+**Download**
+
+Download `mindforger_<version>_amd64.snap` from the **Assets** section of the latest:
+
+* [GitHub release](https://github.com/dvorka/mindforger/releases)
+
+**Install**
+
+Install the downloaded package with the `--dangerous` (sideloaded package which is not
+signed by the Snap Store) and `--classic` (classic confinement) flags:
+
+```sh
+# example: mindforger_2.3.0_amd64.snap
+sudo snap install --dangerous --classic ./mindforger_2.3.0_amd64.snap
+```
+
+Check the installation:
+
+```sh
+snap list mindforger
+```
+
+**Run**
+
+Run MindForger either from the application menu (`MindForger`) or from the command line:
+
+```sh
+mindforger
+```
+
+... or:
+
+```sh
+snap run mindforger
+```
+
+On the **first** start MindForger creates a copy of the documentation and stencils in
+your home directory (`~/mindforger-repository`) and opens it as the default repository.
+
+**Data storage**
+
+Classic confinement stores the data in the same location as any other MindForger
+installation - your notebooks are not locked inside the snap:
+
+```
+~/mindforger-repository   ... default repository with your Markdown files
+~/.mindforger.md          ... configuration
+```
+
+The strictly confined [SnapCraft.io](https://snapcraft.io/mindforger) package keeps both
+under `~/snap/mindforger/common/` instead.
+
+**Upgrade**
+
+A sideloaded snap is not refreshed automatically (`snap refresh` has no Snap Store
+revision to upgrade to). Download the newer `.snap` and install it the same way - your
+repository and configuration are kept:
+
+```sh
+sudo snap install --dangerous --classic ./mindforger_<version>_amd64.snap
+```
+
+**Uninstall**
+
+```sh
+sudo snap remove mindforger
+```
+
+`snap remove` deletes the snap and its `~/snap/mindforger` directory -
+`~/mindforger-repository` and `~/.mindforger.md` are **not** touched.
 
 
 ## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 133; read: 2026-09-20 07:46:57; revision: 21; modified: 2020-03-08 17:02:23; -->
