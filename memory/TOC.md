@@ -44,6 +44,8 @@
         * [Build on Fedora](INSTALLATION.md#build-on-fedora)
         * [Build on Gentoo](INSTALLATION.md#build-on-gentoo)
         * [Build on NixOS](INSTALLATION.md#build-on-nixos)
+        * [Build Flatpak](INSTALLATION.md#build-flatpak)
+        * [Build Snap](INSTALLATION.md#build-snap)
     * [Docker](INSTALLATION.md#docker)
         * [Build and run in container](INSTALLATION.md#build-and-run-in-container)
     * [Nightly builds](INSTALLATION.md#nightly-builds)

@@ -24,6 +24,8 @@ Build:
 * [build on Fedora](#build-on-fedora)
 * [build on Gentoo](#build-on-gentoo)
 * [build on NixOS](#build-on-nixos)
+* [build Flatpak](#build-flatpak)
+* [build Snap](#build-snap)
 * [build and run container](#build-and-run-in-container)
 
 Configure:
@@ -937,6 +939,134 @@ Run MindForger:
 
 ```
 ./mindforger
+```
+## Build Flatpak <!-- Metadata: type: Note; tags: linux,flatpak; created: 2026-09-23 09:00:00; reads: 0; read: 2026-09-23 09:00:00; revision: 1; modified: 2026-09-23 09:00:00; -->
+Build the downloadable `.flatpak` bundle (see [Flatpak](#flatpak) for installing the
+already built bundle) from `build/flatpak/com.mindforger.MindForger.yaml` - the manifest
+uses `org.kde.Platform` 5.15 for Qt 5.15 and Flathub's shared Qt WebEngine base app.
+
+**Prerequisites**
+
+Install `flatpak-builder` itself, plus `eu-strip`/`eu-elfcompress` (package `elfutils`)
+and `appstream-compose` - `flatpak-builder` shells out to all three to strip debug info
+and compose AppStream metadata, and none of them come with a plain `flatpak` install:
+
+```sh
+sudo apt install flatpak flatpak-builder elfutils appstream-compose
+```
+
+On some distros (e.g. Ubuntu 22.04) the `appstream-compose` package installs its
+binary as `/usr/libexec/appstreamcli-compose` instead of `appstream-compose` on
+`PATH`, which `flatpak-builder` 1.2.x hardcodes the name of - symlink it if so:
+
+```sh
+command -v appstream-compose >/dev/null || \
+    sudo ln -s /usr/libexec/appstreamcli-compose /usr/local/bin/appstream-compose
+```
+
+Install the Flatpak SDK/runtime/base-app pinned by the manifest:
+
+```sh
+flatpak remote-add --if-not-exists --user flathub \
+    https://flathub.org/repo/flathub.flatpakrepo
+flatpak install --user flathub \
+    org.kde.Platform//5.15-24.08 org.kde.Sdk//5.15-24.08 \
+    io.qt.qtwebengine.BaseApp//5.15-24.08
+```
+
+Get [source code](https://github.com/dvorka/mindforger):
+
+```sh
+git clone https://github.com/dvorka/mindforger.git
+git submodule init
+git submodule update
+```
+
+**Build**
+
+```sh
+cd mindforger/build
+make distro-flatpak-clean distro-flatpak-build
+```
+
+The bundle is written to `distro/flatpak/mindforger-<version>.flatpak` - show its path
+with:
+
+```sh
+make distro-flatpak-path
+```
+
+**Install and run locally (optional)**
+
+```sh
+make distro-flatpak-install
+make distro-flatpak-run
+```
+
+Remove the locally installed build:
+
+```sh
+make distro-flatpak-remove
+```
+## Build Snap <!-- Metadata: type: Note; tags: linux,snap; created: 2026-09-23 09:30:00; reads: 0; read: 2026-09-23 09:30:00; revision: 1; modified: 2026-09-23 09:30:00; -->
+Build the `.snap` package (see [Snap](#snap) for installing an already built package)
+from `build/snap/snapcraft.yaml` - the **strict** manifest, used both for the Snap
+Store package and, via `build/snap/apply-classic.sh`, to derive the **classic**
+manifest for the downloadable GitHub Release package. Never hand-edit a classic
+variant directly.
+
+**Prerequisites**
+
+```sh
+sudo snap install snapcraft --classic
+sudo snap install lxd
+sudo lxd init --auto
+sudo usermod -aG lxd $USER
+```
+
+`snapcraft` builds inside an LXD container, so log out and log in again (or `newgrp
+lxd`) after adding yourself to the `lxd` group for the first time.
+
+Get [source code](https://github.com/dvorka/mindforger):
+
+```sh
+git clone https://github.com/dvorka/mindforger.git
+git submodule init
+git submodule update
+```
+
+**Build**
+
+```sh
+cd mindforger/build
+# strict package (Snap Store)
+make distro-snap
+# ... or the classic package (downloadable/sideloaded GitHub Release)
+make distro-snap-classic
+```
+
+The packed `mindforger_<version>_amd64.snap` is written to the repository root - show
+its path with:
+
+```sh
+make distro-snap-path
+```
+
+**Install and run locally (optional)**
+
+```sh
+# strict package
+make distro-snap-install
+# ... or the classic package
+make distro-snap-install-classic
+
+mindforger
+```
+
+Remove the locally installed package:
+
+```sh
+make distro-snap-remove
 ```
 
 
