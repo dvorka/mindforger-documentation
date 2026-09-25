@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1577; read: 2026-09-22 18:25:56; revision: 1577; modified: 2026-09-22 18:25:56; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1585; read: 2026-09-25 07:13:46; revision: 1585; modified: 2026-09-25 07:13:46; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [macOS](#macos)
@@ -43,11 +43,11 @@ Look up:
 
 * [release](RELEASES.md)
 * [change](RELEASES.md#changelog)
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 89; read: 2026-09-22 18:24:03; revision: 20; modified: 2022-01-30 17:15:40; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 91; read: 2026-09-25 07:12:53; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
-## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 104; read: 2026-09-22 18:24:03; revision: 13; modified: 2021-12-31 10:09:00; -->
+## macOS <!-- Metadata: type: Note; tags: macos; created: 2018-06-12 19:47:21; reads: 106; read: 2026-09-25 07:12:53; revision: 13; modified: 2021-12-31 10:09:00; -->
 Install MindForger on macOS either using `brew` or by downloading `.dmg`.
 
 **Homebrew**
@@ -71,13 +71,13 @@ Install `.dmg`:
 * Run `MindForger`
 
 MindForger creates copy of the documentation in your home directory (`~/mindforger-repository`) and opens it as default repository.
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 81; read: 2026-09-22 18:24:03; revision: 6; modified: 2020-03-08 17:03:09; -->
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 83; read: 2026-09-25 07:12:53; revision: 6; modified: 2020-03-08 17:03:09; -->
 Install MindForger using installer.
 
 * Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
 * Run installer.
 
-## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 107; read: 2026-09-22 18:24:04; revision: 9; modified: 2020-03-08 17:03:04; -->
+## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 109; read: 2026-09-25 07:12:53; revision: 9; modified: 2020-03-08 17:03:04; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
 
 ```
@@ -108,7 +108,7 @@ sudo apt install mindforger
 # run MindForger
 DISPLAY=:0.0 mindforger
 ```
-## Snap <!-- Metadata: type: Note; tags: linux; created: 2026-09-20 07:47:03; reads: 12; read: 2026-09-22 18:24:04; revision: 6; modified: 2026-09-22 17:57:35; -->
+## Snap <!-- Metadata: type: Note; tags: linux; created: 2026-09-20 07:47:03; reads: 14; read: 2026-09-25 07:12:53; revision: 6; modified: 2026-09-22 17:57:35; -->
 [Snap](https://snapcraft.io/docs) is a self-contained package which runs on all major Linux distros. There are the following MindForger Snap distributions:
 
 * [SnapCraft.io](https://snapcraft.io/mindforger) package which uses strict confinement.
@@ -201,7 +201,7 @@ sudo snap remove mindforger
 `~/mindforger-repository` and `~/.mindforger.md` are **not** touched.
 
 
-## Flatpak <!-- Metadata: type: Note; tags: linux; created: 2026-09-22 09:00:00; reads: 4; read: 2026-09-22 18:24:25; revision: 2; modified: 2026-09-22 18:24:25; -->
+## Flatpak <!-- Metadata: type: Note; tags: linux; created: 2026-09-22 09:00:00; reads: 6; read: 2026-09-25 07:12:53; revision: 2; modified: 2026-09-22 18:24:25; -->
 [Flatpak](https://flatpak.org) is a sandboxed package which runs on all major Linux
 distributions. MindForger is distributed as a single-file `.flatpak` **bundle**
 downloadable from the [GitHub Releases](https://github.com/dvorka/mindforger/releases)
@@ -316,7 +316,7 @@ flatpak uninstall --user com.mindforger.MindForger
 delete them manually if you want to get rid of them.
 
 
-## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 133; read: 2026-09-20 07:46:57; revision: 21; modified: 2020-03-08 17:02:23; -->
+## Ubuntu <!-- Metadata: type: Note; tags: linux; created: 2018-04-23 20:47:41; reads: 135; read: 2026-09-25 07:12:54; revision: 21; modified: 2020-03-08 17:02:23; -->
 Install MindForger from **PPA**.
 Add [my Lauchpad hosted PPA](https://launchpad.net/~ultradvorka/+archive/ubuntu/productivity) and install MindForger:
 
@@ -330,26 +330,32 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 113; read: 2024-02-19 08:07:23; revision: 42; modified: 2023-11-12 13:00:51; -->
-Install MindForger on [Debian](https://www.debian.org/) either by downloading `.deb` or from **PPA**.
+## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 115; read: 2026-09-25 07:13:46; revision: 46; modified: 2026-09-25 07:13:46; -->
+Install MindForger on [Debian](https://www.debian.org/):
+
+* either by downloading `.deb` 
+* or from **PPA**
 
 Download `.deb` package for your Debian version from:
 
 * [GitHub Releases](https://github.com/dvorka/mindforger/releases) **Assets** section
 
-To install MindForger from the **PPA** add [my PPA](http://www.mindforger.com/debian) for **your Debian release** version, trust [GPG key](http://www.mindforger.com/gpgpubkey.txt) and
+To install MindForger from the **PPA** add [my PPA](https://www.mindforger.com/debian-ppa/) for **your Debian release** version, trust [GPG key](https://www.mindforger.com/gpgpubkey.txt) and
 install MindForger - follow the instructions described in:
 
-* http://www.mindforger.com/debian-ppa
+* [https://www.mindforger.com/debian-ppa/](https://www.mindforger.com/debian-ppa/)
 
-For example Debian **"bookworm"**:
+PPAs for Debian 13 **"trixie"** and Debian 12 **"bookworm"** get new MindForger versions (older Debian releases PPAs are kept, but frozen).
+For example Debian **"bookworm"** (for Debian **"trixie"** replace `bookworm` with `trixie`):
 
 ```bash
-# add PPA to APT sources:
-echo "deb http://www.mindforger.com/debian-ppa/bookworm bookworm main" | sudo tee /etc/apt/sources.list.d/mindforger.list
+# create directory for APT repository keys (if it does not exist)
+sudo install -d -m 0755 /etc/apt/keyrings
+# download MindForger GPG key and store it in the binary format used by APT
+wget -qO- https://www.mindforger.com/gpgpubkey.txt | gpg --dearmor | sudo tee /etc/apt/keyrings/mindforger.gpg > /dev/null
 
-# import PPA's GPG key
-wget -qO - http://www.mindforger.com/gpgpubkey.txt | sudo apt-key add -
+# add PPA to APT sources
+echo "deb [signed-by=/etc/apt/keyrings/mindforger.gpg] https://www.mindforger.com/debian-ppa/bookworm bookworm main" | sudo tee /etc/apt/sources.list.d/mindforger.list
 
 # update sources
 sudo apt update
@@ -357,6 +363,11 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
+
+Hints:
+
+* `apt-key` used by older versions of these instructions is deprecated and it is not available on Debian **"trixie"**.
+* If `apt update` reports that the signing key *is not bound* or *SHA1 is not considered secure*, download the GPG key again (see above) - its self-signatures were refreshed to SHA-512 in 2026 (the key fingerprint `E3E8 520D E382 0D8C 1A72 4BB7 B72E 4F7F 24AF 591D` did not change).
 ## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 133; read: 2024-02-19 08:07:29; revision: 22; modified: 2020-03-08 17:02:33; -->
 Install MindForger on [Fedora](https://getfedora.org/):
 
@@ -940,7 +951,7 @@ Run MindForger:
 ```
 ./mindforger
 ```
-## Build Flatpak <!-- Metadata: type: Note; tags: linux,flatpak; created: 2026-09-23 09:00:00; reads: 0; read: 2026-09-23 09:00:00; revision: 1; modified: 2026-09-23 09:00:00; -->
+## Build Flatpak <!-- Metadata: type: Note; tags: linux,flatpak; created: 2026-09-23 09:00:00; reads: 1; read: 2026-09-23 09:00:00; revision: 1; modified: 2026-09-23 09:00:00; -->
 Build the downloadable `.flatpak` bundle (see [Flatpak](#flatpak) for installing the
 already built bundle) from `build/flatpak/com.mindforger.MindForger.yaml` - the manifest
 uses `org.kde.Platform` 5.15 for Qt 5.15 and Flathub's shared Qt WebEngine base app.
@@ -1008,7 +1019,7 @@ Remove the locally installed build:
 ```sh
 make distro-flatpak-remove
 ```
-## Build Snap <!-- Metadata: type: Note; tags: linux,snap; created: 2026-09-23 09:30:00; reads: 0; read: 2026-09-23 09:30:00; revision: 1; modified: 2026-09-23 09:30:00; -->
+## Build Snap <!-- Metadata: type: Note; tags: linux,snap; created: 2026-09-23 09:30:00; reads: 1; read: 2026-09-23 09:30:00; revision: 1; modified: 2026-09-23 09:30:00; -->
 Build the `.snap` package (see [Snap](#snap) for installing an already built package)
 from `build/snap/snapcraft.yaml` - the **strict** manifest, used both for the Snap
 Store package and, via `build/snap/apply-classic.sh`, to derive the **classic**
