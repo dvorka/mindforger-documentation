@@ -1,4 +1,4 @@
-# Getting Started <!-- Metadata: type: Outline; created: 2024-02-13 08:09:03; reads: 491; read: 2024-02-16 15:43:16; revision: 485; modified: 2024-02-16 15:43:16; importance: 0/5; urgency: 0/5; -->
+# Getting Started <!-- Metadata: type: Outline; created: 2024-02-13 08:09:03; reads: 526; read: 2026-09-26 19:31:26; revision: 526; modified: 2026-09-26 19:31:26; importance: 0/5; urgency: 0/5; -->
 Getting started with **MindForger**.
 
 Table of contents:
@@ -20,36 +20,48 @@ Table of contents:
     * [🎞 MindForger: First steps](#mindforger--first-steps)
 
 
-# Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 130; read: 2024-02-16 15:42:41; revision: 34; modified: 2024-02-13 18:36:21; -->
-![desktop](GETTING_STARTED.basic-concepts-overview.png)
+# Basics <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 140; read: 2026-09-26 19:31:26; revision: 45; modified: 2026-09-26 19:31:26; -->
+[![desktop](GETTING_STARTED.basic-animated.png)](https://www.mindforger.com/#basics)
 
-This section aims to explain basic MindForger terminology:
+This section aims to explain MindForger basics:
 
+* [from Note to Notebook shelf](https://www.mindforger.com/#basics) (animation)
+
+MindForger terminology:
+
+* [Notebook shelf](#notebook-shelf) 
 * [Workspace](#workspace)
 * [Notebook](#document---notebook)
 * [Note](#section---note)
 
 In short:
 
-* The MindForger [workspace](#workspace) is analogous **the desktop** of an office desk.
-    * The MindForger [notebook](#notebook) analogous to **a notepad** on the desktop.
-        * A MindForger [note](#note) is analogous to **a page with the note** from a **notepad**.
+* The MindForger [workspace](#workspace) is like **the desktop** of an office desk.
+    * The MindForger [notebook](#notebook) is like **a notepad** on the desktop.
+        * A MindForger [note](#note) is like **a page with the note** from a **notepad**.
+* The MindForger [notebook shelf](#notebook-shelf) is like **a bookshelf** where you put and organize your (note)books.
 
 Let's describe basic terms in more detail.
 
 
-## Workspace <!-- Metadata: type: Note; created: 2024-02-10 22:53:08; reads: 129; read: 2024-02-16 15:42:41; revision: 15; modified: 2024-02-14 22:18:51; -->
+## Notebook shelf <!-- Metadata: type: Note; created: 2026-09-26 19:23:33; reads: 25; read: 2026-09-26 19:26:30; revision: 8; modified: 2026-09-26 19:26:24; -->
+MindForger **notebook shelf**:
+
+* is where you organize notebooks - for instance work, hobbies, research.
+* imagine taking the notebook from notebook shelf to read it and write to it 
+* stored in a file on the filesystem
+## Workspace <!-- Metadata: type: Note; created: 2024-02-10 22:53:08; reads: 168; read: 2026-09-26 19:26:30; revision: 17; modified: 2026-09-26 19:24:43; -->
 ![desktop](GETTING_STARTED.basic-concepts-workspace.png)
 
 MindForger **workspace**:
 
-* ... contains [notebooks](#notebook)
-* ... stored in a directory on the filesystem
-* ... has its own configuration
-* ... might be empty
+* contains [notebooks](#notebook)
+* stored in a directory on the filesystem
+* has its own configuration
+* might be empty
 
 
-## Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 145; read: 2024-02-16 15:42:42; revision: 21; modified: 2024-02-13 19:18:13; -->
+## Notebook <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 173; read: 2026-09-26 19:26:30; revision: 21; modified: 2024-02-13 19:18:13; -->
 ![desktop](GETTING_STARTED.basic-concepts-notebook.png)
 
 MindForger **notebook**:
@@ -58,7 +70,7 @@ MindForger **notebook**:
 * organizes notes in hierarchy - [outline](USER_DOCUMENTATION.md#outliner)
 * can be marked with [tags](USER_DOCUMENTATION.md#tag)
 * is typically devoted to a specific topic such as a project plan, family gifts or lessons learned
-## Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 115; read: 2024-02-16 15:42:42; revision: 11; modified: 2024-02-13 19:18:43; -->
+## Note <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 131; read: 2026-09-26 19:26:30; revision: 11; modified: 2024-02-13 19:18:43; -->
 ![desktop](GETTING_STARTED.basic-concepts-overview.png)
 
 MindForger **note**:
@@ -68,7 +80,7 @@ MindForger **note**:
 * can be marked with [tags](USER_DOCUMENTATION.md#tag)
 
 
-# Create Workspace <!-- Metadata: type: Note; created: 2024-02-13 07:57:32; reads: 120; read: 2024-02-16 15:43:16; revision: 32; modified: 2024-02-16 15:43:16; -->
+# Create Workspace <!-- Metadata: type: Note; created: 2024-02-13 07:57:32; reads: 124; read: 2026-09-26 19:26:26; revision: 32; modified: 2024-02-16 15:43:16; -->
 [![v](https://img.youtube.com/vi/ahThnkU9d90/0.jpg)](https://www.youtube.com/watch?v=ahThnkU9d90)
 
 Create **new** [workspace](#workspace) as follows:
