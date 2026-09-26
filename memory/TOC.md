@@ -56,6 +56,7 @@
         * [Think vs. Sleep mode](INSTALLATION.md#think-vs--sleep-mode)
 * [Getting Started](GETTING_STARTED.md)
     * [Basics](GETTING_STARTED.md#basics)
+        * [Notebook shelf](GETTING_STARTED.md#notebook-shelf)
         * [Workspace](GETTING_STARTED.md#workspace)
         * [Notebook](GETTING_STARTED.md#notebook)
         * [Note](GETTING_STARTED.md#note)
