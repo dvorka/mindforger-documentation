@@ -1,6 +1,25 @@
 # Blog <!-- Metadata: type: Outline; created: 2026-09-20 07:17:46; reads: 38; read: 2026-09-20 07:33:23; revision: 38; modified: 2026-09-20 07:33:23; importance: 0/5; urgency: 0/5; -->
 News and articles about MindForger - one post per [release](RELEASES.md), newest first.
 
+## MindForger 2.5.0: 3rd generation of associations lookup and visualization, status bar w/ ADLMSTW diodes and new Debian PPA
+
+*2026-09-26* | [release on GitHub](https://github.com/dvorka/mindforger/releases/tag/2.5.0)
+
+![MindForger 2.5.0](BLOG.mindforger-2-5-0.png)
+
+This **minor** [MindForger](https://www.mindforger.com/) release brings rewrite of associations lookup and visualization, new status bar w/ `ADLMSTW` diodes and new Debian PPA:
+
+* **Mind inspired features**
+    * 3rd generation of the Notebook/Notes associations - [Best Matching 25](https://en.wikipedia.org/wiki/Okapi_BM25) based associations algorithm (BM25; evolution of BoW; TF-IDF + normalization which prevents long(er) docs from winning): Notes are matched by whole words (e.g. "art" no longer matches "start"), rare words weigh more than common ones (TF-IDF), long Notes no longer win just because of their length, Notes sharing tags w/ the current Note/Notebook are associated and the associations are computed ~2x faster.
+    * Association score is shown visually as a meter and the precise score is newly shown in the tooltip only.
+* **Status bar**
+    * Status bar indicators ("diodes") in the lower right corner of the main window - a capsule w/ autolinking (A), diagrams (D), live spell check (L), math (M), source code syntax highlighting (S), thinking (T) and Wingman availability (W) segments.
+* **Distributions**
+    * MindForger is newly provided for Debian 13 Trixie in addition to Debian 12 Bookworm (Debian 11 Bullseye, 10 Buster and 9 Stretch PPAs are kept, but frozen) at [https://www.mindforger.com/debian-ppa/](https://www.mindforger.com/debian-ppa/) - see [Debian installation](INSTALLATION.md#debian).
+    * Debian PPA signing key self-signatures were refreshed from SHA-1 to SHA-512 (the key fingerprint is unchanged) as Debian Trixie apt rejects keys w/ SHA-1 self-signatures - please DO re-import the key from [https://www.mindforger.com/gpgpubkey.txt](https://www.mindforger.com/gpgpubkey.txt).
+* **Fixes**
+    * Autolinking, thinking and math are stable enough so that they are newly enabled by default after fresh MindForger installation.
+
 ## MindForger 2.4.0: Flatpak
 
 *2026-09-22* | [release on GitHub](https://github.com/dvorka/mindforger/releases/tag/2.4.0)

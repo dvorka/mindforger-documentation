@@ -1,6 +1,7 @@
 # Releases
 MindForger [releases](https://github.com/dvorka/mindforger/releases):
 
+* [2.5.0](https://github.com/dvorka/mindforger/releases/tag/2.5.0): 3rd generation of associations lookup and visualization, status bar w/ ADLMSTW diodes and new Debian PPA
 * [2.4.0](https://github.com/dvorka/mindforger/releases/tag/2.4.0): Flatpak
 * [2.3.0](https://github.com/dvorka/mindforger/releases/tag/2.3.0): Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation
 * [2.2.0](https://github.com/dvorka/mindforger/releases/tag/2.2.0): Rewrap, Snap, WebEngine, KaTeX and Mermaid

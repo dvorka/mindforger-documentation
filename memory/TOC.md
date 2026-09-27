@@ -222,6 +222,7 @@
 **News**:
 
 * [Blog](BLOG.md)
+    * [MindForger 2.5.0: 3rd generation of associations lookup and visualization, status bar w/ ADLMSTW diodes and new Debian PPA](BLOG.md#mindforger-2-5-0--3rd-generation-of-associations-lookup-and-visualization--status-bar-w--adlmstw-diodes-and-new-debian-ppa)
     * [MindForger 2.4.0: Flatpak](BLOG.md#mindforger-2-4-0--flatpak)
     * [MindForger 2.3.0: Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation](BLOG.md#mindforger-2-3-0--notebook-shelves--localization-to-4-languages--lines-sorting--winget-packaging--markdown-export--non-ascii-links-navigation)
     * [You & MindForger: a comic](BLOG.md#you--amp--mindforger--a-comic)
