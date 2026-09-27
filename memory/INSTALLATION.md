@@ -1,4 +1,4 @@
-# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1658; read: 2026-09-26 20:00:00; revision: 1658; modified: 2026-09-26 19:07:26; importance: 3/5; urgency: 3/5; -->
+# Installation <!-- Metadata: type: Outline; created: 2018-03-20 16:19:07; reads: 1666; read: 2026-09-27 08:37:19; revision: 1666; modified: 2026-09-27 08:37:19; importance: 3/5; urgency: 3/5; -->
 Install:
 
 * [Arch Linux](#arch-linux)
@@ -12,7 +12,8 @@ Install:
 * [Snap](#snap)
 * [Ubuntu](#ubuntu)
 * [Windows](#windows)
-* [WSL](#wsl)
+* [Windows winget](#windows)
+* [Windows WSL](#wsl)
 
 Build:
 
@@ -43,14 +44,15 @@ Look up:
 
 * [release](RELEASES.md)
 * [change](RELEASES.md#changelog)
-# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 93; read: 2026-09-26 19:02:57; revision: 20; modified: 2022-01-30 17:15:40; -->
+# Install a package <!-- Metadata: type: Note; created: 2018-04-24 14:32:49; reads: 95; read: 2026-09-27 07:54:21; revision: 20; modified: 2022-01-30 17:15:40; -->
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
-## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 117; read: 2026-09-26 19:04:09; revision: 8; modified: 2020-03-08 17:02:45; -->
+## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 119; read: 2026-09-27 07:54:33; revision: 9; modified: 2026-09-27 07:54:33; -->
 Install MindForger from Arch User Repository (AUR):
 
-* https://aur.archlinux.org/packages/mindforger/
+* [https://aur.archlinux.org/packages/mindforger/](https://aur.archlinux.org/packages/mindforger/)
+
 
 ## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 141; read: 2026-09-26 19:04:26; revision: 46; modified: 2026-09-25 07:13:46; -->
 Install MindForger on [Debian](https://www.debian.org/):
@@ -91,14 +93,32 @@ Hints:
 * `apt-key` used by older versions of these instructions is deprecated and it is not available on Debian **"trixie"**.
 * If `apt update` reports that the signing key *is not bound* or *SHA1 is not considered secure*, download the GPG key again (see above) - its self-signatures were refreshed to SHA-512 in 2026 (the key fingerprint `E3E8 520D E382 0D8C 1A72 4BB7 B72E 4F7F 24AF 591D` did not change).
 ## Fedora <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 19:50:19; reads: 157; read: 2026-09-26 19:04:30; revision: 22; modified: 2020-03-08 17:02:33; -->
-Install MindForger on [Fedora](https://getfedora.org/):
+Install MindForger on [Fedora](https://fedoraproject.org/):
 
-* [download RPM](https://github.com/dvorka/mindforger/releases) from GitHub releases
+* either from **COPR** repository
+* or by downloading `.rpm`
 
-Install RPM:
+To install MindForger from the [COPR](https://copr.fedorainfracloud.org/coprs/dvorka/mindforger/) repository
+(for all current Fedora releases, `x86_64` and `aarch64`) enable the repository and install MindForger:
 
+```bash
+# enable MindForger COPR repository (packages are signed by the COPR key)
+sudo dnf copr enable dvorka/mindforger
+
+# install MindForger
+sudo dnf install mindforger
 ```
-sudo dnf install mindforger-MAJOR.MINOR.REVISION.rpm
+
+New MindForger versions are then installed with the regular system update (`sudo dnf upgrade`).
+
+Alternatively, download `.rpm` package for your Fedora release (`fcNN` in the file name) and architecture from:
+
+* [GitHub Releases](https://github.com/dvorka/mindforger/releases) **Assets** section
+
+and install it:
+
+```bash
+sudo dnf install ./mindforger-MAJOR.MINOR.PATCH-1.fcNN.x86_64.rpm
 ```
 
 ## Flatpak <!-- Metadata: type: Note; tags: linux; created: 2026-09-22 09:00:00; reads: 30; read: 2026-09-26 19:04:32; revision: 2; modified: 2026-09-22 18:24:25; -->
@@ -427,11 +447,55 @@ sudo apt update
 # install MindForger
 sudo apt install mindforger
 ```
-## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 111; read: 2026-09-26 19:04:49; revision: 6; modified: 2020-03-08 17:03:09; -->
-Install MindForger using installer.
+## Windows <!-- Metadata: type: Note; tags: windows; created: 2019-02-16 09:43:18; reads: 116; read: 2026-09-27 08:36:48; revision: 8; modified: 2026-09-27 08:36:48; -->
+Install MindForger on [Microsoft Windows](https://www.microsoft.com/windows) (64-bit `x64`):
 
-* Download installer executable from https://github.com/dvorka/mindforger/releases (or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts))
-* Run installer.
+* either using **winget** package manager
+* or by downloading and running the installer
+
+To install MindForger using [winget](https://learn.microsoft.com/windows/package-manager/winget/)
+(Windows Package Manager - part of **App Installer** which is preinstalled on Windows 10 and 11)
+open a terminal (Command Prompt, PowerShell or Windows Terminal) and run:
+
+```
+winget install --id MartinDvorak.MindForger --exact
+```
+
+MindForger is installed for all users to `C:\Program Files\MindForger` - confirm the
+administrator privileges (UAC) prompt when asked.
+
+New MindForger versions are then installed with:
+
+```
+winget upgrade --id MartinDvorak.MindForger --exact
+```
+
+Useful winget commands:
+
+```
+# show MindForger package details (version, installer URL, release notes)
+winget show --id MartinDvorak.MindForger --exact
+
+# list all MindForger versions available in winget
+winget show --id MartinDvorak.MindForger --exact --versions
+
+# install a specific MindForger version
+winget install --id MartinDvorak.MindForger --exact --version 2.5.0
+
+# uninstall MindForger
+winget uninstall --id MartinDvorak.MindForger --exact
+```
+
+MindForger winget package manifests are maintained in the [microsoft/winget-pkgs](https://github.com/microsoft/winget-pkgs/tree/master/manifests/m/MartinDvorak/MindForger)
+repository. The package installs the same installer as provided on GitHub Releases (see below) - a new MindForger
+version becomes available in winget once its manifest is reviewed and merged there.
+
+Alternatively, **download** the installer executable (`windows-installer-mindforger-MAJOR.MINOR.PATCH.exe`) from:
+
+* [GitHub Releases](https://github.com/dvorka/mindforger/releases) **Assets** section
+* or try [nightly build](https://ci.appveyor.com/project/dvorka/mindforger/build/artifacts)
+
+and run it.
 
 ## WSL <!-- Metadata: type: Note; tags: windows; created: 2018-07-11 15:40:38; reads: 137; read: 2026-09-26 19:04:51; revision: 9; modified: 2020-03-08 17:03:04; -->
 Install [Windows Subsystem for Linux](https://docs.microsoft.com/en-us/windows/wsl/install-win10) (WSL) and check that you have Ubuntu 16.04 or newer:
