@@ -36,6 +36,7 @@
         * [Windows](INSTALLATION.md#windows)
         * [WSL](INSTALLATION.md#wsl)
     * [Build from source code](INSTALLATION.md#build-from-source-code)
+        * [Build on Arch Linux](INSTALLATION.md#build-on-arch-linux)
         * [Build on Debian](INSTALLATION.md#build-on-debian)
         * [Build on Fedora](INSTALLATION.md#build-on-fedora)
         * [Build on Gentoo](INSTALLATION.md#build-on-gentoo)
@@ -222,6 +223,7 @@
 **News**:
 
 * [Blog](BLOG.md)
+    * [MindForger 2.6.0: Editor minimap, find Note by metadata, hierarchical recent Notes, latest Mermaid and better Windows UX](BLOG.md#mindforger-2-6-0--editor-minimap--find-note-by-metadata--hierarchical-recent-notes--latest-mermaid-and-better-windows-ux)
     * [MindForger 2.5.0: 3rd generation of associations lookup and visualization, status bar w/ ADLMSTW diodes and new Debian PPA](BLOG.md#mindforger-2-5-0--3rd-generation-of-associations-lookup-and-visualization--status-bar-w--adlmstw-diodes-and-new-debian-ppa)
     * [MindForger 2.4.0: Flatpak](BLOG.md#mindforger-2-4-0--flatpak)
     * [MindForger 2.3.0: Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation](BLOG.md#mindforger-2-3-0--notebook-shelves--localization-to-4-languages--lines-sorting--winget-packaging--markdown-export--non-ascii-links-navigation)

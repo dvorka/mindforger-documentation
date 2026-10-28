@@ -17,6 +17,7 @@ Install:
 
 Build:
 
+* [build on Arch Linux](#build-on-arch-linux)
 * [build on Debian](#build-on-debian)
 * [build on Fedora](#build-on-fedora)
 * [build on Gentoo](#build-on-gentoo)
@@ -48,10 +49,106 @@ Look up:
 Install MindForger using a package.
 
 If your operating system or distribution is not listed below, then check [packages repository](https://pkgs.org/search/?q=mindforger]) for Linux and Unix.
-## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 119; read: 2026-09-27 07:54:33; revision: 9; modified: 2026-09-27 07:54:33; -->
-Install MindForger from Arch User Repository (AUR):
+## Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2018-06-12 19:47:21; reads: 119; read: 2026-09-27 10:36:34; revision: 10; modified: 2026-09-27 10:36:34; -->
+Install MindForger on [Arch Linux](https://archlinux.org) (and Arch based distributions
+like EndeavourOS or Manjaro):
 
-* [https://aur.archlinux.org/packages/mindforger/](https://aur.archlinux.org/packages/mindforger/)
+* either from **AUR** - MindForger is compiled on your machine
+* or as [Flatpak](#flatpak) or [Snap](#snap) - pre-built package, nothing is compiled
+
+**What is AUR?**
+
+[AUR](https://aur.archlinux.org) (Arch User Repository) is a community repository of
+**build recipes** (`PKGBUILD` files), not of binary packages. When you install a package
+from AUR, its sources are downloaded and compiled on **your** machine by `makepkg`,
+and the result is installed by `pacman`. AUR packages are maintained by volunteers
+and are not officially supported by Arch Linux - review the `PKGBUILD` before you
+build it.
+
+MindForger's AUR package is [mindforger](https://aur.archlinux.org/packages/mindforger).
+It is maintained by AUR maintainers, MindForger upstream provides the
+[reference PKGBUILD](https://github.com/dvorka/mindforger/tree/master/build/arch) for
+every release.
+
+**What gets compiled**
+
+MindForger renders Markdown to HTML using a Qt web engine. Neither Qt WebKit nor
+Qt WebEngine are in the official Arch repositories anymore, therefore the AUR
+package uses **Qt WebKit** which is compiled from AUR as well:
+
+```
+qt5-location, qt5-sensors, qt5-webchannel  ... Qt 5 modules (minutes each)
+qt5-doc      ... make dependency of qt5-webkit - downloads and configures the whole
+                 Qt 5 source tree (~660 MB download, several GB of disk)
+qt5-webkit   ... Qt WebKit (the longest step)
+mindforger   ... MindForger (a few minutes)
+```
+
+The first installation takes about 40 minutes on a 16 CPU core machine (measured) and
+proportionally longer on smaller machines. Upgrades of MindForger rebuild MindForger only (minutes).
+
+Qt WebKit build limitations - if they matter to you, use [Flatpak](#flatpak) or
+[Snap](#snap) instead:
+
+* **source code syntax highlighting** is not available
+* Qt WebKit is end-of-life and gets no security fixes
+
+**Install using an AUR helper**
+
+An AUR helper like [yay](https://github.com/Jguer/yay) or [paru](https://github.com/Morganamilo/paru)
+resolves, builds and installs the whole chain automatically:
+
+```sh
+yay -S mindforger
+```
+
+**Install manually using makepkg**
+
+Install the build tools:
+
+```sh
+sudo pacman -S --needed base-devel git
+```
+
+Build and install AUR packages one after another, in this order: `qt5-location`,
+`qt5-sensors`, `qt5-webchannel`, `qt5-doc`, `qt5-webkit` and `mindforger`:
+
+```sh
+for P in qt5-location qt5-sensors qt5-webchannel qt5-doc qt5-webkit mindforger
+do
+    git clone https://aur.archlinux.org/${P}.git
+    (cd ${P} && makepkg -si)
+done
+```
+
+`makepkg -s` installs dependencies from the official repositories using `pacman`,
+`-i` installs the built package.
+
+**Run**
+
+Run MindForger from the application menu or from the command line:
+
+```sh
+mindforger
+```
+
+**Upgrade**
+
+```sh
+yay -Syu
+```
+
+... or, when installed manually, `git pull` in the `mindforger` directory and
+`makepkg -si` again.
+
+**Uninstall**
+
+```sh
+sudo pacman -R mindforger
+```
+
+`~/mindforger-repository` and `~/.mindforger.md` are **not** removed - delete them
+manually if you want to get rid of them.
 
 
 ## Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:04:57; reads: 141; read: 2026-09-26 19:04:26; revision: 46; modified: 2026-09-25 07:13:46; -->
@@ -530,6 +627,70 @@ DISPLAY=:0.0 mindforger
 ```
 # Build from source code <!-- Metadata: type: Note; created: 2018-03-20 16:19:07; reads: 115; read: 2026-09-26 19:04:51; revision: 8; modified: 2024-02-19 08:08:06; -->
 Build MindForger from the source code.
+
+
+## Build on Arch Linux <!-- Metadata: type: Note; tags: linux; created: 2026-09-27 10:36:34; reads: 1; read: 2026-09-27 10:36:34; revision: 1; modified: 2026-09-27 10:36:34; -->
+Build MindForger from the source code on [Arch Linux](https://archlinux.org). To
+build the AUR package instead, see [Arch Linux](#arch-linux) installation.
+
+Install package dependencies from the official repositories:
+
+```sh
+sudo pacman -S --needed base-devel git cmake qt5-base qt5-tools hunspell curl zlib
+```
+
+Install **Qt WebKit** from [AUR](#arch-linux) - either using an AUR helper:
+
+```sh
+yay -S qt5-webkit
+```
+
+... or manually using `makepkg` (see [Arch Linux](#arch-linux) for details):
+
+```sh
+for P in qt5-location qt5-sensors qt5-webchannel qt5-doc qt5-webkit
+do
+    git clone https://aur.archlinux.org/${P}.git
+    (cd ${P} && makepkg -si)
+done
+```
+
+Get [source code](https://github.com/dvorka/mindforger):
+
+```sh
+# clone MindForger repository including its sub-modules
+git clone --recurse-submodules https://github.com/dvorka/mindforger.git
+cd mindforger
+```
+
+Build dependencies:
+
+```sh
+# build cmark-gfm
+# (the policy option is needed only for MindForger 2.5.0 and older w/ CMake 4)
+cmake -S deps/cmark-gfm -B deps/cmark-gfm/build \
+    -DCMARK_TESTS=OFF -DCMARK_SHARED=OFF -DCMAKE_POLICY_VERSION_MINIMUM=3.5
+cmake --build deps/cmark-gfm/build
+```
+
+Compile and install from Git repository root directory:
+
+```sh
+# CONFIG+=mfwebkit builds MindForger w/ Qt WebKit
+qmake -r CONFIG+=mfwebkit mindforger.pro
+# consider speeding up compilation by increasing the number of CPU cores to use e.g. make -j8
+make
+sudo make install
+```
+
+Run MindForger:
+
+```sh
+mindforger
+```
+
+On the first start MindForger creates `~/mindforger-repository` w/ documentation and
+stencils.
 
 
 ## Build on Debian <!-- Metadata: type: Note; tags: linux; created: 2018-04-25 17:18:23; reads: 144; read: 2026-09-26 19:05:01; revision: 37; modified: 2023-11-05 13:38:33; -->

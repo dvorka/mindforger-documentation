@@ -1,6 +1,7 @@
-# Releases
+# Releases <!-- Metadata: type: Outline; created: 2026-09-26 22:56:19; reads: 5; read: 2026-10-28 17:54:28; revision: 5; modified: 2026-10-28 17:54:28; importance: 0/5; urgency: 0/5; -->
 MindForger [releases](https://github.com/dvorka/mindforger/releases):
 
+* [2.6.0](https://github.com/dvorka/mindforger/releases/tag/2.6.0): Editor minimap, find Note by metadata, hierarchical recent Notes, latest Mermaid and beautiful Windows UX
 * [2.5.0](https://github.com/dvorka/mindforger/releases/tag/2.5.0): 3rd generation of associations lookup and visualization, status bar w/ ADLMSTW diodes and new Debian PPA
 * [2.4.0](https://github.com/dvorka/mindforger/releases/tag/2.4.0): Flatpak
 * [2.3.0](https://github.com/dvorka/mindforger/releases/tag/2.3.0): Notebook shelves, localization to 4 languages, lines sorting, winget packaging, Markdown export, non-ASCII links navigation
@@ -19,7 +20,7 @@ MindForger [releases](https://github.com/dvorka/mindforger/releases):
 * [1.43.0](https://github.com/dvorka/mindforger/releases/tag/1.43.0): Eisenhower matrix, tags view and recent notes
 * [1.42.0](https://github.com/dvorka/mindforger/releases/tag/1.42.0): Initial release
 
-## Changelog
+## Changelog <!-- Metadata: type: Note; created: 2026-09-26 22:56:19; reads: 1; read: 2026-09-26 22:56:19; revision: 1; modified: 2026-09-26 22:56:19; -->
 See release [changelog](https://raw.githubusercontent.com/dvorka/mindforger/master/Changelog) for more details.
 
 

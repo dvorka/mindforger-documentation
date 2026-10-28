@@ -1,5 +1,5 @@
-# Credits
-Written by [Martin Dvorak](http://me.mindforger.com).
+# Credits <!-- Metadata: type: Outline; created: 2026-09-20 17:40:08; reads: 5; read: 2026-10-28 16:49:28; revision: 5; modified: 2026-10-28 16:49:28; importance: 0/5; urgency: 0/5; -->
+MindForger written by [Martin Dvorak](http://me.mindforger.com).
 
 Acknowledgements to contributors:
 
@@ -23,6 +23,7 @@ Big thanks to 3rd party FOSS content authors:
 * David Parsons ([Discount](http://www.pell.portland.or.us/~orc/Code/discount/) - Markdown rendering - library used in the past)
 * Google ([Google C++ unit testing framework](https://github.com/google/googletest))
 * Knut Sveidqvist ([Mermaid.js](https://mermaidjs.github.io/) - diagrams and flowcharts rendering in HTML)
+* Khan Academy ([KaTeX](https://katex.org/) - math typesetting in HTML)
 * AMS and SIAM ([MathJax.js](https://www.mathjax.org/) - math rendering in HTML)
 * Ivan Sagalaev ([Highlight.js](https://highlightjs.org/) - source code syntax highlighting)
 * Danny Allen (primary [icon theme](https://store.kde.org/content/show.php?content=18317) store.kde.com - icons)

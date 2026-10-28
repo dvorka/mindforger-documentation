@@ -1,4 +1,4 @@
-# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 869; read: 2026-09-20 16:53:36; revision: 869; modified: 2026-09-20 16:53:36; importance: 0/5; urgency: 0/5; -->
+# User documentation <!-- Metadata: type: Outline; created: 2022-02-26 08:27:46; reads: 947; read: 2026-10-18 18:53:06; revision: 947; modified: 2026-10-18 18:53:06; importance: 0/5; urgency: 0/5; -->
 Table of contents:
 
 * [Basics](#basics)
@@ -776,13 +776,25 @@ MathJax [cheetsheet](https://math.meta.stackexchange.com/questions/5020/mathjax-
 Limit block:
 
 $$\lim_{x\to 0}$$
-### Diagrams <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 39; read: 2026-09-13 15:58:05; revision: 8; modified: 2026-09-13 15:58:05; -->
+### Diagrams <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 47; read: 2026-10-18 18:53:06; revision: 47; modified: 2026-10-18 18:53:06; -->
 MindForger supports [Mermaid](https://github.com/mermaid-js/mermaid) ([cheatsheet](https://github.com/JakeSteam/Mermaid)) to render **diagrams**.
 
+You can either encapsulate diagram code to the ```mermaid code block  or `<div class="mermaid">`:
+
+```mermaid
+graph TD
+D[Mermaid] --> DDD{decide}
+DDD --> I(div)
+I --> N[no background]
+DDD --> C(code block)
+C --> B[background]
+```
+
+**Diagram examples**:
 
 Flowchart diagram:
 
-``` mermaid
+```mermaid
 graph TD;
     A-->B;
     A-->C;
@@ -830,6 +842,8 @@ gantt
 
 💡 edit this Note to see the syntax <br/>
 💡 if diagram expressions are **not** rendered, then you must **enable** them using menu `Knowledge/Preferences/Viewer/Diagram support`.
+
+
 ### Comments <!-- Metadata: type: Note; created: 2022-02-26 08:27:46; reads: 27; read: 2024-02-16 16:17:40; revision: 1; modified: 2022-02-26 08:27:46; -->
 If you want **line** or **multi-line** comment that 
 is strictly for yourself (readers of the converted 
